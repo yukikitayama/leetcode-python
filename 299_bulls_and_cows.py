@@ -27,6 +27,15 @@ class Solution:
         return f'{str(bulls)}A{str(cows)}B'
 
 
+"""
+Time complexity
+One pass for making dictionary, another pass for for-loop, so O(2n) = O(n)
+
+Space complexity
+O(1) because we keep dictionary and keys are from 0 to 9, at most 10 elements, so O(10) = O(1)
+"""
+
+
 secret = "1807"
 guess = "7810"
 # secret = "1123"
