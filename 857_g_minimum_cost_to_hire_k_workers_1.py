@@ -10,7 +10,7 @@ class Solution:
         for captain in range(N):
             factor = wage[captain] / quality[captain]
             prices = []
-            # print(f'Captain: {captain}')
+            print(f'Captain: {captain}, factor: {factor}')
 
             for worker in range(N):
                 price = factor * quality[worker]
@@ -30,7 +30,7 @@ class Solution:
             prices.sort()
             # prices[:k] because we cannot hire more than k
             ans = min(ans, sum(prices[:k]))
-            # print(f'Updated answer: {ans} with prices: {prices} and tried cost in this iteration: {sum(prices[:k])}')
+            print(f'Updated answer: {ans} with prices: {prices} and tried cost in this iteration: {sum(prices[:k])}')
 
         return float(ans)
 
