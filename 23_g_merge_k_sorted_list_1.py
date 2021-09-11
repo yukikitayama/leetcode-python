@@ -36,6 +36,7 @@ Let n be the total number of nodes
 O(n) to collect all the values from ListNode and append them to list
 O(nlogn) to sort the array by timsort
 O(n) to create linked list
+so O(n + nlogn + n) = O(2n + nlogn) = O(nlogn) 
 
 Space complexity
 O(n) to keep list of values of each node
