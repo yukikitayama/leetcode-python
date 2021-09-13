@@ -1,6 +1,5 @@
-from collections import defaultdict
 from typing import List
-import pprint
+from collections import defaultdict
 
 
 class Solution:
@@ -25,6 +24,9 @@ class Solution:
         # Evaluate each query by backtracking
         results = []
         for numerator, denominator in queries:
+            print()
+            print(f'query: {numerator, denominator}')
+
             if numerator not in self.graph or denominator not in self.graph:
                 ret = -1.0
                 # print(f'Query: [{numerator}, {denominator}], here')
@@ -66,27 +68,15 @@ class Solution:
                     break
 
         # Remove for next query
+        print(f'target_node: {target_node}, visited: {visited}')
         visited.remove(curr_node)
         return ret
 
 
-"""
-Time complexity
-Let n be the number of equations, m be the number of queries.
-O(n) to make a graph, in worst case it needs to traverse all the nodes by m times so O(nm),
-so O(n + nm) = O(nm)
-
-Space complexity
-O(n) for stack in backtracking, O(n) for visited set, O(n) for graph,
-so O(n + n + n) = O(n)
-"""
-
-
-
-equations = [["a","b"],["b","c"]]
-values = [2.0,3.0]
-queries = [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]
-# equations = [["a", "b"], ["c", "d"]]
-# queries = [["a", "c"]]
+# equations = [["a","b"],["b","c"]]
+# values = [2.0,3.0]
+# queries = [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]
+equations = [["x1","x2"],["x2","x3"],["x3","x4"],["x4","x5"]]
+values = [3.0,4.0,5.0,6.0]
+queries = [["x1","x5"],["x5","x2"],["x2","x4"],["x2","x2"],["x2","x9"],["x9","x9"]]
 print(Solution().calcEquation(equations, values, queries))
-
