@@ -62,7 +62,7 @@ It has one stack, two dictionary with size number of indices v, so O(v + v + v) 
 """
 
 
-# stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]
-stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]
+stones = [[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]
+# stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]
 print(f'Stones: {stones}')
 print(Solution().removeStones(stones))
