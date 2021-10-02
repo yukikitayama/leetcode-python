@@ -47,8 +47,8 @@ class Solution:
 
         ans = 0
 
-        for start in range(len(answerKey)):
-            if
+        # for start in range(len(answerKey)):
+        #     if
 
 
 answerKey = "TTFTTFTT"
