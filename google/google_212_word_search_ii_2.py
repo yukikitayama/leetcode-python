@@ -1,8 +1,18 @@
 """
+Algorithm
 - For each row and column, use it as the starting cell of dfs
 - in each iteration, check where the current sequence of characters is in words
 - No more cells to go, break out of DFS, and go back to the nested for loops and start from
   the next row and column cell as starting cell.
+
+Complexity
+- Let m be the number of cells in the board,
+  n be the total number of characters in words,
+  l be the length of a word
+- Time is O(m * 4 * 3^(l - 1)) because we have m different starting cells for backtracking
+  and at first we have 4 directions to go, and then because we cannot move back to the cells
+  coming from, so you only have 3 directions to go for the rest of the characters in a word.
+- Space is O(n) for making trie.
 """
 
 
