@@ -22,3 +22,12 @@ if popped:
     print('if')
 else:
     print('else')
+
+
+word = 'abc'
+trie = {}
+node = trie
+for char in word:
+    print(node.setdefault(char, {}))
+
+
