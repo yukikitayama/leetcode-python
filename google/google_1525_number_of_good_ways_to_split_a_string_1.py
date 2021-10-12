@@ -31,8 +31,8 @@ class Solution:
 Use two counter dictionaries. One is initially empty and the other is counted for all the characters in s
 As we iterate each character in s, we increment empty counter and decrement the full counter.
 Important thing is that, when we have 0 in the initially full counter, need to delete the key and value,
-because eventually we will compare the number of keys in each dictionary to know how many distinct characters
-Distinct characters do not need to be the same. Just the number of distinc characters.
+because eventually we will compare the number of keys in each dictionary to know how many distinct characters are there.
+Distinct characters do not need to be the same. Just the number of distinct characters.
 
 Time complexity
 Let n be the length of s. O(n) to do for loop.
