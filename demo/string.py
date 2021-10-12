@@ -9,3 +9,8 @@ print(cur)
 cur += ['is']
 print(cur)
 
+text = 'test'
+print(text[:0] + text[1:])
+print()
+for i in range(len(text)):
+    print(text[:i] + text[i + 1:])
