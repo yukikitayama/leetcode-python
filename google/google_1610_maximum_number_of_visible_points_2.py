@@ -37,6 +37,8 @@ import math
 class Solution:
     def visiblePoints(self, points: List[List[int]], angle: int, location: List[int]) -> int:
 
+        # print(f'points: {points}')
+
         def get_degree(x_location, y_location, x_point, y_point):
             x = x_point - x_location
             y = y_point - y_location
@@ -54,7 +56,7 @@ class Solution:
         points = [point for point in points if point != location]
         points_on_me = initial_length - len(points)
 
-        # print(f'points: {points}')
+        # print(f'screened points: {points}')
 
         degrees = []
         for point in points:
@@ -89,11 +91,18 @@ class Solution:
                 left += 1
 
         return ans + points_on_me
+        # return ans
 
 
-points = [[2,1],[2,2],[3,3]]
-angle = 90
+# points = [[2,1],[2,2],[3,3]]
+# angle = 90
+# location = [1,1]
+# location = [2,1]
+# Expected: 3
+points = [[1,1],[2,2],[3,3],[4,4],[1,2],[2,1]]
+angle = 0
 location = [1,1]
+# Expected: 4
 print(Solution().visiblePoints(points, angle, location))
 
 
