@@ -1,3 +1,7 @@
+def isBadVersion(num):
+    return None
+
+
 class Solution:
     def firstBadVersion(self, n):
         left = 1
