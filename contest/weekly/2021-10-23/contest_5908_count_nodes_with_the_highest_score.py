@@ -12,3 +12,4 @@ from typing import List
 
 class Solution:
     def countHighestScoreNodes(self, parents: List[int]) -> int:
+        return 0
