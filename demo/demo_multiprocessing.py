@@ -1,3 +1,8 @@
+"""
+https://www.geeksforgeeks.org/synchronization-pooling-processes-python/
+"""
+
+
 import multiprocessing
 
 
