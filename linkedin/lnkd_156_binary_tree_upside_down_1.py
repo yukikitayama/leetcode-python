@@ -44,6 +44,11 @@ class Solution:
 
 
 """
+    1
+   / \
+  2   3
+ / \
+4   5
 udbt(TreeNode(1)),
 
   if: F, udbt(TreeNode(2)),
