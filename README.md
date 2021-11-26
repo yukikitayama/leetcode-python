@@ -3,6 +3,28 @@
 * LeetCode ID: yukikitayama
   * https://leetcode.com/yukikitayama/
 
+## Disjoint set
+
+Disjoint set = union-find. The goal is to find whether two vertices share a common ancestor.
+
+### Method
+- find(vertex)
+  - Find the root node of a given vertex.
+- union(vertex1, vertex2)
+  - Connect two vertices by making their root nodes the same.
+
+### Complexity
+- Quick find
+  - Parent array stores root vertex, not parent vertex.
+  - For time, find() is O(1), but union() is O(N) because it needs to iterate parent array to update root node.
+  - Space is O(N) for the parent array.
+
+### Terminology
+- Parent node
+  - The direct parent node of a vertex. For example, 0 (Root) - 1 - 3, The parent node of 3 is 1.
+- Root node
+  - A node without a parent node. In the above example, 0 is a root node.
+
 ## YouTube
 
 LeetCode Number | Problem Name | Level | YouTube | Language
