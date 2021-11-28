@@ -1,7 +1,39 @@
 # Algorithms in Python and LeetCode
 
+- [daily-challenge](https://github.com/yukikitayama/leetcode-python/tree/main/daily-challenge) folder contains my 
+  problem-solving every day by following the daily challenge problems given by LeetCode.
+- [algorithm](https://github.com/yukikitayama/leetcode-python/tree/main/algorithm) folder tried to improve my 
+  understanding of a specific algorithms by picking the algorithm from LeetCode.
+- [company](https://github.com/yukikitayama/leetcode-python/tree/main/company) folder is a collection of the problems I
+  solved with the higher frequency by company.
+
 ## LeetCode
+
 LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
+
+### Progress
+
+- [x] Solve 700 LeetCode problems (2021-11-23)
+- [ ] Solve 800 LeetCode problems
+- [ ] Solve 900 LeetCode problems
+- [ ] Solve 1,000 LeetCode problems
+
+## Hash table
+
+When you use modulo as hash function, the divisor should use prime number (e.g. 1999), because it can best avoid 
+collision.
+
+Integer, string and tuple are the Python valid dictionary keys. You cannot use list as key, because Python list is 
+[mutable unhashable object](https://www.geeksforgeeks.org/how-to-use-a-list-as-a-key-of-a-dictionary-in-python-3/). So first convert the list to tuple, and then use it as a key of the Python dictionary.
+
+### Complexity
+
+In the best case, the bucket size is small enough to be regarded as constant, so insertion and search are O(1). But in 
+the worst case, all the items go to the same bucket and the size becomes N, so search time complexity will be O(N) while
+insertion is still O(1).
+
+If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
+worst case, search and insertion time complexity is O(logN).
 
 ## Disjoint set
 Disjoint set = union-find. The goal is 1. to find whether two vertices share a common ancestor, and 2. connect two 
