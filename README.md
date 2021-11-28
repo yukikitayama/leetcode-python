@@ -57,6 +57,38 @@ Let V denote the number of vertices, and E the number of edges.
     (V - 2) paths, appended by (V - 3), ..., and * V comes from each path added to the stack taking O(V) space (?, need
     review).
 
+## Minimum spanning tree
+
+- **Spanning tree** is a subgraph in a graph where all the vertices are connected with the minimum number of edges. 
+
+- **Minimum spanning tree** is a spanning tree with the minimum total edge weight. 
+
+- Spanning tree is in an undirected graph, and minimum spanning tree is in a weighted undirected graph. Those graphs could
+have multiple (minimum) spanning trees.
+
+- **Cut** is a partition of vertices in a graph into two disjoint subsets. 
+  - Cut has **crossing edges** which connect a vertex in one disjoint subset with another vertex in the other disjoint 
+    subset. 
+  - Among the crossing edges, if you choose the edge with the smallest weight, it belongs to minimum spanning tree. This
+    is called **cut property**.
+
+### Kruskal's algorithm
+
+An algorithm to make a minimum spanning tree of a weighted undirected graph.
+
+#### Algorithm
+1. Sort a list of edges in the ascending order by weight.
+2. Add an edge in the order to minimum spanning tree.
+   - Skip the current edge if it makes a cycle.
+3. Repeat until N - 1 edeges are added. 
+   - N - 1 because, if it's more than N - 1, it has too many edges to be spanning tree.
+
+#### Complexity
+Time is O(E * logE), because sorting edges take O(E * logE), and for each edge, checking whether two vertices belong to 
+the same connected component take O(E * &alpha;(V)), so O(E * logE + E * &alpha;(V)) = O(E * logE).
+
+Space is O(V), because it needs union find data structure to keep track of the root of every vertex.
+
 ## Disjoint set
 Disjoint set = union-find. The goal is 1. to find whether two vertices share a common ancestor, and 2. connect two 
 vertices. Disjoint set is optimized by implementing union by rank and path compression. Implementation of Disjoint set
