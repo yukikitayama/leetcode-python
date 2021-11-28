@@ -85,7 +85,8 @@ An algorithm to make a minimum spanning tree of a weighted undirected graph.
 
 #### Complexity
 Time is O(E * logE), because sorting edges take O(E * logE), and for each edge, checking whether two vertices belong to 
-the same connected component take O(E * &alpha;(V)), so O(E * logE + E * &alpha;(V)) = O(E * logE).
+the same connected component take O(E * &alpha;(V)), so O(E * logE + E * &alpha;(V)) = O(E * logE). &alpha;() is the 
+inverse ackerman function.
 
 Space is O(V), because it needs union find data structure to keep track of the root of every vertex.
 
