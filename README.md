@@ -35,6 +35,11 @@ insertion is still O(1).
 If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
 worst case, search and insertion time complexity is O(logN).
 
+## Binary Search Tree (BST)
+
+- Inorder traversal of a binary search tree gives nodes in the ascending order.
+- Inorder is left, root, right.
+
 ## Depth first search (DFS)
 
 DFS is used 1. for traversing all the vertices in a graph, and 2. for traversing all the paths between two vertices.
@@ -76,6 +81,8 @@ have multiple (minimum) spanning trees.
 
 An algorithm to make a minimum spanning tree of a weighted undirected graph.
 
+Kruskal's algorithm expands minimum spanning tree by adding edges.
+
 #### Algorithm
 1. Sort a list of edges in the ascending order by weight.
 2. Add an edge in the order to minimum spanning tree.
@@ -89,6 +96,37 @@ the same connected component take O(E * &alpha;(V)), so O(E * logE + E * &alpha;
 inverse ackerman function.
 
 Space is O(V), because it needs union find data structure to keep track of the root of every vertex.
+
+### Prim's Algorithm
+
+Another algorithm to make a minimum spanning tree of a weighted undirected graph.
+
+**Cut propety** works for the newly added edges described below. There are edges which connect two disjoint set, which
+are cut. Picking the minimum weight edge among then connect two disjoint set as minimum spanning tree.
+
+Prim's algorithm expands the minimum spanning tree by adding vertices.
+
+#### Algorithm
+
+1. Make an empty visited set, and a non-visited set initially containing all the vertices.
+2. Remove a vertex from the non-visited, and find the minimum weight edge out from the vertex to an unvisited vertex.
+3. Remove the chosen vertex, treat this connected vertices as a whole, find the minimum weight edge out from the whole
+   to an unvisited.
+4. Repeat until N - 1 edges picked.
+
+#### Complexity
+
+- Time is O(E * logV) with binary heap. O(V + E) to traverse all the vertices and store them in the heap. Getting 
+  minimum element from the heap costs O(logV), so O(V + E) * O(logV) = O(E * logV)
+- Space is O(V) to store all the vertices.
+
+### Dijkstra's Algorithm
+
+- Solve the shortest path problem in a weighted directed graph with non-negative weights.
+
+### Bellman-Ford Algorithm
+
+- Solve the shortes path problem in a weighted directed graph with any weights including negative weights.
 
 ## Disjoint set
 Disjoint set = union-find. The goal is 1. to find whether two vertices share a common ancestor, and 2. connect two 
