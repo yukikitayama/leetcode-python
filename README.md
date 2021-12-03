@@ -40,6 +40,11 @@ worst case, search and insertion time complexity is O(logN).
 - Inorder traversal of a binary search tree gives nodes in the ascending order.
 - Inorder is left, root, right.
 
+## Linked List
+
+- two pointers (`prev` and `curr`) iteration often works for solution to traverse the linked list.
+  - Because singly-linked list does not have a reference to the precedent node.
+
 ## Depth first search (DFS)
 
 DFS is used 1. for traversing all the vertices in a graph, and 2. for traversing all the paths between two vertices.
@@ -122,7 +127,17 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
 
 ### Dijkstra's Algorithm
 
-- Solve the shortest path problem in a weighted directed graph with non-negative weights.
+- Solve the shortest path problem in a weighted directed graph with **non-negative** weights.
+- It's a greedy approach because each step selects minimum weights from the current vertex to find the shortest path to
+  other vertex.
+- Dijkstra's algorithm won't work if there's a negative edge somewhere in the graph, because greedy algorithm looking 
+  only at the current vertex with others does not work.
+
+#### Complexity
+
+- Time is O(E + V * logV) because it takes O(E) to consider all the edges to find minimum weights, and takes O(VlogV)
+  to get minimum element from the min heap.
+- Space is O(V) because it needs to store all the vertices min distance and previous vertex information.
 
 ### Bellman-Ford Algorithm
 
