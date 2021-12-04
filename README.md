@@ -187,6 +187,16 @@ taking O(N) every time in calling find().
 - Root node
   - A node without a parent node. In the above example, 0 is a root node.
 
+## Trie
+
+- If you are asked to dynamically add and search strings.
+- Usually it's implemented as nested hashmaps.
+- Template: [Trie Python code](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/trie/Trie.py)
+
+### LeetCode
+
+- [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
 ## YouTube
 
 LeetCode Number | Problem Name | Level | YouTube | Language
