@@ -141,7 +141,36 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
 
 ### Bellman-Ford Algorithm
 
-- Solve the shortes path problem in a weighted directed graph with any weights including negative weights.
+- Solve the shortest path problem in a weighted directed graph with any weights including negative weights.
+- Bellman-Ford Algorithm is based on Dynamic Programming and optimizes the space.
+  - If there's a restriction to use at most k edges, Bellman-Ford Algorithm needs to be implemented by DP.
+- But Bellman-Ford Algorithm cannot calculate the shortest path in **graph with negative-weight cycle**, because it 
+  doesn't exist.
+- Suppose a graph has a cycle with weights, and the sum of the weights is positive, call it the graph with 
+  positive-weight cycle, and if the sum of weight is negative, the graph with negative-weight cycle.
+  - In the graph with positive-weight cycle, there's the shortest path, because by cycling, the total weight keeps 
+    increasing.
+  - In the graph with negative-weight cycle, there's the shortest path, because, by cycling, the total weight keeps
+    decreasing.
+
+#### Shortest Path Faster Algorithm (SPFA algorithm)
+
+- Improvement of Bellman-Ford algorithm.
+- Use a queue to maintain the next starting vertex.
+- Add a vertex only when it updates the shortest path to the vertex and the vertex is not in the queue.
+- Iterate until the queue is empty.
+
+#### Complexity
+
+- Bellman-Ford Algorithm in Dynamic Programming implementation
+  - Time is O(V * E). In the worst case, all the vertices are connected with each other, so it needs to check every edge
+    from every vertex.
+  - Space is O(V^2) because it needs to make 2 dimensional DP table with the number of edges at most axis and the 
+    to-vertex axis.
+- SPFA Bellman-Ford Algorithm
+  - Time is O(V * E). In the worst case, SPFA is the same as the standard Bellman-Ford algorithm, but on average, SPFA
+    tends to be faster.
+  - Space is O(V)
 
 ## Disjoint set
 Disjoint set = union-find. The goal is 1. to find whether two vertices share a common ancestor, and 2. connect two 
