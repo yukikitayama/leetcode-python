@@ -35,6 +35,27 @@ insertion is still O(1).
 If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
 worst case, search and insertion time complexity is O(logN).
 
+## Binary Tree
+
+- Recursion template. Key is to implement `if node is None` for how to end the recursion.
+
+```python
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def helper(node, other_information):
+    if node is None:
+        return 'Things like 0 or None'
+    else:
+        'Do something relates to helpe(node.left) and helper(node.right)'
+
+def answer_to_problem(root):
+    return helper(root, 'other_information')
+```
+
 ## Binary Search Tree (BST)
 
 - Inorder traversal of a binary search tree gives nodes in the ascending order.
