@@ -35,6 +35,11 @@ insertion is still O(1).
 If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
 worst case, search and insertion time complexity is O(logN).
 
+## Tree
+
+- An undirected graph in which any two vertices are connected by exactly one path
+- Any connected graph without cycles is a tree.
+
 ## Binary Tree
 
 - Recursion template. Key is to implement `if node is None` for how to end the recursion.
