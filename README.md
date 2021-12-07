@@ -220,6 +220,47 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
   and decrement every outgoing edge once to take O(V + E).
 - Space is O(V + E), because the adjacency list is O(E), queue is O(V) at most.
 
+## Heap
+
+- Efficiently access the largest or smallest element in the data.
+- Heap is a data structure, while priority queue is an abstract data type.
+  - Heap is a way to implement priority queue, which can be implemented by array and linked list.
+  - Heap implementation of priority queue is time O(logN) for insertion and deletion
+  - Linked list implementation of priority queue is time O(1) for insertion and deletion, but other operations O(N)
+- Heap is a complete binary tree, and each node value must be no greater than (or no less than) the child node values
+  - Max heap has the largest value at the top, and min heap has the smallest at the top.
+
+### Method
+
+- Insert
+  - Add a new node to the bottom leftmost position to keep complete binary tree
+  - Keep exchanging the node with the parent node until parent value is smaller than child value (Min heap)
+- Delete
+  - Remove the top element.
+  - Move the bottom rightmost node to the top to keep complete binary tree.
+  - Keep exchanging the node with the children until parent and child value satisfy the min heap or max heap condition.
+
+### Complexity
+
+- Insert
+  - Add a new node at the bottom, and in the worst case, it compares the node with all the parent nodes from bottom to 
+    top. So time is the height of the tree
+  
+- Time
+  - Insert is O(logN)
+  - Delete is O(logN)
+  - Get max or min is O(1)
+
+### Implementation
+
+- Array
+  - [Min heap template](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/heap/MinHeap.py)
+  - Size is heap size + 1. +1 because of the convenience and not use the element at 0 index.
+    - The element at index 0 in the array could store the number of elements in the heap. 
+  - Find a parent node by `n // 2`.
+  - Find the left and right children by `left = n * 2` and `right = n * 2 + 1`.
+  - Find whether the current index is a leaf node by `i > (n // 2)`
+
 ## Disjoint set
 Disjoint set = union-find. The goal is 1. to find whether two vertices share a common ancestor, and 2. connect two 
 vertices. Disjoint set is optimized by implementing union by rank and path compression. Implementation of Disjoint set
