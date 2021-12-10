@@ -6,6 +6,7 @@
   understanding of a specific algorithms by picking the algorithm from LeetCode.
 - [company](https://github.com/yukikitayama/leetcode-python/tree/main/company) folder is a collection of the problems I
   solved with the higher frequency by company.
+- [math](https://github.com/yukikitayama/leetcode-python/tree/main/math) folder contains calculations to get solutions or to calculate complexity.
 
 ## LeetCode
 
@@ -18,80 +19,21 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [ ] Solve 900 LeetCode problems
 - [ ] Solve 1,000 LeetCode problems
 
-## Hash table
+## Dynamic Programming
 
-When you use modulo as hash function, the divisor should use prime number (e.g. 1999), because it can best avoid 
-collision.
-
-Integer, string and tuple are the Python valid dictionary keys. You cannot use list as key, because Python list is 
-[mutable unhashable object](https://www.geeksforgeeks.org/how-to-use-a-list-as-a-key-of-a-dictionary-in-python-3/). So first convert the list to tuple, and then use it as a key of the Python dictionary.
-
-### Complexity
-
-In the best case, the bucket size is small enough to be regarded as constant, so insertion and search are O(1). But in 
-the worst case, all the items go to the same bucket and the size becomes N, so search time complexity will be O(N) while
-insertion is still O(1).
-
-If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
-worst case, search and insertion time complexity is O(logN).
-
-## Tree
-
-- An undirected graph in which any two vertices are connected by exactly one path
-- Any connected graph without cycles is a tree.
-
-## Binary Tree
-
-- Recursion template. Key is to implement `if node is None` for how to end the recursion.
-
-```python
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-def helper(node, other_information):
-    if node is None:
-        return 'Things like 0 or None'
-    else:
-        'Do something relates to helpe(node.left) and helper(node.right)'
-
-def answer_to_problem(root):
-    return helper(root, 'other_information')
-```
-
-## Binary Search Tree (BST)
-
-- Inorder traversal of a binary search tree gives nodes in the ascending order.
-- Inorder is left, root, right.
-
-## Linked List
-
-- two pointers (`prev` and `curr`) iteration often works for solution to traverse the linked list.
-  - Because singly-linked list does not have a reference to the precedent node.
-
-## Depth first search (DFS)
-
-DFS is used 1. for traversing all the vertices in a graph, and 2. for traversing all the paths between two vertices.
-
-DFS uses recursion call `stack`, LIFO, last in first out.
-
-Often use visited set as helper data structure to avoid visiting the previously visited vertices.
-
-### Complexity
-Let V denote the number of vertices, and E the number of edges.
-- Traversing all the vertices
-  - Time is O(V + E) because it needs to check every vertex
-    and traverse through every edge in the graph. 
-  - Space is O(V) for the recursion call stack.
-- Traversing all the paths
-  - Time is O((V - 1)!). -1 because once a path reaches the target, from the target no more traverse occurs. Factorial !
-    because, in the worst case, every vertex is connected to every other vertex (Complete graph), meaning that V - 1 
-    paths from start to target, V - 2 paths from the next vertex from the start to target, continue...
-  - Space is O(V^3), because it comes from O((V(V - 1)/2 + 1) * V). V(V - 1)/2 + 1 comes from (V - 1) paths appended by
-    (V - 2) paths, appended by (V - 3), ..., and * V comes from each path added to the stack taking O(V) space (?, need
-    review).
+- There are two ways to implement
+  - Bottom-up (Tabulation)
+    - Use iteration, by using for loop
+    - Start from the base case, save the result in array, and repeat.
+    - Usually faster than top-down
+  - Top-down (Memoization)
+    - Use recursion, by using recursion function.
+    - Recursion until it hits the base case, save the result in hashmap, keep until clear the recursion stack.
+    - Usually easier to write than bottom-up
+- Any DP problem can be implemented and solved with either method.
+- A problem is likely to be a DP problem if ...
+  1. Asking for the maximum, minimum, longest, or shortest of something.
+  2. Current decisions depend on previous decisions.
 
 ## Minimum spanning tree
 
@@ -229,6 +171,41 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
   - Linked list implementation of priority queue is time O(1) for insertion and deletion, but other operations O(N)
 - Heap is a complete binary tree, and each node value must be no greater than (or no less than) the child node values
   - Max heap has the largest value at the top, and min heap has the smallest at the top.
+- Max heap
+  - Python heapq is min heap, so multiplying -1 makes it max heap.
+  - Top element is still the smallest element in the heap, but when taking out an element, multiply -1 again to get back
+    the original value.
+```python
+import heapq
+
+# Construct max heap
+max_heap = [1, 2, 3]
+max_heap = [-x for x in max_heap]
+heapq.heapify(max_heap)
+
+# Insert an element to max heap
+heapq.heappush(max_heap, -1 * 4)
+
+# Get the top element
+-1 * max_heap[0]
+
+# Delete the max element
+heapq.heappop(max_heap)
+
+# If you need to use the popped element
+value = -1 * heapq.heappop(max_heap)
+```
+- To get the K-th **smallest** element, there are two ways to implement
+  - Put all the N elements to **min** heap and pop K elements from the top.
+    - Time is O(KlogN + N) because O(N) to make the min heap, and O(logN) to pop for k elements.
+  - Put each element to **max** heap one by one. If the heap has k elements and the current element is bigger than or 
+    equal to the top element, continue. If the current element is smaller than the top element, insert it to the max 
+    heap, and pop the top element. Because it's max heap, the top element is the largest element in the heap. But this
+    approach limits the size of the heap, so the largest element is actuall k-th smallest element.
+    - For example, K is 2, and to find the 2nd smallest element, max heap only contains 2 elements, the bottom of the 
+      heap is the smallest element and top is the 2nd smallest element, because the heap only contains 2 elements.
+    - Time is (NlogK), because, in K size element, inserting and deleting is O(logK) and do this for each N elements.
+  - So optimal solution depends on N and K.
 
 ### Method
 
@@ -247,9 +224,16 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
     top. So time is the height of the tree
   
 - Time
-  - Insert is O(logN)
+  - Constructor is O(N)
+  - Insert is O(logN). LogN because at most exchanging needs to run the tree height times. Tree height is LogN
   - Delete is O(logN)
+  - Get max or min (Get the top element) is O(1)
+  - Get heap size is O(1)
+- Space
+  - Constructor is O(N)
+  - Insert is O(1)
   - Get max or min is O(1)
+  - Get heap size is O(1)
 
 ### Implementation
 
@@ -260,6 +244,41 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
   - Find a parent node by `n // 2`.
   - Find the left and right children by `left = n * 2` and `right = n * 2 + 1`.
   - Find whether the current index is a leaf node by `i > (n // 2)`
+
+### Heap Sort
+
+#### Algorithm
+
+- Input is array
+- Make a complete binary tree from the array
+- Heapify it, meaning keeping complete binary tree and making min or max order by exchanging non-leaf nodes with 
+  parents and children.
+- Pop the top element and insert it to the result sorted array.
+- Move the bottom rightmost element to the top, and exchange with children to maintain min or max structure.
+- Repeat all the elements
+
+#### Complexity
+
+- Time
+  - O(N * logN), because making the array to min or max heap is O(N), popping each element is O(N), and moving the 
+    bottom rightmost to top and exchanging is O(logN) for operating within tree height, so O(N * logN).
+- Space
+  - O(N) for the heap.
+
+### Top k smallest/largest problem
+
+#### Algorithm
+
+- Add all the elements in the array to heap
+- Popping the top element, adding to a result array, exchanging the bottom rightmost elements k times.
+
+#### Complexity
+
+- Time
+  - O(k * logN), because making heap is O(N), and popping top element and keeping heap structure is O(k * logN), and we 
+    consider O(k * logN) is bigger than O(N).
+- Space
+  - O(N) because it still adds all the N elements to heap.
 
 ## Disjoint set
 Disjoint set = union-find. The goal is 1. to find whether two vertices share a common ancestor, and 2. connect two 
@@ -310,6 +329,84 @@ taking O(N) every time in calling find().
 - If you are asked to dynamically add and search strings.
 - Usually it's implemented as nested hashmaps.
 - Template: [Trie Python code](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/trie/Trie.py)
+
+## Hash table
+
+When you use modulo as hash function, the divisor should use prime number (e.g. 1999), because it can best avoid 
+collision.
+
+Integer, string and tuple are the Python valid dictionary keys. You cannot use list as key, because Python list is 
+[mutable unhashable object](https://www.geeksforgeeks.org/how-to-use-a-list-as-a-key-of-a-dictionary-in-python-3/). So first convert the list to tuple, and then use it as a key of the Python dictionary.
+
+### Complexity
+
+In the best case, the bucket size is small enough to be regarded as constant, so insertion and search are O(1). But in 
+the worst case, all the items go to the same bucket and the size becomes N, so search time complexity will be O(N) while
+insertion is still O(1).
+
+If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
+worst case, search and insertion time complexity is O(logN).
+
+## Tree
+
+- An undirected graph in which any two vertices are connected by exactly one path
+- Any connected graph without cycles is a tree.
+
+## Binary Tree
+
+- Recursion template. Key is to implement `if node is None` for how to end the recursion.
+
+```python
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def helper(node, other_information):
+    if node is None:
+        return 'Things like 0 or None'
+    else:
+        'Do something relates to helpe(node.left) and helper(node.right)'
+
+def answer_to_problem(root):
+    return helper(root, 'other_information')
+```
+
+- Postorder traversal
+  - `Left -> Right -> Root`
+
+## Binary Search Tree (BST)
+
+- Inorder traversal of a binary search tree gives nodes in the ascending order.
+- Inorder is left, root, right.
+
+## Linked List
+
+- two pointers (`prev` and `curr`) iteration often works for solution to traverse the linked list.
+  - Because singly-linked list does not have a reference to the precedent node.
+
+## Depth first search (DFS)
+
+DFS is used 1. for traversing all the vertices in a graph, and 2. for traversing all the paths between two vertices.
+
+DFS uses recursion call `stack`, LIFO, last in first out.
+
+Often use visited set as helper data structure to avoid visiting the previously visited vertices.
+
+### Complexity
+Let V denote the number of vertices, and E the number of edges.
+- Traversing all the vertices
+  - Time is O(V + E) because it needs to check every vertex
+    and traverse through every edge in the graph. 
+  - Space is O(V) for the recursion call stack.
+- Traversing all the paths
+  - Time is O((V - 1)!). -1 because once a path reaches the target, from the target no more traverse occurs. Factorial !
+    because, in the worst case, every vertex is connected to every other vertex (Complete graph), meaning that V - 1 
+    paths from start to target, V - 2 paths from the next vertex from the start to target, continue...
+  - Space is O(V^3), because it comes from O((V(V - 1)/2 + 1) * V). V(V - 1)/2 + 1 comes from (V - 1) paths appended by
+    (V - 2) paths, appended by (V - 3), ..., and * V comes from each path added to the stack taking O(V) space (?, need
+    review).
 
 ### LeetCode
 
