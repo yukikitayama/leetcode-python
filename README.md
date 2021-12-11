@@ -35,6 +35,31 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
   1. Asking for the maximum, minimum, longest, or shortest of something.
   2. Current decisions depend on previous decisions.
 
+## Math
+
+### Greatest Common Divisor
+
+- Greatest common divisor of a and b is the largest positive integer d such that d is dividor of both a and b.
+  - e.g. gcd(8, 12) is 4. 2 is also common divisor but it's not the largest. 6 is divisor of 12 but 8 is not divisible
+    by 6 because divmod(8, 6) is quotient: 1, remainder: 2 not 0.
+- Use Euclidean algorithm
+  1. Wanna get GCD of `a` and `b`. 
+  2. Keep replacing `(a, b)` by `(b, a % b)` until it becomes `(d, 0)`.
+  3. `d` is GCD.
+- [GCD example](https://github.com/yukikitayama/leetcode-python/blob/main/math/greatest_common_divisor.py)
+- Python built-in function `math.gcd` is available from Python 3.5.
+
+### Least Common Multiple
+
+- Least common multiple of a and b is the smallest positive integer that is divisible by a and b.
+  - e.g. lcm(4, 6), multiples of 4: 4, 8, **12**, 16, ..., multiple of 6: 6, **12**, 18, ... 12 is the smallest common
+    number.
+- Use greatest common divisor
+  1. Make or import a function to calculate GCD.
+  2. `LCM(a, b) = abs(a * b) / gcd(a, b)`.
+- [LCM example](https://github.com/yukikitayama/leetcode-python/blob/main/math/least_common_multiple.py)
+- Python built-in function `math.lcm` is available from Python 3.9
+
 ## Minimum spanning tree
 
 - **Spanning tree** is a subgraph in a graph where all the vertices are connected with the minimum number of edges. 
