@@ -1,3 +1,4 @@
+# Example of Euclidean algorithm
 a = 48
 b = 18
 print(f'a: {a}, b: {b}')
@@ -9,6 +10,7 @@ while b:
 print(a)
 
 
+# Make it a function
 def get_gcd(a, b):
     while b:
         a, b = b, a % b
@@ -16,3 +18,8 @@ def get_gcd(a, b):
 
 
 print(get_gcd(a, b))
+
+
+# Python built-in function
+import math
+print(math.gcd(a, b))
