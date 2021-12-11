@@ -6,7 +6,8 @@
   understanding of a specific algorithms by picking the algorithm from LeetCode.
 - [company](https://github.com/yukikitayama/leetcode-python/tree/main/company) folder is a collection of the problems I
   solved with the higher frequency by company.
-- [math](https://github.com/yukikitayama/leetcode-python/tree/main/math) folder contains calculations to get solutions or to calculate complexity.
+- [math](https://github.com/yukikitayama/leetcode-python/tree/main/math) folder contains mathematical equations, 
+  calculations and proof to get solutions or to calculate complexity.
 
 ## LeetCode
 
