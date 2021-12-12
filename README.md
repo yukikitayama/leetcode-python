@@ -26,15 +26,39 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
   - Bottom-up (Tabulation)
     - Use iteration, by using for loop
     - Start from the base case, save the result in array, and repeat.
-    - Usually faster than top-down
+    - Usually faster than top-down, because functions calls and cache loopups of top-down are relatively expensive.
   - Top-down (Memoization)
     - Use recursion, by using recursion function.
     - Recursion until it hits the base case, save the result in hashmap, keep until clear the recursion stack.
     - Usually easier to write than bottom-up
 - Any DP problem can be implemented and solved with either method.
+  - You should be able to do both, because you may be asked to rewrite solution in bottom-up instead if solved in 
+    top-down.
 - A problem is likely to be a DP problem if ...
   1. Asking for the maximum, minimum, longest, or shortest of something.
   2. Current decisions depend on previous decisions.
+- Without memoization, it's just basic recursion with time O(2^n). But adding memoization makes it DP with time O(N).
+- Framework
+  1. Identify states
+  2. Identify recurrence relation to transition between states.
+  3. Identify base case to stop top-down recursion or to start tabulation.
+- In multi-dimensional states DP problems, states could be ...
+  - Start and end indices `i` and `j`.
+  - Numerical constraint `k`. e.g. "You are only allowed to complete `k` transactions".
+  - Status in a given state. e.g. "`True` if currently holding a key, `False` if not".
+  - Tuple or bitmask indicating "visited" or "used". 
+- `functools.lru_cache(maxsize=None)`
+  - It means the cache size is not limited. We do this because the number of states that will be re-used in a problem
+    is large, and we don't wanna evict a state early and have to re-calculate it.
+
+```python
+import functools
+
+def func():
+    @functools.lru_cache(maxsize=None)
+    def recursion():
+        pass
+```
 
 ## Math
 
