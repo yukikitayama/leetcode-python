@@ -457,6 +457,14 @@ def answer_to_problem(root):
 - two pointers (`prev` and `curr`) iteration often works for solution to traverse the linked list.
   - Because singly-linked list does not have a reference to the precedent node.
 
+## Graph
+
+- Centroid
+  - node that is close to all the peripheral nodes (leaf nodes)
+- Tree-alike graph (See tree as a graph) has no more than 2 centroids
+  - If the number of nodes is even, there would be 2 centroids.
+  - If the number of nodes is odd, there would be 1 centroid.
+
 ## Depth first search (DFS)
 
 DFS is used 1. for traversing all the vertices in a graph, and 2. for traversing all the paths between two vertices.
