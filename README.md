@@ -83,6 +83,10 @@ def func():
 
 ## Math
 
+- Sum of digits time complexity is O(logN), base is 10.
+  - https://github.com/yukikitayama/leetcode-python/blob/main/math/sum_of_digits_time_is_logn.png
+  - [Explain why time complexity for summing digits in a number of length N is O(logN)](https://stackoverflow.com/questions/50261364/explain-why-time-complexity-for-summing-digits-in-a-number-of-length-n-is-ologn)
+
 ### Greatest Common Divisor
 
 - Greatest common divisor of a and b is the largest positive integer d such that d is dividor of both a and b.
