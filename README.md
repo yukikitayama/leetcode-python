@@ -86,6 +86,8 @@ def func():
 - Sum of digits time complexity is O(logN), base is 10.
   - https://github.com/yukikitayama/leetcode-python/blob/main/math/sum_of_digits_time_is_logn.png
   - [Explain why time complexity for summing digits in a number of length N is O(logN)](https://stackoverflow.com/questions/50261364/explain-why-time-complexity-for-summing-digits-in-a-number-of-length-n-is-ologn)
+- Read an integer one by one from left to right and create number
+  - `num = num * 10 + curr_num`
 
 ### Greatest Common Divisor
 
@@ -421,6 +423,10 @@ insertion is still O(1).
 
 If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
 worst case, search and insertion time complexity is O(logN).
+
+## Stack
+
+- Use stack when you wanna delay processing the current data later
 
 ## Tree
 
