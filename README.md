@@ -518,6 +518,31 @@ Let V denote the number of vertices, and E the number of edges.
     (V - 2) paths, appended by (V - 3), ..., and * V comes from each path added to the stack taking O(V) space (?, need
     review).
 
+## Sort
+
+### Timsort
+
+- Python `LIST.sort()` and `sorted(LIST)`.
+- Time is `O(NlogN)`.
+- Space is `O(N)`
+
+### Counting sort
+
+- Suitable when the value range of array is not significantly greater than the length of array.
+- Algorithm
+  - Initialize array with 0s with length (max - min + 1)
+  - Get shift by -min
+  - Iterate each num in the given array
+  - Count up the initialized array at current num + shift
+- Complexity
+  - Let N be the length of the given array, and M be the value range of the array.
+  - Time is `O(M + N)` because initializing the array is `O(M)` and iterating the given array is `O(N)`.
+  - Space is `O(M)` for the initialized array.
+
+#### Example
+
+- [1200. Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)
+
 ### LeetCode
 
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
