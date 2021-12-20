@@ -401,6 +401,12 @@ taking O(N) every time in calling find().
 - Root node
   - A node without a parent node. In the above example, 0 is a root node.
 
+## Backtracking
+
+- Find every possible patterns or ways
+- If we are only interested in the number of patterns or ways, consider using dynamic programming, because generating 
+  every possible patterns is time-consuming.
+
 ## Trie
 
 - If you are asked to dynamically add and search strings.
@@ -456,6 +462,21 @@ def answer_to_problem(root):
 
 - Postorder traversal
   - `Left -> Right -> Root`
+
+## Decision Tree
+
+- A special form of binary tree used in classification and regression.
+- Decision node
+  - Non-leaf node.
+  - Each decision node contains a condition as a branching rule.
+    - Less-then-or-equal comparison
+    - Membership of category
+- Each leaf node contains a label assigned to objects which fall into this leaf.
+- Stopping condition
+  - All the data fall into a node belong to the same category.
+  - The tree reaches the predefined maximum depth.
+  - The number of examples fall into a node is less than the predefined minimum number of data in a node.
+
 
 ## Binary Search Tree (BST)
 
