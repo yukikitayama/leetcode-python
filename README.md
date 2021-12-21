@@ -112,6 +112,12 @@ def func():
 - [LCM example](https://github.com/yukikitayama/leetcode-python/blob/main/math/least_common_multiple.py)
 - Python built-in function `math.lcm` is available from Python 3.9
 
+## Amortized Analysis
+
+- Gives the average performance of each operation in the worst case.
+- The worst case operation can alter the state in such a way that the worst case cannot occur again for a long time
+  ("amortizing cost").
+
 ## Minimum spanning tree
 
 - **Spanning tree** is a subgraph in a graph where all the vertices are connected with the minimum number of edges. 
@@ -487,6 +493,22 @@ def answer_to_problem(root):
 
 - two pointers (`prev` and `curr`) iteration often works for solution to traverse the linked list.
   - Because singly-linked list does not have a reference to the precedent node.
+
+### Floyd's Tortoise and Hare (Floyd's cycle-finding algorithm)
+
+- Detect cycle in linked list.
+- Benefit of using this algorithm is
+  1. Time is linear time `O(N)`
+  2. Space is `O(1)` because it only uses two pointers to reference of linked lists.
+- Algorithm
+  - Find the intersection node by hare moving 2 nodes and tortoise moving 1 node.
+  - Make two pointers
+    - Pointer 1 starts from the intersection node
+    - Pointer 2 starts from the head of linked list
+    - Iterate both pointers one by one
+    - Two pointers will be identical at the entrance of the cycly in the linked list.
+- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+- [Python code](https://github.com/yukikitayama/leetcode-python/blob/main/company/goldman-sachs/gs_142_linked_list_cycle_ii_2.py)
 
 ## Graph
 
