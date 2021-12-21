@@ -112,6 +112,38 @@ def func():
 - [LCM example](https://github.com/yukikitayama/leetcode-python/blob/main/math/least_common_multiple.py)
 - Python built-in function `math.lcm` is available from Python 3.9
 
+## Bit Manipulation
+
+### Two's Complement
+
+- To compute two's complement notation -x, revert all bits in x, and add 1
+- x = 7: 0 0 0 0 0 1 1 1, ~x: 1 1 1 1 1 0 0 0, ~x + 1: 1 1 1 1 1 0 0 1
+- x = 6: 0 0 0 0 0 1 1 0, ~x: 1 1 1 1 1 0 0 1, ~x + 1: 1 1 1 1 1 0 1 0
+
+### Get the Rightmost 1-bit
+
+- `x & (-x)`
+  - `-x` is two's complement
+- [231. Power of Two](https://leetcode.com/problems/power-of-two/)
+
+| Code | Binary representation |
+|------|-----------------------|
+| x = 7 | 0 0 0 0 0 1 1 **1** |
+| -x = ~x + 1 | 1 1 1 1 1 0 0 **1** |
+| x & (-x) | 0 0 0 0 0 0 0 **1** |
+
+### Turn Off the Rightmost 1-bit
+
+- `x & (x - 1)`
+  - Subtracting 1 means changing the rightmost 1-bit to 0, and setting all the lower bits to 1, and then 1 & 0 = 0.
+- [231. Power of Two](https://leetcode.com/problems/power-of-two/)
+
+| Code | Binary representation |
+|------|-----------------------|
+| x = 4 | 0 0 0 0 0 **1** 0 0 |
+| x - 1 | 0 0 0 0 0 **0** 1 1 |
+| x & (x - 1) | 0 0 0 0 0 **0** 0 0 |
+
 ## Amortized Analysis
 
 - Gives the average performance of each operation in the worst case.
