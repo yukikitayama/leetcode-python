@@ -451,6 +451,10 @@ taking O(N) every time in calling find().
 - Usually it's implemented as nested hashmaps.
 - Template: [Trie Python code](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/trie/Trie.py)
 
+### LeetCode
+
+- [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
 ## Hash table
 
 When you use modulo as hash function, the divisor should use prime number (e.g. 1999), because it can best avoid 
@@ -572,6 +576,17 @@ Let V denote the number of vertices, and E the number of edges.
     (V - 2) paths, appended by (V - 3), ..., and * V comes from each path added to the stack taking O(V) space (?, need
     review).
 
+## Breadth First Search (BFS)
+
+- BFS uses `queue`.
+
+### Complexity
+
+- Let `V` be number of vertices in a graph, and `E` be the number of the edges.
+- Time is `O(V + E)` because it needs to check every vertexa and traverse through every edge in a graph.
+- Space is `O(V)` because in the worst case, one vertex is connected to every other vertex, so all of them go to the 
+  queue.
+
 ## Sort
 
 ### Timsort
@@ -597,9 +612,20 @@ Let V denote the number of vertices, and E the number of edges.
 
 - [1200. Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)
 
-### LeetCode
+## Swap
 
-- [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+- Reduce a temporary variable and lines of code by multiple items at the both sides of an equal sign.
+
+```python
+# Before
+tmp = curr.next
+curr.next = prev
+prev = curr
+curr = tmp
+
+# After
+curr.next, prev, curr = prev, curr, curr.next
+```
 
 ## YouTube
 
