@@ -576,6 +576,12 @@ Let V denote the number of vertices, and E the number of edges.
     (V - 2) paths, appended by (V - 3), ..., and * V comes from each path added to the stack taking O(V) space (?, need
     review).
 
+### Hierholzer's Algorithm
+
+- `Eulerian path` is a path in a graph that visits every edge exactly once.
+- `Eulerian cycle` is an Eulerian path that starts and ends on the same vertex.
+- [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
+
 ## Breadth First Search (BFS)
 
 - BFS uses `queue`.
