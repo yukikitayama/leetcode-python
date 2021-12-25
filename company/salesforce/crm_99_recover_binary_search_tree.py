@@ -15,11 +15,6 @@ class TreeNode:
         self.right = right
 
 
-class Solution2:
-    def recoverTree(self, root: Optional[TreeNode]) -> None:
-
-
-
 class Solution1:
     def recoverTree(self, root: Optional[TreeNode]) -> None:
         stack = []
