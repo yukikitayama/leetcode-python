@@ -87,7 +87,7 @@ def func():
   - https://github.com/yukikitayama/leetcode-python/blob/main/math/sum_of_digits_time_is_logn.png
   - [Explain why time complexity for summing digits in a number of length N is O(logN)](https://stackoverflow.com/questions/50261364/explain-why-time-complexity-for-summing-digits-in-a-number-of-length-n-is-ologn)
 - Read an integer one by one from left to right and create number
-  - `num = num * 10 + curr_num`
+  - Initialize as `num = 0`, and then in the for loop, `num = num * 10 + curr_num`
 
 ### Greatest Common Divisor
 
@@ -502,6 +502,10 @@ def answer_to_problem(root):
     return helper(root, 'other_information')
 ```
 
+- Inorder traversal
+  - `Left -> Root -> Right`
+- Preorder traversal
+  - `Root -> Left -> Right`
 - Postorder traversal
   - `Left -> Right -> Root`
 
@@ -523,12 +527,19 @@ def answer_to_problem(root):
 ## Binary Search Tree (BST)
 
 - Inorder traversal of a binary search tree gives nodes in the ascending order.
-- Inorder is left, root, right.
+- Inorder is `left -> root -> right`.
 
 ## Linked List
 
-- two pointers (`prev` and `curr`) iteration often works for solution to traverse the linked list.
-  - Because singly-linked list does not have a reference to the precedent node.
+- `Singly linked list` contains value and a reference field to link to the next node, but no link to the previous node.
+- Two pointers technique (`prev` and `curr`, or `fast (hare)` and `slow (tortoise)`) often works for solution to 
+  traverse the linked list.
+  - Sometimes need `prev` because singly-linked list does not have a reference to the precedent node.
+  - Check if a node is null before it calls the next field, otherwise it causes the null-pointer error.
+  - Don't forget to define the end conditions in two pointers iteration loop.
+- Benefit of linked list over array
+  - In linked list, inserting an element is `O(1)` time because it only updates reference to next node. But in array, 
+    it takes `O(N)` time because it needs to move all elements after the inserted element.
 
 ### Floyd's Tortoise and Hare (Floyd's cycle-finding algorithm)
 
@@ -618,7 +629,16 @@ Let V denote the number of vertices, and E the number of edges.
 
 - [1200. Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)
 
-## Swap
+### Quickselect
+
+- Should consider whether Quickselect can be applied when the problem is to find the k (or kth) smallest/larest/etc 
+  element(s).
+
+#### Example
+
+- [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)
+
+## Python Swap
 
 - Reduce a temporary variable and lines of code by multiple items at the both sides of an equal sign.
 
@@ -632,6 +652,11 @@ curr = tmp
 # After
 curr.next, prev, curr = prev, curr, curr.next
 ```
+
+## Python String
+
+- `STRING.split()` time complexity is `N` where `N` is the length of the string.
+  - [Time/space complexity of in-built python functions](https://stackoverflow.com/questions/55113713/time-space-complexity-of-in-built-python-functions)
 
 ## YouTube
 
