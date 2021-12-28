@@ -144,6 +144,43 @@ def func():
 | x - 1 | 0 0 0 0 0 **0** 1 1 |
 | x & (x - 1) | 0 0 0 0 0 **0** 0 0 |
 
+### XOR
+
+- Use `A ^ B` in Python
+- XOR truth table
+
+| Input A | Input B | Output |
+|---------|---------|--------|
+| 0 | 0 | 0 |
+| 1 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 1 | 0 |
+
+### 1-bits Bitmask
+
+- In binary representation, all the bits are 1, like `111`.
+- Usage
+  - Flip bits in a given number
+
+| Action | Binary representation |
+|--------|-----------------------|
+| Given number: 5 | 1 0 1 |
+| 1-bits bitmask | 1 1 1 |
+| Number ^ bitmask | 0 1 0 |
+
+- Make 1-bits bitmask
+  - Get the number of digits in binary representation of a given number
+  - Left-shift 1 the above number of times to give us 1 followed by multiple 0s
+  - Subtract 1 to give us all the above 0s become 1s, which is 1-bits bitmask.
+
+```python
+import math
+# Replace num with your given number
+num = 5  # 101 in binary representation
+number_of_digits = math.floor(math.log2(num)) + 1  # 3
+one_bits_bitmask = (1 << number_of_digits) - 1  # 111
+```
+
 ## Amortized Analysis
 
 - Gives the average performance of each operation in the worst case.
@@ -529,9 +566,15 @@ def answer_to_problem(root):
 - Inorder traversal of a binary search tree gives nodes in the ascending order.
 - Inorder is `left -> root -> right`.
 
+### Example
+
+- Problems to solve by using BST properties
+  - [669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)
+
 ## Linked List
 
 - `Singly linked list` contains value and a reference field to link to the next node, but no link to the previous node.
+  - Cannot trace back the previous node, so the algorithm needs to store both current and previous nodes.
 - Two pointers technique (`prev` and `curr`, or `fast (hare)` and `slow (tortoise)`) often works for solution to 
   traverse the linked list.
   - Sometimes need `prev` because singly-linked list does not have a reference to the precedent node.
@@ -540,6 +583,9 @@ def answer_to_problem(root):
 - Benefit of linked list over array
   - In linked list, inserting an element is `O(1)` time because it only updates reference to next node. But in array, 
     it takes `O(N)` time because it needs to move all elements after the inserted element.
+- `Sentinel node` is a dummy pseudo head or tail node in linked list to standardize linked list algorithm, doesn't hold
+  any meaningful data.
+  - [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
 
 ### Floyd's Tortoise and Hare (Floyd's cycle-finding algorithm)
 
@@ -657,6 +703,12 @@ curr.next, prev, curr = prev, curr, curr.next
 
 - `STRING.split()` time complexity is `N` where `N` is the length of the string.
   - [Time/space complexity of in-built python functions](https://stackoverflow.com/questions/55113713/time-space-complexity-of-in-built-python-functions)
+
+## Array
+
+- `Subsequence`
+  - An array by deleting some or no elements without changing the order of the remaining elements
+  - e.g. `[3, 6, 2, 7]` is a subsequence of the array `[0, 3, 1, 6, 2, 2, 7]`.
 
 ## YouTube
 
