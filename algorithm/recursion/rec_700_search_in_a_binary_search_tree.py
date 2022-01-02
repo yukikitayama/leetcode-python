@@ -1,3 +1,11 @@
+"""
+- Time: 5m
+- Solved: 1
+- Saw solution: 0
+- Optimized: 1
+"""
+
+
 from typing import Optional
 
 
