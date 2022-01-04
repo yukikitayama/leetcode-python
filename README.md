@@ -112,6 +112,12 @@ def func():
 - [LCM example](https://github.com/yukikitayama/leetcode-python/blob/main/math/least_common_multiple.py)
 - Python built-in function `math.lcm` is available from Python 3.9
 
+### Modulo
+
+- Modulo is distributive `(a + b) % n = {(a % n) + (b % n)} % n`
+  - LeetCode: [1010. Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)
+- [Wiki modulo properties](https://en.wikipedia.org/wiki/Modulo_operation#Properties_(identities))
+
 ### Remainder
 
 - Numerator is `dividend`. Denominator is `divisor`. Division produces `quotient` and `remainder`.
@@ -166,8 +172,7 @@ def func():
 ### 1-bits Bitmask
 
 - In binary representation, all the bits are 1, like `111`.
-- Usage
-  - Flip bits in a given number
+- To flip bits in a given number
 
 | Action | Binary representation |
 |--------|-----------------------|
@@ -179,6 +184,7 @@ def func():
   - Get the number of digits in binary representation of a given number
   - Left-shift 1 the above number of times to give us 1 followed by multiple 0s
   - Subtract 1 to give us all the above 0s become 1s, which is 1-bits bitmask.
+- `INTEGER.bit_length()` is a built-in function to get the length of bits or digits.
 
 ```python
 import math
@@ -186,6 +192,9 @@ import math
 num = 5  # 101 in binary representation
 number_of_digits = math.floor(math.log2(num)) + 1  # 3
 one_bits_bitmask = (1 << number_of_digits) - 1  # 111
+
+# Built-in function
+num.bit_length()  # 3
 ```
 
 ## Amortized Analysis
@@ -484,6 +493,27 @@ taking O(N) every time in calling find().
 - Root node
   - A node without a parent node. In the above example, 0 is a root node.
 
+## Divide and Conquer
+
+- Big picture
+  1. Divide the problem into two or more subproblems until these are simple enough to solve.
+  2. Conquer by solving each subproblem recursively.
+  3. Combine the results of each subproblem.
+- If you do not combine subproblmes and if instead use a single smaller subproblem, it's `decrease and conquery` such as
+  Binary Search.
+
+### Merge Sort
+
+- Sort algorithm by using divide and conquer.
+  - [Template: top-down merge sort](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/recursion/top_down_merge_sort.py)
+- Big picture
+  1. Divide the unsorted list into sublists
+  2. Sort each sublist recursively
+  3. Merge sorted sublists to make a new sorted list
+- Time is `O(NlogN)` because dividing takes N times to get a single element, merging repeats N elements times on each 
+  level, and it has logN levels.
+- Space is `O(N)` because it needs to keep sublists and buffer to hold the merge results.
+
 ## Backtracking
 
 - Find every possible patterns or ways
@@ -709,6 +739,50 @@ Let V denote the number of vertices, and E the number of edges.
 
 - [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)
 
+## Recursion
+
+- Solve problems using a functions that calls itself.
+- `Base case (bottom case)` is the case where one can compute the answer directly without any further recursion calls.
+  - Something to stop recursion.
+- `Execution tree` is used to find time complexity in recursion
+  - Each node represents recursive function call.
+  - Total number of nodes in the tree is the number of recursion calls, which is time complexity.
+- `Stack overflow` is where the stack allocated for recursion reaches its maximum space limit and the program crashes. 
+- Space allocated by the recursion stack
+  - Returning address of function call, i.e. the line of code to return after a function call is completed.
+  - Parameters passed to the function call
+  - Local variables in the function call
+- `Tail recursion` is a recursion where the recursive call is the final instruction in the recursion function, no other 
+  computations at the end of the function, and there should be only one recursive call in the function.
+  - Benefit of tail recursion is that it allows to `reuse a fixed amount space` in the recursion stack to save space by 
+    avoiding accumulating the stacks.
+  - So tail recursion is used to avoid `stack overflow`.
+  - Tail recursion also makes things easier to read and understand, compared to non-tail-recursion.
+  - It doesn't need a call stack for all the recursive calls, because, as soon as it returns from a recursive call, 
+    immediately go to return to the original caller.
+  - Non-tail-recursion functions are not automatically optimized by Python and Java. But C and C++ recognizes tail 
+    recursion pattern and automatically optimizes the execution.
+    - [Optimizing tail-recursion in Python](https://stackoverflow.com/questions/13591970/does-python-optimize-tail-recursion)
+
+```python
+def tail_recursion(nums):
+    def recursion(nums, accumulator):
+        if len(nums) == 0:
+            return accumulator
+        # recursion() is a tail recursion 
+        # because the final instruction is only a recursive call
+        return recursion(nums[1:], nums[0] + accumulator)
+    return recursion(nums, 0)
+
+def not_tail_recursion(nums):
+    if len(nums) == 0:
+        return 0
+    # not_tail_recursion() is not a tail recursion 
+    # because it needs to add the result of recursion to nums[0] as an extra computation,
+    # so the final instruction is not only a recursive call
+    return nums[0] + not_tail_recursion(nums[1:])
+```
+
 ## Python Swap
 
 - Reduce a temporary variable and lines of code by multiple items at the both sides of an equal sign.
@@ -734,6 +808,17 @@ curr.next, prev, curr = prev, curr, curr.next
 - `Subsequence`
   - An array by deleting some or no elements without changing the order of the remaining elements
   - e.g. `[3, 6, 2, 7]` is a subsequence of the array `[0, 3, 1, 6, 2, 2, 7]`.
+- `enumerate(iterable, start)` can change the starting integer by start.
+
+```python
+input = ['a', 'b', 'c']
+print(list(enumerate(input)))
+# [(0, 'a'), (1, 'b'), (2, 'c')]
+print(list(enumerate(input, 1)))
+# [(1, 'a'), (2, 'b'), (3, 'c')]
+print(list(enumerate(input[1:], 1)))
+# [(1, 'b'), (2, 'c')]
+```
 
 ## YouTube
 
