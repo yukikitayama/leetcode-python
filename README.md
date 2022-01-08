@@ -197,6 +197,15 @@ one_bits_bitmask = (1 << number_of_digits) - 1  # 111
 num.bit_length()  # 3
 ```
 
+## Probability and Statistics
+
+### Reservoir Sampling
+
+- Sample one or more elements from an unknown size population with equal probability and constant space.
+- Equal probability is obtained by `prob to be chosen * prob to stay * prob to stay * ...` in the iteration.
+- [Reservoir sampling math](https://github.com/yukikitayama/leetcode-python/blob/main/math/reservoir_sampling.png)
+- [382. Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/)
+
 ## Amortized Analysis
 
 - Gives the average performance of each operation in the worst case.
@@ -502,6 +511,11 @@ taking O(N) every time in calling find().
 - If you do not combine subproblmes and if instead use a single smaller subproblem, it's `decrease and conquery` such as
   Binary Search.
 
+### Master Theorem
+
+- `Master Theorem (Master Method)` calculates the time complexity of the recursion algorithms with divide and conquer.
+- 
+
 ### Merge Sort
 
 - Sort algorithm by using divide and conquer.
@@ -513,6 +527,21 @@ taking O(N) every time in calling find().
 - Time is `O(NlogN)` because dividing takes N times to get a single element, merging repeats N elements times on each 
   level, and it has logN levels.
 - Space is `O(N)` because it needs to keep sublists and buffer to hold the merge results.
+
+### Quick Sort
+
+- Sorting algorithm using divide and conquer.
+  - [Template: quick sort]()
+- Pick a pivot value to divide a list into two sublist, until reach the base case, and recursively sort.
+- Time
+  - `O(NlogN)` in the best case and on average.
+    - When the pivot value happends to be median value of the list, and each partition divides into two equal size 
+      sublists.
+    - It results in a balanced binary search tree with height `logN`. At each level, scanning takes `O(N)`
+  - `O(N^2)` in the worst case
+    - If pivot value is smallest or largest, partition divides the list into one single sublist and the other empty 
+      list.
+    - Partitioning occur `N` times, and each partition scans `N` elements.
 
 ## Backtracking
 
@@ -729,6 +758,19 @@ Let V denote the number of vertices, and E the number of edges.
 #### Example
 
 - [1200. Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference/)
+
+### Bucket Sort
+
+- Sorting algorithm that works by distributing the elements of an array into a number of buckets
+- Require prior knowledge for the range of the data
+- Useful if you know the range of values from the problem constraints.
+- For example, initialize an empty array by the length by min and max of the value range, insert the original array 
+  value as the index to the new array, so you don't need to apply sort, because when inserting, values are sorted.
+
+#### Example
+
+- [1094. Car Pooling](https://leetcode.com/problems/car-pooling/)
+- [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)
 
 ### Quickselect
 
