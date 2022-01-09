@@ -514,7 +514,35 @@ taking O(N) every time in calling find().
 ### Master Theorem
 
 - `Master Theorem (Master Method)` calculates the time complexity of the recursion algorithms with divide and conquer.
-- 
+- `a`: The number of subproblems needed to be solved
+- `b`: The number of subproblems made by dividing a problem
+- `d`: Complexity parameter for dividing and combining
+  - `d = 0` if dividing and combining is constant
+- `f(n)`: Time complexity to divide a problem into subproblems adn to combine the results from the subproblems.
+  - If dividing and combining is constant, `f(n) = O(1) = O(n^0) with d = 0`
+  - `f(n) = O(n^d)`
+- `T(n)`: Time complexity of divide and conquer recursion
+  - `T(n) = a * T(n / b) + f(n)`. This will further be converted into the followings by `a`, `b`, and `d`.
+    - `T(n) = O(n^(log_b(a)))` if `a > b^d`
+      - e.g. DFS in binary tree `O(n)`
+    - `T(n) = O(n^d * log(n)) = O(n^(log_b(a)) * log(n))` if `a = b^d`
+      - e.g. Binary search `O(log(n))`
+    - `T(n) = O(n^d)` if `a < b^d`
+- DFS to traverse every node in the binary tree
+  - `a = 2` because DFS needs to traverse both left and right child
+  - `b = 2` because each node in binary tree splits into left and right child
+  - `d = 0` because binary tree data structure allow DFS to traverse in constant
+  - `b^d = 2^0 = 1, less than a, so a > b^d, so T(n) = O(n^(log_b a)) = O(n^(log_2 2)) = O(n^1) = O(n)`
+- Binary search
+  - `a = 1` because binary search cuts a problem into half, so only one of the subproblems needed to be solved
+  - `b = 2` because binary search divides a problem into halves
+  - `d = 0` because dividing is constant by using middle index, and no need to combine because it simply returns the
+    result of subproblem without further processing.
+  - `b^d = 2^0 = 1, equal to a, so a = b^d, so T(n) = O(n^d * log(n)) = O(n^0 * log(n)) = O(log(n))`
+- Limitations
+  - Master Theorem only applies to the cases where the subproblems are of equal size.
+    - e.g. not applicable to the recursion for Fibonacci number which divides into two subproblems of different sizes.
+- Math: [Proving the Master Theorem](https://www.youtube.com/watch?v=I7JCtSwVeXs)
 
 ### Merge Sort
 
