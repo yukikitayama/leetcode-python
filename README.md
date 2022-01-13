@@ -20,6 +20,10 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [ ] Solve 900 LeetCode problems
 - [ ] Solve 1,000 LeetCode problems
 
+### Action
+
+- [ ] Understand Morris Preorder Traversal.
+
 ## Dynamic Programming
 
 - There are two ways to implement
@@ -125,6 +129,16 @@ def func():
   - e.g. divmod(5, 2) = (2, 1), divmod(1, 2) = (0, 1)
   - [1015. Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/)
 
+### Log
+
+- `log_base(result) = exponent <-> base^exponent = result`
+  - `log_2(4) = 2 <-> 2^2 = 4`
+- Check whether a number if power of two
+  - `if math.log(NUMBER, 2).is_integer()`
+    - If NUMBER is 4, it returns 2, which is integer
+    - If NUMBER is 3, it returns 1.58..., which is not integer. 
+  - `math.log(result, base)`
+
 ## Bit Manipulation
 
 ### Two's Complement
@@ -157,6 +171,17 @@ def func():
 | x - 1 | 0 0 0 0 0 **0** 1 1 |
 | x & (x - 1) | 0 0 0 0 0 **0** 0 0 |
 
+### Check Whether a Number is the Power of 2
+
+- `if (x & (x - 1)) == 0`
+  - `x` and `x - 1` have different bits in all of their bits, so AND yields 0.
+
+| Action | Binary representation |
+|--------|-----------------------|
+| x = 4 | 1 0 0 |
+| x - 1 = 3 | 0 1 1 |
+| x & (x - 1) | 0 0 0 |
+
 ### XOR
 
 - Use `A ^ B` in Python
@@ -168,6 +193,15 @@ def func():
 | 1 | 0 | 1 |
 | 0 | 1 | 1 |
 | 1 | 1 | 0 |
+
+#### Problems
+
+- [67. Add Binary](https://leetcode.com/problems/add-binary/)
+- [137. Single Number II](https://leetcode.com/problems/single-number-ii/)
+- [260. Single Number III](https://leetcode.com/problems/single-number-iii/)
+- [421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)
+- [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
+- [318. Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/)
 
 ### 1-bits Bitmask
 
@@ -196,6 +230,25 @@ one_bits_bitmask = (1 << number_of_digits) - 1  # 111
 # Built-in function
 num.bit_length()  # 3
 ```
+
+### Carry
+
+- `(a & b) << 1`
+- AND (`&`) finds the common 1-bit, and left-shift (`<<`) moves the carry to the next bit position
+
+| Action | Binary representation |
+|--------|-----------------------|
+| a | 1 1 1 1 |
+| b | 0 0 1 0 |
+| (a & b) << 1| 0 1 0 0 |
+
+### Create a binary number from the most significant bit
+
+- `(previous bit << 1) | current bit`
+  - e.g. Previous bit: 1, current bit: 1, the result needs to be 11, which is 3 in binary representation.
+  - `1 << 1` gives us `10`. `10 | 1` gives us `11`. It's 3.
+- `previous digit * 10 + current digit` is the equivalent in decimal representation
+  - e.g. Make 12, previous digit: 1, current digit: 2, 10 + 2 = 12
 
 ## Probability and Statistics
 
@@ -640,6 +693,18 @@ def answer_to_problem(root):
   - `Root -> Left -> Right`
 - Postorder traversal
   - `Left -> Right -> Root`
+- [All DFS traversals (preorder, inorder, postorder) in Python in 1 line](https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/283746/all-dfs-traversals-preorder-inorder-postorder-in-python-in-1-line)
+
+### Morris Preorder Traversal
+
+- Morris preorder traversal is constant space for DFS preorder traversal in binary tree, while recusrive and iterative
+  DFS use `O(H)` space where `H` is the height of the binary tree.
+  - Recursion uses recursion stack for `O(H)`
+  - Iteration uses queue for `O(H)`
+
+#### Problem
+
+- [1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)
 
 ## Decision Tree
 
@@ -868,10 +933,30 @@ curr = tmp
 curr.next, prev, curr = prev, curr, curr.next
 ```
 
-## Python String
+## String
 
 - `STRING.split()` time complexity is `N` where `N` is the length of the string.
   - [Time/space complexity of in-built python functions](https://stackoverflow.com/questions/55113713/time-space-complexity-of-in-built-python-functions)
+- `Substring` is a **contiguous** sequence of characters within a string.
+
+### Rabin-Karp Algorithm
+
+- Pattern searching
+  - e.g. Plagiarism detection, similar protein search in bioinformatics.
+- Idea
+  - Allows algorithm to compute the hash of the pattern string and substring by sliding window in the given string.
+  - Pattern matching becomes computing two hashes and compare, which makes the time constant.
+  - Rolling hash also makes the recomputing of the hash in the next sliding window the constant time.
+- Time is `O(n + m)` where `n` is the length of the given string, and `m` is the pattern length.
+- Worst case time is `O(n * m)`. Worst case of Rabin-Karp algorithm occurs when all characters of pattern and text are same as the hash values of all
+  the substrings of the given string match with hash values of the pattern
+  - e.g. The given string: "AAAAAAA", pattern: "AAA"
+- [Rolling Hash Function Tutorial, used by Rabin-Karp String Searching Algorithm](https://www.youtube.com/watch?v=BfUejqd07yo)
+
+#### Problem
+
+- [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
+- [1044. Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/)
 
 ## Array
 
@@ -889,6 +974,44 @@ print(list(enumerate(input, 1)))
 print(list(enumerate(input[1:], 1)))
 # [(1, 'b'), (2, 'c')]
 ```
+
+## Iterator
+
+- Only needs to know how to get the next item.
+  - It doesn't need to store the entire data in memory.
+- It can represent a sequence without using a data structure
+  - Below, if min and max are far apart, an array data structure allocates a lot of memory
+  - But the RangeIterator still consumes only `O(1)` space
+```python
+class RangeIterator:
+    def __init__(self, min, max):
+        self.current = min
+        self.max = max
+
+    def has_next(self):
+        return self.current < self.max
+
+    def next(self):
+        # This updates self.current
+        self.current += 1
+        # This does not update self.current
+        return self.current - 1
+```
+
+- Can handle an infinite sequence. An array is always bounded finite sequence.
+
+### Problem
+
+- [284. Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)
+
+## Set
+
+- `SET.discard(ITEM)` doesn't raise an error if the specified item does not exist in the set, while `SET.remove(ITEM)`
+  raises an error.
+
+## Resource
+
+- [Stable Sort](https://www.youtube.com/channel/UCV2g02zq5y7unJ_GSr-de2w/videos)
 
 ## YouTube
 
