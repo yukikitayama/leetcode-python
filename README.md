@@ -640,6 +640,18 @@ taking O(N) every time in calling find().
 
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
 
+## Greedy
+
+- The idea of greedy algorithm is to pick the locally optimal move at each step, and it will lead to the globally 
+  optimal solution.
+- Greedy problem usually look like "Find minimum number f something to do something" or "Find maximum number of 
+  something to fit in some condition", and typically propose an unsorted input
+
+#### Problem
+
+- [134. Gas Station](https://leetcode.com/problems/gas-station/)
+- [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+
 ## Hash table
 
 When you use modulo as hash function, the divisor should use prime number (e.g. 1999), because it can best avoid 
@@ -1012,6 +1024,11 @@ class RangeIterator:
 ## Resource
 
 - [Stable Sort](https://www.youtube.com/channel/UCV2g02zq5y7unJ_GSr-de2w/videos)
+
+## Game
+
+- [Snake game](https://en.wikipedia.org/wiki/Snake_(video_game_genre))
+  - [Play online](http://patorjk.com/games/snake/)
 
 ## YouTube
 
