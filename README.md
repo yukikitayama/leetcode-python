@@ -16,7 +16,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 ### Progress
 
 - [x] Solve 700 LeetCode problems (2021-11-23)
-- [ ] Solve 800 LeetCode problems
+- [x] Solve 800 LeetCode problems (2022-01-14)
 - [ ] Solve 900 LeetCode problems
 - [ ] Solve 1,000 LeetCode problems
 
@@ -692,6 +692,10 @@ worst case, search and insertion time complexity is O(logN).
 ## Stack
 
 - Use stack when you wanna delay processing the current data later
+
+#### Problem
+
+- [71. Simplify Path](https://leetcode.com/problems/simplify-path/)
 
 ## Tree
 
