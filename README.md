@@ -1040,6 +1040,18 @@ class RangeIterator:
 
 - [284. Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)
 
+## Generator
+
+### Generator Expression
+
+- `GENERATOR = (x for x in list)`
+  - Use generator expression in round parentheses , similarly to making list comprehension, to create generators on the fly
+  - Use it by `x = next(GENERATOR, DEFAULT_VALUE)`. `DEFAULT_VALUE` is returned when the generator is exhausted.
+
+#### Problem
+
+- [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/)
+
 ## Set
 
 - `SET.discard(ITEM)` doesn't raise an error if the specified item does not exist in the set, while `SET.remove(ITEM)`
