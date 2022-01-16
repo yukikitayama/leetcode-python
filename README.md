@@ -194,6 +194,10 @@ def func():
 | 0 | 1 | 1 |
 | 1 | 1 | 0 |
 
+- It can be used to flip `False` to `True`, or `True` to `False`, by always `^ True` to something.
+  - If `flag` is `False`, `flag ^= True` is `True`.
+  - If `flag` is `True`, `flag ^= True` is `False`. 
+
 #### Problems
 
 - [67. Add Binary](https://leetcode.com/problems/add-binary/)
