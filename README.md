@@ -38,6 +38,9 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 
 ## Algorithm
 
+Markdown files in which I take note to understand algorithm concepts, to track the useful LeetCode problems regarding
+the concepts and useful code snippets. These unordered lists are linked to markdown files in this repo.
+
 - [Dynamic programming](https://github.com/yukikitayama/leetcode-python/blob/main/note/dynamic_programming.md)
   - [Kadane's Algorithm](https://github.com/yukikitayama/leetcode-python/blob/main/note/dynamic_programming.md#kadanes-algorithm)
 - [Bit manipulation](https://github.com/yukikitayama/leetcode-python/blob/main/note/bit_manipulation.md)
