@@ -39,6 +39,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 ## Algorithm
 
 - [Dynamic programming](https://github.com/yukikitayama/leetcode-python/blob/main/note/dynamic_programming.md)
+  - [Kadane's algorithm](https://github.com/yukikitayama/leetcode-python/blob/main/note/dynamic_programming.md#kadanes-algorithm)
 - [Bit manipulation](https://github.com/yukikitayama/leetcode-python/blob/main/note/bit_manipulation.md)
 - [Disjoint set](https://github.com/yukikitayama/leetcode-python/blob/main/note/disjoint_set.md)
 - [Heap](https://github.com/yukikitayama/leetcode-python/blob/main/note/heap.md)
