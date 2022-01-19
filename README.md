@@ -36,6 +36,11 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [math.md](https://github.com/yukikitayama/leetcode-python/blob/main/note/math.md)
   - Useful maths to understand and solve LeetCode problems.
 
+## SQL
+
+- [sql.md](https://github.com/yukikitayama/leetcode-python/blob/main/note/sql.md)
+  - MySQL skills
+
 ## Algorithm
 
 Markdown files in which I take note to understand algorithm concepts, to track the useful LeetCode problems regarding
