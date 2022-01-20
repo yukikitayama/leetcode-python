@@ -155,3 +155,38 @@ class RangeIterator:
 
 - `SET.discard(ITEM)` doesn't raise an error if the specified item does not exist in the set, while `SET.remove(ITEM)`
   raises an error.
+
+
+## reduce()
+
+- The purpose of using `reduce()` is to reduce the iterable object to a single cumulative value without using a for 
+  loop.
+- Actually many of the use cases with `reduce()` are replaced with the new Python built-in functions, but good to know
+  `reduce()` exists.
+- In Python 2.X `reduce()` was a built-in function, but in Python 3.0 it moved to `functools.reduce()`.
+- `functools.reduce(function, iterable[, initial_value])`
+  - `function`: A function which has two arguments.
+    - The left argument is the accumulated value
+    - The right argument is the update value from the iterable.
+- e.g. `reduce(lambda x, y: x * y, [1, 2, 3, 4])` is `((1 * 2) * 3) * 4`
+- [Demo](https://github.com/yukikitayama/leetcode-python/blob/main/demo/demo_functools_reduce.py)
+- The difference between `itertools.accumulate()` and `functools.reduce()`
+  - `itertools.accumulate()` returns an iterator of accumulation in the sequence.
+  - `functools.reduce()` only returns the final value fo the accumulation in the sequence.
+
+### Reference
+
+- [Python's reduce(): From Functional to Pythonic Style](https://realpython.com/python-reduce-function/)
+- [The fate of reduce() in Python 3000](https://www.artima.com/weblogs/viewpost.jsp?thread=98196)
+
+## prod()
+
+- `math.prod`
+- Quick tool to calculate the cumulative product from an array of numbers.
+
+```python
+import math
+nums = [1, 2, 3, 4]
+print(math.prod(nums))
+# 1 * 2 * 3 * 4 = 24
+```
