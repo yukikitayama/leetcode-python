@@ -29,6 +29,27 @@ It seems people pronounce it as "try". I was pronouncing "turii", but it's wrong
 - There is no convenient built-in data structure tool like `heapq` or `collections.deque` in Python.
   - We have to make Trie data structure by `class` with `collections.defaultdict`.
 - [Template: Trie Python code](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/trie/Trie.py)
+- The below is the implementation of Trie without class
+
+```python
+import collections
+
+# Instantiate Trie data structure
+Trie = lambda: collections.defaultdict(Trie)
+trie = Trie()
+
+# Add strings to Trie
+words = ['abc', 'def']
+for word in words:
+    curr = trie
+    for c in word:
+        curr = curr[c]
+    
+    # Mark as the end of word
+    curr['is_word'] = True
+    # or
+    # curr[True] = word
+```
 
 ## Operation
 
@@ -69,9 +90,11 @@ It seems people pronounce it as "try". I was pronouncing "turii", but it's wrong
 - Autocomplete
 - Spell checker
 
-### LeetCode
+## LeetCode
 
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+  - The most basic problem need to understand
+- 
 
 ## Resource
 
