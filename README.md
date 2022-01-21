@@ -38,7 +38,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 
 ## Programming
 
-- [programming.md]()
+- [programming.md](https://github.com/yukikitayama/leetcode-python/blob/main/note/programming.md)
   - Programming concepts in general.
 
 ## SQL
