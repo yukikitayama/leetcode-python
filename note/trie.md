@@ -32,6 +32,18 @@ It seems people pronounce it as "try". I was pronouncing "turii", but it's wrong
 - The below is the implementation of Trie without class
 
 ```python
+words = ['abc', 'def']
+
+# 1. Use Python dictionary
+trie = {}
+for word in words:
+    curr = trie
+    for c in word:
+        if c not in curr:
+            curr[c] = {}
+        curr = curr[c]
+
+# 2. Use collections.defaultdict
 import collections
 
 # Instantiate Trie data structure
@@ -39,7 +51,6 @@ Trie = lambda: collections.defaultdict(Trie)
 trie = Trie()
 
 # Add strings to Trie
-words = ['abc', 'def']
 for word in words:
     curr = trie
     for c in word:
@@ -85,6 +96,12 @@ for word in words:
   - In the worst case, no words have a common prefix with each other.
   - In practice, space is not such bad, because many words share the same prefix.
 
+## Bitwise Trie
+
+- The root to leaf path in `Bitwise Tree` represents a binary form of a number.
+  - e.g. 5 is 101 in a binary form. Bitwise Tree stores 1 -> 0 -> 1 for 5.
+- 
+
 ## Application
 
 - Autocomplete
@@ -96,6 +113,8 @@ for word in words:
   - The most basic problem need to understand
 - [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
   - Wild card modification to search operation
+- [421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)
+  - Bitwise Trie to store binary prefixes.
 
 ## Resource
 

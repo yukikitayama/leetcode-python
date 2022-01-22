@@ -1,12 +1,12 @@
-## Bit Manipulation
+# Bit Manipulation
 
-### Two's Complement
+## Two's Complement
 
 - To compute two's complement notation -x, revert all bits in x, and add 1
 - x = 7: 0 0 0 0 0 1 1 1, ~x: 1 1 1 1 1 0 0 0, ~x + 1: 1 1 1 1 1 0 0 1
 - x = 6: 0 0 0 0 0 1 1 0, ~x: 1 1 1 1 1 0 0 1, ~x + 1: 1 1 1 1 1 0 1 0
 
-### Get the Rightmost 1-bit
+## Get the Rightmost 1-bit
 
 - `x & (-x)`
   - `-x` is two's complement
@@ -18,7 +18,7 @@
 | -x = ~x + 1 | 1 1 1 1 1 0 0 **1** |
 | x & (-x) | 0 0 0 0 0 0 0 **1** |
 
-### Turn Off the Rightmost 1-bit
+## Turn Off the Rightmost 1-bit
 
 - `x & (x - 1)`
   - Subtracting 1 means changing the rightmost 1-bit to 0, and setting all the lower bits to 1, and then 1 & 0 = 0.
@@ -30,7 +30,7 @@
 | x - 1 | 0 0 0 0 0 **0** 1 1 |
 | x & (x - 1) | 0 0 0 0 0 **0** 0 0 |
 
-### Check Whether a Number is the Power of 2
+## Check Whether a Number is the Power of 2
 
 - `if (x & (x - 1)) == 0`
   - `x` and `x - 1` have different bits in all of their bits, so AND yields 0.
@@ -41,7 +41,7 @@
 | x - 1 = 3 | 0 1 1 |
 | x & (x - 1) | 0 0 0 |
 
-### XOR
+## XOR
 
 - Use `A ^ B` in Python
 - XOR truth table
@@ -57,7 +57,7 @@
   - If `flag` is `False`, `flag ^= True` is `True`.
   - If `flag` is `True`, `flag ^= True` is `False`. 
 
-#### Problems
+### Problems
 
 - [67. Add Binary](https://leetcode.com/problems/add-binary/)
 - [137. Single Number II](https://leetcode.com/problems/single-number-ii/)
@@ -65,8 +65,10 @@
 - [421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)
 - [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
 - [318. Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/)
+- [421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)
+  - `XOR` plus `Trie`
 
-### 1-bits Bitmask
+## 1-bits Bitmask
 
 - In binary representation, all the bits are 1, like `111`.
 - To flip bits in a given number
@@ -94,7 +96,7 @@ one_bits_bitmask = (1 << number_of_digits) - 1  # 111
 num.bit_length()  # 3
 ```
 
-### Carry
+## Carry
 
 - `(a & b) << 1`
 - AND (`&`) finds the common 1-bit, and left-shift (`<<`) moves the carry to the next bit position
@@ -105,10 +107,40 @@ num.bit_length()  # 3
 | b | 0 0 1 0 |
 | (a & b) << 1| 0 1 0 0 |
 
-### Create a binary number from the most significant bit
+## Create a binary number from the most significant bit
 
 - `(previous bit << 1) | current bit`
   - e.g. Previous bit: 1, current bit: 1, the result needs to be 11, which is 3 in binary representation.
   - `1 << 1` gives us `10`. `10 | 1` gives us `11`. It's 3.
 - `previous digit * 10 + current digit` is the equivalent in decimal representation
   - e.g. Make 12, previous digit: 1, current digit: 2, 10 + 2 = 12
+
+## Zero Left-Padding
+
+- `[(DECIMAL_NUMBER >> i) & 1 for i in range(BIT_LENGTH)]`
+- Standardize the number of bits for numbers
+- e.g. `bin(3) = '0b11' -> '11'`. `bin(25) = '0b11001' -> '11001'`. The length of bits is different
+- The goal of zero left-padding is to make `[1, 1, 0, 0, 1]` from `5`, and `[0, 0, 0, 1, 1]`.
+  - First find the maximum length of bits, then make all the binary forms have the same length, and then store them in a
+    list.
+
+```python
+# -2 because bin() returns extra '0b' in front of binary numbers
+l = len(bin(max(3, 25))) - 2
+binaries_25 = []
+for i in range(l):
+    # (25 >> i) & 1 gets the bits from the right
+    binaries_25.append((25 >> i) & 1)
+
+# Reverse it because we store bit from the right, but we wanna see bits from the left
+binaries_25.reverse()
+
+binaries_3 = []
+for i in range(l):
+    # bin(3) is '0b11', so when i is 0 and 1, it gets 1,
+    # but for i >= 2, 3 >> i is always 0, so it successfully appending additional 0s for length l
+    binaries_3.append((3 >> i) & 1)
+
+# Reverse it because we store bit from the right, but we wanna see bits from the left
+binaries_3.reverse()
+```

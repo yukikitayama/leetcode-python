@@ -103,6 +103,12 @@ the concepts and useful code snippets. These unordered lists are linked to markd
 - The worst case operation can alter the state in such a way that the worst case cannot occur again for a long time
   ("amortizing cost").
 
+## Proof by Contradiction
+
+### Example
+
+- [134. Gas Station](https://leetcode.com/problems/gas-station/solution/)
+
 ## Resource
 
 - [Stable Sort](https://www.youtube.com/channel/UCV2g02zq5y7unJ_GSr-de2w/videos)

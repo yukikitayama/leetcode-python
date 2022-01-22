@@ -110,6 +110,9 @@ print(list(enumerate(input[1:], 1)))
 # [(1, 'b'), (2, 'c')]
 ```
 
+- `LIST.reverse()`
+  - Time complexity of reversing a list is `O(N)` the length of list.
+
 ## Iterator
 
 - Only needs to know how to get the next item.
