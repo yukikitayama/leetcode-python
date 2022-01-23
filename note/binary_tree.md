@@ -15,3 +15,15 @@
     - i.e. Delete its left child, and its right child, before you delete the node itself.
   - Post-order is used in mathematical expression.
   - I try to remember post-order is something I finally come up with, so (to me) weird left, right, root order.
+
+![LeetCode tree traversal](https://github.com/yukikitayama/leetcode-python/blob/main/image/leetcode_traverse_tree.png)
+LeetCode
+
+## Implementation
+
+### Preorder traversal
+- [Template](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/binary-tree/preorder_traversal.py) 
+- Preorder traversal is DFS, so use stack
+- Root should be the first to return, so before DFS to left and right child, append the current value to output
+- Although preorder traversal has left before right, push right first to stack before left. 
+- But we pop the left first from the top of the stack, so successfully output left first and delay processing right.
