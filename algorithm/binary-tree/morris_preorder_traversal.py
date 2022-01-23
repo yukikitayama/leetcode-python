@@ -38,25 +38,6 @@ class Solution:
         return output
 
 
-class Solution1:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-
-        ans = []
-        stack = [root]
-
-        while stack:
-            curr = stack.pop()
-
-            if curr:
-                ans.append(curr.val)
-                if curr.right:
-                    stack.append(curr.right)
-                if curr.left:
-                    stack.append(curr.left)
-
-        return ans
-
-
 if __name__ == '__main__':
     root = TreeNode(1)
     root.right = TreeNode(2)
