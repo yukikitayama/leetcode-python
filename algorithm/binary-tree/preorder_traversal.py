@@ -8,7 +8,14 @@ class TreeNode:
         self.right = right
 
 
-class Solution:
+# Recursive approach
+class RecursiveSolution:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right) if root else []
+
+
+# Iterative approach
+class IterativeSolution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
 
         ans = []
@@ -41,4 +48,4 @@ if __name__ == '__main__':
     root = TreeNode(1)
     root.right = TreeNode(2)
     root.right.left = TreeNode(3)
-    print(Solution().preorderTraversal(root))
+    print(IterativeSolution().preorderTraversal(root))

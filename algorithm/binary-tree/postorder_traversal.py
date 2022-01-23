@@ -8,7 +8,14 @@ class TreeNode:
         self.right = right
 
 
-class Solution:
+# Recursive approach
+class RecursiveSolution:
+    def postorderTraversal(self, root: Optional) -> List[int]:
+        return self.postorderTraversal(root.left) + self.postorderTraversal(root.right) + [root.val] if root else []
+
+
+# Iterative approach
+class IterativeSolution:
     def postorderTraversal(self, root: Optional) -> List[int]:
 
         ans = []
