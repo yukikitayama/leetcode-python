@@ -26,6 +26,32 @@
 ![LeetCode tree traversal](https://github.com/yukikitayama/leetcode-python/blob/main/image/leetcode_traverse_tree.png)
 LeetCode
 
+## Recursion
+
+- `Top-down`
+  - Set parameters to know the answer of the current node, and use the parameters and the answer of the current node to 
+    solve the children of the current node.
+- `Bottom-up`
+  - Use the answer of the children of the current node, and calculate the answer of the current node.
+- See the difference by pseudocode to find maximum value from the binary tree with the two approaches.
+
+Top-down
+```
+return if root is null
+if root is a leaf node:
+    answer = max(answer, depth)
+maximum_depth(root.left, depth + 1)
+maximum_depth(root.right, depth + 1)
+```
+
+Bottom-up
+```
+return 0 if root is null
+left_depth = maximum_depth(root.left)
+right_depth = maximum_depth(root.right)
+return max(left_depth, right_depth) + 1
+```
+
 ## Implementation
 
 ### Preorder Traversal

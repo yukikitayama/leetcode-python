@@ -92,6 +92,8 @@ curr.next, prev, curr = prev, curr, curr.next
 - `STRING.split()` time complexity is `N` where `N` is the length of the string.
   - [Time/space complexity of in-built python functions](https://stackoverflow.com/questions/55113713/time-space-complexity-of-in-built-python-functions)
 - `Substring` is a **contiguous** sequence of characters within a string.
+- `STRING.isupper()`
+  - Returns True if all characters in the string are uppercase.
 
 ## Array
 

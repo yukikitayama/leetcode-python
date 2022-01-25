@@ -86,6 +86,7 @@ the concepts and useful code snippets. These unordered lists are linked to markd
   - [Master Theorem](https://github.com/yukikitayama/leetcode-python/blob/main/note/topological_sorting.md#kahns-algorithm)
   - [Merge Sort](https://github.com/yukikitayama/leetcode-python/blob/main/note/topological_sorting.md#kahns-algorithm)
   - [Quick Sort](https://github.com/yukikitayama/leetcode-python/blob/main/note/topological_sorting.md#kahns-algorithm)
+- [Binary Tree](https://github.com/yukikitayama/leetcode-python/blob/main/note/binary_tree.md)
 - [Tree](https://github.com/yukikitayama/leetcode-python/blob/main/note/tree.md)
   - [Morris Preorder Traversal](https://github.com/yukikitayama/leetcode-python/blob/main/note/tree.md#morris-preorder-traversal)
 - [String manipulation](https://github.com/yukikitayama/leetcode-python/blob/main/note/string_manipulation.md)
