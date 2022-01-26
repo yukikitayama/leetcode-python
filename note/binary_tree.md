@@ -1,6 +1,6 @@
 # Binary Tree
 
-## Traversal
+## Traversal in Binary Tree
 
 - `Pre-order traversal`
   - `Root -> Left -> Right`
@@ -25,6 +25,20 @@
 
 ![LeetCode tree traversal](https://github.com/yukikitayama/leetcode-python/blob/main/image/leetcode_traverse_tree.png)
 LeetCode
+
+## Construct Binary Tree from Traversal
+
+- Preorder traversal array has a root at the first element.
+- Postorder traversal array has a root at the last element.
+- Inorder traversal array can split into left and right subtrees if we know a root.
+- So first use preorder or postorder traversal array to identify a root, and then use inorder traversal array to split
+  an array into left and right.
+  - For postorder traversal, need to make right subtree first, because in postorder, before root is right.
+  - For preorder traversal, need to make left subtree first, because in preorder, after root is left.
+- Make a hashmap where the key is the value in the preorder/postorder array and the value is the index in inorder array
+  to make accessing inorder array easy.
+- [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+- [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
 ## Recursion
 

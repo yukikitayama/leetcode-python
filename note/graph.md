@@ -1,4 +1,4 @@
-## Graph
+# Graph
 
 - Centroid
   - node that is close to all the peripheral nodes (leaf nodes)
@@ -37,6 +37,14 @@ Let V denote the number of vertices, and E the number of edges.
 ## Breadth First Search (BFS)
 
 - BFS uses `queue`.
+- `Sentinel node`
+  - Sometimes used in BFS. It's `None` to be inserted to `queue`, and it indicates separation of the levels.
+  - e.g. `queue: [1, None, 2, 3, None, 4, ...]` means 2 and 3 are the same level or depth, but 4 is at one level deeper
+    different level.
+  - When inserting root node to queue, the queue initialization starts from `queue: [root, None]`.
+  - But it could be replaced by using the length of the queue. When exhausting nodes at the current level, only pop the 
+    number of nodes which are in the current queue.
+  - [1602. Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree/)
 
 ### Complexity
 

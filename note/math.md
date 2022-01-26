@@ -51,3 +51,9 @@
     - If NUMBER is 4, it returns 2, which is integer
     - If NUMBER is 3, it returns 1.58..., which is not integer. 
   - `math.log(result, base)`
+
+### Strictly Increasing
+
+- The next value must be greater than the current value.
+- "Greater than or equal to" is not strictly increasing.
+- e.g. `1 -> 2 -> 3` is strictly increasing, but `1 -> 3 -> 3 -> 4` is, though increasing, not strictly increasing.
