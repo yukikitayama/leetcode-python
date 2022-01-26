@@ -26,6 +26,8 @@
 ![LeetCode tree traversal](https://github.com/yukikitayama/leetcode-python/blob/main/image/leetcode_traverse_tree.png)
 LeetCode
 
+- [All DFS traversals (preorder, inorder, postorder) in Python in 1 line](https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/283746/all-dfs-traversals-preorder-inorder-postorder-in-python-in-1-line)
+
 ## Construct Binary Tree from Traversal
 
 - Preorder traversal array has a root at the first element.
