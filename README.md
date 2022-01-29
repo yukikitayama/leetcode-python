@@ -104,6 +104,10 @@ the concepts and useful code snippets. These unordered lists are linked to markd
 - The worst case operation can alter the state in such a way that the worst case cannot occur again for a long time
   ("amortizing cost").
 
+### Problems Requiring Amortized Analysis
+
+- [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
+
 ## Proof by Contradiction
 
 ### Example
