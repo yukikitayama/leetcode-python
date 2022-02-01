@@ -40,6 +40,10 @@
     - e.g. not applicable to the recursion for Fibonacci number which divides into two subproblems of different sizes.
 - Math: [Proving the Master Theorem](https://www.youtube.com/watch?v=I7JCtSwVeXs)
 
+#### Problems Using Master Theorem
+
+- [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
+
 ### Merge Sort
 
 - Sort algorithm by using divide and conquer.
