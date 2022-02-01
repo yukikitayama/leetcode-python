@@ -4,7 +4,7 @@ vertices. Disjoint set is optimized by implementing union by rank and path compr
 is highly modularized, so it's good to just memorize the implementation of disjoint set with union by rank and path
 compression.
 
-Template: [Disjoint Set Python code](https://github.com/yukikitayama/leetcode-python/blob/main/disjoint-set-union-find/DisjointSet.py)
+Template: [Disjoint Set Python code](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/disjoint-set-union-find/DisjointSet.py)
 
 Union by rank is to limit the maximum height of each vertex to improve find() time complexity. Find the height (rank) of
 the root nodes and choose the bigger rank root node as the root node in union().

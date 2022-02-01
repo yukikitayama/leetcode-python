@@ -25,6 +25,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 ## Action
 
 - [ ] Understand Morris Preorder Traversal.
+- [ ] Understand Inverse Ackermann Function used to analyze time complexity of disjoint set find() and union()
 
 ## Python
 
