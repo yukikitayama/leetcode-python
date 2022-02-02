@@ -6,9 +6,28 @@
   - and less than (or equal to) any values in its right subtree.
 - The strength of a BST is search, insertion and deletion operations are time `O(H)` even in the worst case, where H is 
   the height of a BST.
+  - BST is a good choice if we have to handle both insertion and search operations.
 - `Inorder traversal` in a BST is in `ascending order`
 - `Successor` (node after the current node) is the smallest node after the current node.
 - `Predecessor` (node before the current node) is the largest node before the current node.
+
+## Height-Balanced BST (Self-Balancing BST)
+
+- Tree automatically keeps its height small after `insert` and `delete` operations.
+- The height of a balanced BST with `N` nodes is always `logN`.
+- It also means the height of the two subtrees of every node never differs by more than 1.
+  - [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+- It matters because BST operations take time proportional to the height of the tree.
+- If a BST is skewed, the height is `O(N)`, not `O(H) = O(logN)` where `H` is a tree height.
+
+![LeetCode height balanced BST](https://github.com/yukikitayama/leetcode-python/blob/main/image/leetcode_height_balanced_bst.png)
+LeetCode
+
+- There are several implementations of height-balanced BST
+  - Red-black tree
+  - AVL tree
+  - Splay tree
+  - Treap
 
 ## Operation
 
@@ -62,3 +81,5 @@
 
 - [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
   - Need to understand how to find predecessor and successor in BST.
+- [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)
+  - Not obvious from problem statement that we should use BST to solve.

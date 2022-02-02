@@ -51,6 +51,9 @@
     - If NUMBER is 4, it returns 2, which is integer
     - If NUMBER is 3, it returns 1.58..., which is not integer. 
   - `math.log(result, base)`
+- The logarithm functions is non-linear, so when you take the log, you need to contain the entire terms on one side
+  - e.g. `a + b = c`, taking log of both side is `log(a + b) = log(c)`, not `log(a) + log(b) = log(c)`.
+  - [When I take the Log of both sides of an equation, should I only do it once?](https://math.stackexchange.com/questions/2036159/when-i-take-the-log-of-both-sides-of-an-equation-should-i-only-do-it-once)
 
 ### Strictly Increasing
 

@@ -114,6 +114,11 @@ print(list(enumerate(input[1:], 1)))
 
 - `LIST.reverse()`
   - Time complexity of reversing a list is `O(N)` the length of list.
+- [Python list time complexity table](https://wiki.python.org/moin/TimeComplexity)
+  - `insert()` is `O(N)` time, because you need to shift all elements after the insert position one step backward.
+  - `remove()` is also `O(N)` time, because after removing an item from position i, you need to shift all elements after
+    i one step forward.
+  - `append()` is `O(1)` time.
 
 ## Iterator
 
