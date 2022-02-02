@@ -17,6 +17,27 @@ insertion is still O(1).
 If there are too many values in the same bucket, you should use `height-balanced binary search tree` instead. In the 
 worst case, search and insertion time complexity is O(logN).
 
+## Counter()
+
+- `collections.Counter`
+- Supports comparison operators
+  - Time complexity is `O(N)` where `N` is the number of keys in Counter.
+  - [Python Runtime of collections.Counter Equality](https://stackoverflow.com/questions/52341976/python-runtime-of-collections-counter-equality)
+
+```python
+import collections
+c1 = collections.Counter('aab')
+c2 = collections.Counter()
+print(c1 == c2)  # False
+c2['a'] = 1
+c2['b'] = 1
+print(c1 == c2)  # False
+c2['a'] = 2
+print(c1 == c2)  # True
+c2['c'] = 0
+print(c1 == c2)  # False
+```
+
 ## Stack
 
 - Use stack when you wanna delay processing the current data later
