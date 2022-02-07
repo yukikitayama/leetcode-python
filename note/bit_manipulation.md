@@ -144,3 +144,13 @@ for i in range(l):
 # Reverse it because we store bit from the right, but we wanna see bits from the left
 binaries_3.reverse()
 ```
+
+## Filter a Character
+
+- Use `XOR`
+- Filter out the same character and find out the extra character in the other
+  - `s: 'a', t: 'ae'`
+  - XOR `s[0] ^ t[0]` returns `0`
+  - XOR `0 ^ t[1]` return `ord(t[1])`
+  - Back to character by `chr(ord(t[1]))`
+- [389. Find the Difference](https://leetcode.com/problems/find-the-difference/)
