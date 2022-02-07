@@ -15,6 +15,13 @@
   right of the index one step to right, and insert a new element to the empty space at the index.
 - `LIST.insert(INDEX, ELEMENT)`
 
+### Deletion
+
+- Deleting from the end of array is `O(1)` time
+- Deleting from the start of array is `O(N)` time, because to fill the deleted spot, it needs to shift every element all
+  the way to the last by one place to the left.
+- Deleting from the middle is `O(N)` time, because it needs left shift of every element to the right
+
 ## LeetCode
 
 - [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
