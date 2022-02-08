@@ -22,6 +22,11 @@
   the way to the last by one place to the left.
 - Deleting from the middle is `O(N)` time, because it needs left shift of every element to the right
 
+## Linear Search
+
+- The way for finding an element by checking through all elements one by one
+- Time is `O(N)`
+
 ## LeetCode
 
 - [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
