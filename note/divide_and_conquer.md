@@ -1,4 +1,4 @@
-## Divide and Conquer
+# Divide and Conquer
 
 - Big picture
   1. Divide the problem into two or more subproblems until these are simple enough to solve.
@@ -7,7 +7,7 @@
 - If you do not combine subproblmes and if instead use a single smaller subproblem, it's `decrease and conquery` such as
   Binary Search.
 
-### Master Theorem
+## Master Theorem
 
 - `Master Theorem (Master Method)` calculates the time complexity of the recursion algorithms with divide and conquer.
 - `a`: The number of subproblems needed to be solved
@@ -40,11 +40,11 @@
     - e.g. not applicable to the recursion for Fibonacci number which divides into two subproblems of different sizes.
 - Math: [Proving the Master Theorem](https://www.youtube.com/watch?v=I7JCtSwVeXs)
 
-#### Problems Using Master Theorem
+### Problems Using Master Theorem
 
 - [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 
-### Merge Sort
+## Merge Sort
 
 - Sort algorithm by using divide and conquer.
   - [Template: top-down merge sort](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/recursion/top_down_merge_sort.py)
@@ -56,7 +56,7 @@
   level, and it has logN levels.
 - Space is `O(N)` because it needs to keep sublists and buffer to hold the merge results.
 
-### Quick Sort
+## Quick Sort
 
 - Sorting algorithm using divide and conquer.
   - [Template: quick sort]()
@@ -70,3 +70,8 @@
     - If pivot value is smallest or largest, partition divides the list into one single sublist and the other empty 
       list.
     - Partitioning occur `N` times, and each partition scans `N` elements.
+
+## LeetCode
+
+- [1274. Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle/)
+  - Hard problem

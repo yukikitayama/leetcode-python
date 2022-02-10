@@ -122,6 +122,16 @@ the concepts and useful code snippets. These unordered lists are linked to markd
 - Elements of Programming Interviews in Python: The Insiders' Guide
   - The book that the people who apply for software engineer use to prepare for technical interviews.
 
+## Blind Game
+
+- A type of LeetCode problem where we don't have a direct access to the data.
+- Instead, we are given API or custom class or function to get a partial information of the data.
+- So unless interaction, we cannot find the answer.
+
+### Example
+
+- [1274. Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle/)
+
 ## Game
 
 - [Snake game](https://en.wikipedia.org/wiki/Snake_(video_game_genre))

@@ -54,6 +54,10 @@
 - The logarithm functions is non-linear, so when you take the log, you need to contain the entire terms on one side
   - e.g. `a + b = c`, taking log of both side is `log(a + b) = log(c)`, not `log(a) + log(b) = log(c)`.
   - [When I take the Log of both sides of an equation, should I only do it once?](https://math.stackexchange.com/questions/2036159/when-i-take-the-log-of-both-sides-of-an-equation-should-i-only-do-it-once)
+- Find the depth of a N-ary tree.
+  - If a tree divides `M` branches at each level, and if we know the number of node, the depth of the tree is `log_M(N)`
+    (base M)
+  - e.g. 4 branches at each level, and total nodes are 1,000,000, the depth of the tree is `log_4(1000000) = 9.97...`
 
 ## Strictly Increasing
 
