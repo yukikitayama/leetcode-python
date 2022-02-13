@@ -99,6 +99,11 @@ the concepts and useful code snippets. These unordered lists are linked to markd
 - [Probability and statistics](https://github.com/yukikitayama/leetcode-python/blob/main/note/probability_statistics.md)
   - [Reservoir Sampling](https://github.com/yukikitayama/leetcode-python/blob/main/note/probability_statistics.md#reservoir-sampling)
 
+## Communication
+
+- Often times you don't need to code the brute force solution in interview if you can come up with a better solution.
+- Just speak out the brute force approach.
+
 ## Amortized Analysis
 
 - Gives the average performance of each operation in the worst case.
