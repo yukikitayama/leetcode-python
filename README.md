@@ -104,6 +104,12 @@ the concepts and useful code snippets. These unordered lists are linked to markd
 - Often times you don't need to code the brute force solution in interview if you can come up with a better solution.
 - Just speak out the brute force approach.
 
+## Design
+
+- Have as less attributes as possible, even if attributes are convenient.
+  - Less attributes mean that the manipulation logic is simpler and less error-prone.
+  - Less space, so efficiency to the runtime performance.
+
 ## Amortized Analysis
 
 - Gives the average performance of each operation in the worst case.
