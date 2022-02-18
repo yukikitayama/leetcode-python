@@ -140,6 +140,9 @@ print(list(enumerate(input[1:], 1)))
   - `remove()` is also `O(N)` time, because after removing an item from position i, you need to shift all elements after
     i one step forward.
   - `append()` is `O(1)` time.
+- `Slicing`
+  - `LIST[::2]` means every 2 element from 0 to end index
+  - e.g. `[1, 2, 3, 4, 5][::2]` is `[1, 3, 5]`
 
 ## Iterator
 
