@@ -18,7 +18,7 @@
 | -x = ~x + 1 | 1 1 1 1 1 0 0 **1** |
 | x & (-x) | 0 0 0 0 0 0 0 **1** |
 
-## Turn Off the Rightmost 1-bit
+## Turn Off the Rightmost 1-bit (Zeroing Out Least Significant Nonzero Bit)
 
 - `x & (x - 1)`
   - Subtracting 1 means changing the rightmost 1-bit to 0, and setting all the lower bits to 1, and then 1 & 0 = 0.
