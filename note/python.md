@@ -190,7 +190,6 @@ class RangeIterator:
 - `SET.discard(ITEM)` doesn't raise an error if the specified item does not exist in the set, while `SET.remove(ITEM)`
   raises an error.
 
-
 ## reduce()
 
 - The purpose of using `reduce()` is to reduce the iterable object to a single cumulative value without using a for 
@@ -224,3 +223,9 @@ nums = [1, 2, 3, 4]
 print(math.prod(nums))
 # 1 * 2 * 3 * 4 = 24
 ```
+
+## Operator
+
+- Assignment operator with inline if-else statement. The below increments if true and decrements if false. Even if `-` 
+  does not have `=`, it works as assignment operator
+  - `num += 1 if SOMETHING is True else -1`
