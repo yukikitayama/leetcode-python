@@ -38,6 +38,13 @@ c2['c'] = 0
 print(c1 == c2)  # False
 ```
 
+## OrderedDict()
+
+- `OrderedDict` preserves the order in which the keys are inserted. It's not about sorting by key to be ordered.
+- So `OrderedDict` should be used with `DICTIONARY.items()` and `DICTIONARY.values()` to iterate to make use of an 
+  inserted order.
+- Regular Python dictionary does not track the order of insertion, so iterating the keys gives in an arbitrary order.
+
 ## Stack
 
 - Use stack when you wanna delay processing the current data later
