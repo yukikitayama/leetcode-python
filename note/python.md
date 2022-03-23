@@ -236,3 +236,9 @@ print(math.prod(nums))
 - Assignment operator with inline if-else statement. The below increments if true and decrements if false. Even if `-` 
   does not have `=`, it works as assignment operator
   - `num += 1 if SOMETHING is True else -1`
+
+## String
+
+- `ord('a')` gives `97`.
+- `chr(97)` gives `'a'`.
+- `chr()` gives `ASCII characters` by 0-based integer.
