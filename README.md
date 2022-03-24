@@ -99,6 +99,13 @@ the concepts and useful code snippets. These unordered lists are linked to markd
 - [Probability and statistics](https://github.com/yukikitayama/leetcode-python/blob/main/note/probability_statistics.md)
   - [Reservoir Sampling](https://github.com/yukikitayama/leetcode-python/blob/main/note/probability_statistics.md#reservoir-sampling)
 
+## English
+
+- `Subarray`
+  - Contiguous subsequence
+  - E.g. given `nums = [1, 2, 3, 4]`, `[1, 2, 3]` is subarray, but `[1, 2, 4]` isn't. It's subsequence of nums, but 2 
+    and 4 are not contiguous, so it's not subarray.
+
 ## Communication
 
 - Often times you don't need to code the brute force solution in interview if you can come up with a better solution.
