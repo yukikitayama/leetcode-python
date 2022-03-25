@@ -23,6 +23,7 @@ worst case, search and insertion time complexity is O(logN).
 - Supports comparison operators
   - Time complexity is `O(N)` where `N` is the number of keys in Counter.
   - [Python Runtime of collections.Counter Equality](https://stackoverflow.com/questions/52341976/python-runtime-of-collections-counter-equality)
+  - Equality compares corresponding counts.
 
 ```python
 import collections
