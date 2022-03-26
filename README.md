@@ -105,6 +105,8 @@ the concepts and useful code snippets. These unordered lists are linked to markd
   - Contiguous subsequence
   - E.g. given `nums = [1, 2, 3, 4]`, `[1, 2, 3]` is subarray, but `[1, 2, 4]` isn't. It's subsequence of nums, but 2 
     and 4 are not contiguous, so it's not subarray.
+- `Pangram`
+  - A sentence where every letter of the english alphabet appears at least once
 
 ## Communication
 
