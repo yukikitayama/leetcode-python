@@ -39,6 +39,9 @@ c2['c'] = 0
 print(c1 == c2)  # False
 ```
 
+- `COUNTER.elements()` returns a list of each key repeated by its value times.
+  - e.g. `counter = Counter('aab') -> counter: {'a': 2, 'b': 1} -> counter.elements() -> ['a', 'a', 'b']`
+
 ## OrderedDict()
 
 - `OrderedDict` preserves the order in which the keys are inserted. It's not about sorting by key to be ordered.
