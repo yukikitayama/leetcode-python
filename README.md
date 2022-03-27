@@ -19,7 +19,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 
 - [x] Solve 700 LeetCode problems (2021-11-23)
 - [x] Solve 800 LeetCode problems (2022-01-14)
-- [ ] Solve 900 LeetCode problems
+- [x] Solve 900 LeetCode problems (2022-03-26)
 - [ ] Solve 1,000 LeetCode problems
 
 ## Action
