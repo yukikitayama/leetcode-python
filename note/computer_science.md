@@ -6,6 +6,11 @@
 - Each chunk is preceded by its size in bytes.
 - [Wiki](https://en.wikipedia.org/wiki/Chunked_transfer_encoding)
 
+## Run Length Encoding
+
+- e.g. `nums: [1, 1, 1, 2, 2, 2, 2, 2] -> encoded: [[1, 3], [2, 5]]`, three 1s followed by five 2s.
+- [Run-length encoding](https://en.wikipedia.org/wiki/Run-length_encoding)
+
 ## Defang link
 
 - `Defaning link` is a way to prevent a user from inadvertently clicking a malicious link
