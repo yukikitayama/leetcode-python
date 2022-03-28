@@ -52,3 +52,20 @@ Let V denote the number of vertices, and E the number of edges.
 - Time is `O(V + E)` because it needs to check every vertexa and traverse through every edge in a graph.
 - Space is `O(V)` because in the worst case, one vertex is connected to every other vertex, so all of them go to the 
   queue.
+
+### Implementation
+
+- Pretty shockingly simple implementation of BFS
+  - [Python BFS](https://leetcode.com/problems/find-largest-value-in-each-tree-row/discuss/99000/Python-BFS)
+  - `while any(row)` because the given root could be `None`. `while [None]:` is `True`, but `while any([None])` is 
+    `False`
+
+```python
+def findValueMostElement(self, root):
+    maxes = []
+    row = [root]
+    while any(row):
+        maxes.append(max(node.val for node in row))
+        row = [kid for node in row for kid in (node.left, node.right) if kid]
+    return maxes
+```
