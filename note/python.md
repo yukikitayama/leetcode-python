@@ -246,3 +246,11 @@ print(math.prod(nums))
 - `ord('a')` gives `97`.
 - `chr(97)` gives `'a'`.
 - `chr()` gives `ASCII characters` by 0-based integer.
+
+## Integer
+
+- Integer overflow does not occur in Python3.
+- It does not have fixed maximum, called `arbitrary precision`
+- But it's limited by available compute memory.
+- [Is there a way to get the largest integer one can use in Python? [duplicate]](https://stackoverflow.com/questions/4581842/is-there-a-way-to-get-the-largest-integer-one-can-use-in-python)
+- [Can Integer Operations Overflow in Python?](https://mortada.net/can-integer-operations-overflow-in-python.html)
