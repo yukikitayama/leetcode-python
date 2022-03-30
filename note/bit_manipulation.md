@@ -155,3 +155,10 @@ binaries_3.reverse()
   - XOR `0 ^ t[1]` return `ord(t[1])`
   - Back to character by `chr(ord(t[1]))`
 - [389. Find the Difference](https://leetcode.com/problems/find-the-difference/)
+
+## Multiply and Divide by 2
+
+- People say `bitwise shift` is faster than multiplication and division.
+- `x * 2` is the same as `x << 1` left shift.
+  - e.g. `x: 2`, its bin is `10`, `x << 1` is `100`, which is `4`.
+- `x / 2` is the same as `x >> 1` right shift.
