@@ -31,6 +31,9 @@ class BinarySearch:
             return -1
 
         left = 0
+        # No -1 because end condition is left == right
+        # When array length is 1 and -1 to right, right is 0.
+        # And while ends without searching
         right = len(nums)
 
         # End condition: left == right
