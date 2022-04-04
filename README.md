@@ -122,6 +122,11 @@ the concepts and useful code snippets. These unordered lists are linked to markd
   - Less attributes mean that the manipulation logic is simpler and less error-prone.
   - Less space, so efficiency to the runtime performance.
 
+## Follow-up
+
+- Reducing the number of passes by loops is a very common follow-up.
+  - e.g. Code contains 2 while loops. It's not `O(N^2)`, but `O(N)`, even if `O(2N) = O(N)` in analysis.
+
 ## Amortized Analysis
 
 - Gives the average performance of each operation in the worst case.
