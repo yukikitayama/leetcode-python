@@ -254,3 +254,19 @@ print(math.prod(nums))
 - But it's limited by available compute memory.
 - [Is there a way to get the largest integer one can use in Python? [duplicate]](https://stackoverflow.com/questions/4581842/is-there-a-way-to-get-the-largest-integer-one-can-use-in-python)
 - [Can Integer Operations Overflow in Python?](https://mortada.net/can-integer-operations-overflow-in-python.html)
+
+## zip()
+
+- Iterate each column of a matrix
+  - Use `zip(*matrix)` to unpack a matrix into each row, and iterate element of each row together by `zip()`
+
+```python
+matrix = [
+  [1, 2],
+  [3, 4]
+]
+
+for column in zip(*matrix):
+    print(column)
+    # [1, 3], [2, 4]
+```
