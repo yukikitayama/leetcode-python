@@ -47,3 +47,7 @@ for i in range(n):
 
 - [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)
 - [1044. Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring/)
+
+#### File path
+
+- [388. Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)
