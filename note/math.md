@@ -79,3 +79,10 @@
   - `11 % 9 = 2`
   - `50 % 9 = 5`
 - [258. Add Digits](https://leetcode.com/problems/add-digits/)
+
+# Permutations
+
+- `n! / (n - r)!` where `n` is the number of thins to choose from, and we choose `r` of them, `no repetitions`, 
+  `order matters`
+- [Combinations and Permutations](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
+- [447. Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)
