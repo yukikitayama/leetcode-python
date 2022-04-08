@@ -46,3 +46,9 @@
   - Time is O(V * E). In the worst case, SPFA is the same as the standard Bellman-Ford algorithm, but on average, SPFA
     tends to be faster.
   - Space is O(V)
+
+## LeetCode
+
+- [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
+  - By Dijkstra and Bellman-Ford
+  - Google
