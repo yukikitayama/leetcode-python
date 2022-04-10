@@ -51,3 +51,7 @@ for i in range(n):
 #### File path
 
 - [388. Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path/)
+
+## isdigit()
+
+- If the given string is negative number string such as `-1`, it doesn't work.
