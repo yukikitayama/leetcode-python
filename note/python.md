@@ -270,3 +270,20 @@ for column in zip(*matrix):
     print(column)
     # [1, 3], [2, 4]
 ```
+
+## Assignment Expression
+
+- `:=` is `assignment expression` new syntax from `Python 3.8`.
+- [Assignment expressions](https://docs.python.org/3/whatsnew/3.8.html#assignment-expressions)
+- Below, n is not made yet, but in if statement the result of length assigned to n, and the n is immediately available
+
+```python
+a = 2
+
+if (n := a) > 1:
+    print(f'n: {n}')
+else:
+    print('else')
+
+# >>> n: 2
+```
