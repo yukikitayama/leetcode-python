@@ -34,6 +34,7 @@
 - Modulo is distributive `(a + b) % n = {(a % n) + (b % n)} % n`
   - LeetCode: [1010. Pairs of Songs With Total Durations Divisible by 60](https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/)
 - [Wiki modulo properties](https://en.wikipedia.org/wiki/Modulo_operation#Properties_(identities))
+- [1260. Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)
 
 ## Remainder
 
