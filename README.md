@@ -108,6 +108,8 @@ the concepts and useful code snippets. These unordered lists are linked to markd
 - `Subsequence`
   - A sequence that can be derived from a given array by deleting some or no elements without changing the order of the
     remaining elements.
+- `Substring`
+  - A **contiguous** non-empty sequence of characters within a string.
 - `Palindrome`
   - A sequence of characters or numbers which reads the same backward as forward same
   - e.g. `121` is a palindrome, `123` isn't. `aba` is a palindrome, but `abc` isn't.
