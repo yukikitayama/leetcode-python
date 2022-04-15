@@ -287,3 +287,12 @@ else:
 
 # >>> n: 2
 ```
+
+## Magic Method
+
+- `__lt__`
+  - `__lt__(self, other)`. Use `self` because this is a method of a class.
+  - This method should return boolean type.
+  - [Python __lt__() Magic Method](https://blog.finxter.com/python-__lt__-magic-method/)
+  - [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)
+  - [Python 3 solution with O(nlogk) and O(n)](https://leetcode.com/problems/top-k-frequent-words/discuss/108348/Python-3-solution-with-O(nlogk)-and-O(n))
