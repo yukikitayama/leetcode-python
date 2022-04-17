@@ -115,6 +115,8 @@ the concepts and useful code snippets. These unordered lists are linked to markd
   - e.g. `121` is a palindrome, `123` isn't. `aba` is a palindrome, but `abc` isn't.
 - `Pangram`
   - A sentence where every letter of the english alphabet appears at least once
+- `Bipartition`
+  - Having or consisting of two parts
 
 ## Communication
 
