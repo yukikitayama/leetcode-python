@@ -75,3 +75,5 @@
 
 - [1274. Number of Ships in a Rectangle](https://leetcode.com/problems/number-of-ships-in-a-rectangle/)
   - Hard problem
+- [241. Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)
+  - Divide and conquer in practice
