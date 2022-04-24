@@ -49,6 +49,13 @@ print(c1 == c2)  # False
   inserted order.
 - Regular Python dictionary does not track the order of insertion, so iterating the keys gives in an arbitrary order.
 
+## defaultdict()
+
+- **Lambda** function also can be used as the argument default factory
+- e.g. `defaultdict(lambda: [0, 0])` means without input, it initializes length 2 integer list all the time
+  - Useful because we don't need to append 2 elements, directly can call increment for example
+  - [1396. Design Underground System](https://leetcode.com/problems/design-underground-system/)
+
 ## Stack
 
 - Use stack when you wanna delay processing the current data later
