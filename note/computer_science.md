@@ -17,3 +17,8 @@
   - e.g. `http -> hxxp` in URL, `1.1.1.1 -> 1[.]1[.]1[.]1` in IP address.
   - [Email Security – Defanging URLs](https://www.ibm.com/docs/en/sqsp/32.0?topic=SSBRUQ_32.0.0/com.ibm.resilient.doc/install/resilient_install_defangURLs.htm)
   - `Defang`: make (something) harmless or ineffectual.
+
+## Iterator Pattern
+
+- [Iterator Pattern](https://www.geeksforgeeks.org/iterator-pattern/)
+- [284. Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)
