@@ -1,4 +1,4 @@
-## Minimum spanning tree
+# Minimum spanning tree
 
 - **Spanning tree** is a subgraph in a graph where all the vertices are connected with the minimum number of edges. 
 
@@ -55,3 +55,7 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
 - Time is O(E * logV) with binary heap. O(V + E) to traverse all the vertices and store them in the heap. Getting 
   minimum element from the heap costs O(logV), so O(V + E) * O(logV) = O(E * logV)
 - Space is O(V) to store all the vertices.
+
+## LeetCode
+
+- [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
