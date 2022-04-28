@@ -26,3 +26,31 @@ SELECT 'b' AS col
   - `GROUP_CONCAT()`
     - e.g. `GROUP_CONCAT(DISTINCT col ORDER BY col separator ',')`
   - [1484. Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)
+  
+## Percentage
+
+- Use `AVG()` and `CASE WHEN` to convert a column into binary
+- [SQL 1 liner solution (This is a FB DE interview question)](https://leetcode.com/problems/recyclable-and-low-fat-products/discuss/1062936/SQL-1-liner-solution-(This-is-a-FB-DE-interview-question))
+
+```sql
+select
+  round(
+    avg(
+      case when column = 'something' 
+        then 1 
+        else 0 
+      end), 
+    2) 
+  as percentage
+from
+  some_table
+```
+
+## IS NULL for 3-Valued Logic
+
+- MySQL uses 3-valued logic, `TRUE`, `FALSE`, and `UNKNOWN`
+- Anything compared to `NULL` evaluates to the 3rd value `UNKNOWN`
+- For example, `where column != 1` only returns rows which have non-null value and not 1
+  - If a row has null in the column, this row will not be returned.
+  - If we wanna return this null row as well, `where column != 1 or column is null`
+- [584. Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)
