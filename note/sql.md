@@ -65,3 +65,7 @@ from
 - 2 ways to construct `case when` syntax.
 - [13.6.5.1 CASE Statement](https://dev.mysql.com/doc/refman/5.7/en/case.html)
 - [627. Swap Salary](https://leetcode.com/problems/swap-salary/)
+
+## Delete
+
+- [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)
