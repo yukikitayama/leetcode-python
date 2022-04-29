@@ -59,3 +59,9 @@ from
 
 - `select if(condition, true, false) as name`
 - [873. Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)
+
+## Case When
+
+- 2 ways to construct `case when` syntax.
+- [13.6.5.1 CASE Statement](https://dev.mysql.com/doc/refman/5.7/en/case.html)
+- [627. Swap Salary](https://leetcode.com/problems/swap-salary/)
