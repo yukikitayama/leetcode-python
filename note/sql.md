@@ -54,3 +54,8 @@ from
   - If a row has null in the column, this row will not be returned.
   - If we wanna return this null row as well, `where column != 1 or column is null`
 - [584. Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)
+
+## If Statement
+
+- `select if(condition, true, false) as name`
+- [873. Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)
