@@ -22,10 +22,14 @@ SELECT 'a' AS col
 UNION ALL
 SELECT 'b' AS col
 ```
+
+## GROUP_CONCAT()
+
 - Concatenate string from a group into a single string with options such as separator.
-  - `GROUP_CONCAT()`
-    - e.g. `GROUP_CONCAT(DISTINCT col ORDER BY col separator ',')`
-  - [1484. Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)
+- e.g. `GROUP_CONCAT(DISTINCT col ORDER BY col separator ',')`
+  - `seperator ','` can be omitted because by default ',' is a separator.
+- [1484. Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)
+- [MySQL GROUP_CONCAT Function](https://www.mysqltutorial.org/mysql-group_concat/)
   
 ## Percentage
 
@@ -69,3 +73,7 @@ from
 ## Delete
 
 - [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)
+
+## LIKE
+
+- [1527. Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/)
