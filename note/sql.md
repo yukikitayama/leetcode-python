@@ -77,3 +77,13 @@ from
 ## LIKE
 
 - [1527. Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/)
+
+## LIMIT
+
+- `LIMIT 1 OFFSET 1` allows us to get the only second element, because `OFFSET 1` skips the first row
+- [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)
+- [MySQL LIMIT](https://www.mysqltutorial.org/mysql-limit.aspx)
+
+## IFNULL
+
+- [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)
