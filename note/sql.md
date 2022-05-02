@@ -87,3 +87,41 @@ from
 ## IFNULL
 
 - [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)
+
+## Optimization
+
+- [1581. Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)
+  - [simple MySQL solution (Visits.visit_id not in (SELECT visit_id FROM Transactions))](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/discuss/841000/simple-MySQL-solution-(Visits.visit_id-not-in-(SELECT-visit_id-FROM-Transactions)))
+  - Comments in the above discussion discuss why `LEFT JOIN` is better than `NOT IN` subquery in this problem
+  - Sub query runs earlier than main query.
+  - Subquery returns a list and in where clause for each item checks against the list, so not optimized
+
+```sql
+# Write your MySQL query statement below
+# select
+#   customer_id,
+#   count(*) as count_no_trans
+# from
+#   visits
+# where
+#   visit_id not in (
+#     select visit_id from transactions
+#   )
+# group by
+#   customer_id
+# ;
+
+select
+  a.customer_id,
+  count(a.visit_id) as count_no_trans
+from
+  visits as a
+left join
+  transactions as b
+on
+  a.visit_id = b.visit_id
+where
+  b.transaction_id is null
+group by
+  a.customer_id
+```
