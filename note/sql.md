@@ -125,3 +125,8 @@ where
 group by
   a.customer_id
 ```
+
+## DATEDIFF()
+
+- `DATEDIFF(later_date, earlier_date)`
+- This can be used in where clause like `where datediff(later_date, earlier_date) = 1` to find yesterday data.
