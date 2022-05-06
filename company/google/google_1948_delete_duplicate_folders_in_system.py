@@ -1,8 +1,14 @@
+"""
+https://leetcode.com/problems/delete-duplicate-folders-in-system/
+"""
+
+
 from typing import List
 
 
 class TrieNode:
     def __init__(self):
+        pass
 
 
 class Solution:
