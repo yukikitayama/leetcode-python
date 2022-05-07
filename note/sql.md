@@ -132,3 +132,9 @@ group by
 - This can be used in where clause like `where datediff(later_date, earlier_date) = 1` to find yesterday data.
 - [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/)
 - [1141. User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/)
+
+## Having
+
+- Add a condition to a `GROUP BY` result
+- [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)
+- [1050. Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/)
