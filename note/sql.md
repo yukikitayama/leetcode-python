@@ -138,3 +138,10 @@ group by
 - Add a condition to a `GROUP BY` result
 - [182. Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)
 - [1050. Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/)
+
+## DATE_FORMAT
+
+- `DATE_FORMAT(DATE, 'FORMAT_STRING')`
+- `%m`: month `00` to `12`
+- `%Y`: 4 digits year
+- [MySQL DATE_FORMAT() Function](https://www.w3schools.com/sql/func_mysql_date_format.asp)
