@@ -145,3 +145,8 @@ group by
 - `%m`: month `00` to `12`
 - `%Y`: 4 digits year
 - [MySQL DATE_FORMAT() Function](https://www.w3schools.com/sql/func_mysql_date_format.asp)
+
+## 2 Items for NOT IN
+
+- `WHERE (column1, column2) NOT IN (column1, column2)` can work
+- [1112. Highest Grade For Each Student](https://leetcode.com/problems/highest-grade-for-each-student/)
