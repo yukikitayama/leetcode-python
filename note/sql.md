@@ -150,3 +150,7 @@ group by
 
 - `WHERE (column1, column2) NOT IN (column1, column2)` can work
 - [1112. Highest Grade For Each Student](https://leetcode.com/problems/highest-grade-for-each-student/)
+
+## MOD
+
+- `MOD(dividend (numerator), divisor (denominator))` returns `remainder` of a number divided by another number
