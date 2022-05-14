@@ -1,14 +1,21 @@
-## Single Source Shortest Path
+# Single Source Shortest Path
 
-### Dijkstra's Algorithm
+## Dijkstra's Algorithm
 
 - Solve the shortest path problem in a weighted directed graph with **non-negative** weights.
 - It's a greedy approach because each step selects minimum weights from the current vertex to find the shortest path to
   other vertex.
 - Dijkstra's algorithm won't work if there's a negative edge somewhere in the graph, because greedy algorithm looking 
   only at the current vertex with others does not work.
+- Use **priority queue** to traverse nodes in increasing order of weights, so in each iteration, we will visit the node 
+  with the smallest weight.
 
-#### Complexity
+### Implementation
+
+- Use priority queue **min heap** to store `(weight, next node)` in the ascending order of weight.
+- `Weight` in the min heap always is incremented to represent `weight` is the total weight from the source to the node.  
+
+### Complexity
 
 - Time is O(E + V * logV) because it takes O(E) to consider all the edges to find minimum weights, and takes O(VlogV)
   to get minimum element from the min heap.
@@ -52,3 +59,5 @@
 - [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
   - By Dijkstra and Bellman-Ford
   - Google
+- [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/)
+  - It can be solved by DFS and BFS, but need to use Dijkstra's Algorithm to optimize time.
