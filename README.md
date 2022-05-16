@@ -25,6 +25,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 
 ## Action
 
+- [ ] Review A star in [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
 - [ ] Understand Morris Preorder Traversal.
 - [ ] Understand Inverse Ackermann Function used to analyze time complexity of disjoint set find() and union()
 

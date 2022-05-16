@@ -22,3 +22,13 @@
 
 - [Iterator Pattern](https://www.geeksforgeeks.org/iterator-pattern/)
 - [284. Peeking Iterator](https://leetcode.com/problems/peeking-iterator/)
+
+## Overengineering
+
+- Designing a product or providing a solution to a problem in an elaborate or complicated manner, where a simpler 
+  solution can be demonstrated to exist with the same efficiency and effectiveness
+- [Overengineering](https://en.wikipedia.org/wiki/Overengineering)
+
+## Lattice Graph
+
+- [Lattice graph](https://en.wikipedia.org/wiki/Lattice_graph)
