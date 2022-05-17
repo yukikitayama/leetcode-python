@@ -154,3 +154,7 @@ group by
 ## MOD
 
 - `MOD(dividend (numerator), divisor (denominator))` returns `remainder` of a number divided by another number
+
+## Common Table Expression
+
+- [13.2.15 WITH (Common Table Expressions)](https://dev.mysql.com/doc/refman/8.0/en/with.html)
