@@ -1,0 +1,24 @@
+select
+  b.project_id,
+  a.employee_id
+from
+  employee as a
+left join
+  project as b
+on
+  a.employee_id = b.employee_id
+where
+  (b.project_id, a.experience_years) in (
+select
+  project_id,
+  max(experience_years)
+from
+  employee as a
+left join
+  project as b
+on
+  a.employee_id = b.employee_id
+group by
+  project_id
+  )
+;
