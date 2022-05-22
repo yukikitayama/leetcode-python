@@ -83,6 +83,7 @@ from
 - `LIMIT 1 OFFSET 1` allows us to get the only second element, because `OFFSET 1` skips the first row
 - [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)
 - [MySQL LIMIT](https://www.mysqltutorial.org/mysql-limit.aspx)
+- [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
 
 ## IFNULL
 
@@ -158,3 +159,39 @@ group by
 ## Common Table Expression
 
 - [13.2.15 WITH (Common Table Expressions)](https://dev.mysql.com/doc/refman/8.0/en/with.html)
+
+## Rank
+
+- `order by` can use `desc` after column name
+
+```
+rank() over(
+  partition by
+    WITHIN-GROUP_TO_ASSIGN_RANK
+  order by
+    COLUMN_TO_REFER_TO_MAKE_RANK 
+) as RANK_COLUMN_NAME
+```
+
+## Recursive Common Table Expression
+
+- A common table expression using `with recursive` and having a subquery inside referring to its own table
+- [1613. Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/)
+- [Recursive Common Table Expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html#common-table-expressions-recursive)
+- [[MySQL] 4 solutions to generate consecutive sequence](https://leetcode.com/problems/find-the-missing-ids/discuss/890608/MySQL-4-solutions-to-generate-consecutive-sequence)
+- Generate a integer sequence from 1 to 100
+
+```
+with recursive cte as
+(
+  select 1 as value
+  union all
+  select value + 1
+  from cte
+  where value < 100
+)
+
+select *
+from cte
+;
+```
