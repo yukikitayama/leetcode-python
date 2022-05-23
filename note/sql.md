@@ -195,3 +195,11 @@ select *
 from cte
 ;
 ```
+
+## ROW_NUMBER()
+
+- Assign a sequential number to each row.
+
+## Over Clause
+
+- [What Is the MySQL OVER Clause?](https://learnsql.com/blog/over-clause-mysql/)
