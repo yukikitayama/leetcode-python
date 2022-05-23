@@ -203,3 +203,7 @@ from cte
 ## Over Clause
 
 - [What Is the MySQL OVER Clause?](https://learnsql.com/blog/over-clause-mysql/)
+
+## Lead()
+
+- [1709. Biggest Window Between Visits](https://leetcode.com/problems/biggest-window-between-visits/)
