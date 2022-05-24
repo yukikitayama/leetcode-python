@@ -173,6 +173,11 @@ rank() over(
 ) as RANK_COLUMN_NAME
 ```
 
+## DENSE_RANK() vs RANK()
+
+- [MySQL DENSE_RANK Function](https://www.mysqltutorial.org/mysql-window-functions/mysql-dense_rank-function/)
+- `DENSE_RANK()` returns **consecutive rank**, but `RANK()` will skip a number when a tie exists.
+
 ## Recursive Common Table Expression
 
 - A common table expression using `with recursive` and having a subquery inside referring to its own table
