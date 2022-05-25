@@ -204,6 +204,7 @@ from cte
 ## ROW_NUMBER()
 
 - Assign a sequential number to each row.
+- [MySQL ROW_NUMBER Function](https://www.mysqltutorial.org/mysql-window-functions/mysql-row_number-function/)
 
 ## Over Clause
 
@@ -218,3 +219,8 @@ from cte
 - `MIN()` is typically used to return the minimum value in a column in a database. The table could contain many rows, but this function returns the one with the minimum value.
 - `LEAST()` on the other hand, returns the minimum-valued argument from the list of arguments passed to it. So you could pass say, 3 arguments to this function and it will return the one with the smallest value.
 - [MIN() vs LEAST() in MySQL: What’s the Difference?](https://database.guide/min-vs-least-in-mysql-whats-the-difference/)
+
+## Median
+
+- [569. Median Employee Salary](https://leetcode.com/problems/median-employee-salary/)
+- 
