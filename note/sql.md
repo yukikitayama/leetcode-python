@@ -225,3 +225,7 @@ from cte
 - [569. Median Employee Salary](https://leetcode.com/problems/median-employee-salary/)
 - [571. Find Median Given Frequency of Numbers](https://leetcode.com/problems/find-median-given-frequency-of-numbers/)
 
+## UNION vs UNION ALL
+
+- `UNION` removes duplicate records, but `UNION ALL` doesn't.
+- [What is the difference between UNION and UNION ALL?](https://stackoverflow.com/questions/49925/what-is-the-difference-between-union-and-union-all)
