@@ -159,6 +159,10 @@ group by
 ## Common Table Expression
 
 - [13.2.15 WITH (Common Table Expressions)](https://dev.mysql.com/doc/refman/8.0/en/with.html)
+- Multiple common table expressions
+  - If table contains both recursive and non-recursive, put `RECURSIVE` right after `WITH`
+
+
 
 ## Rank
 
@@ -183,8 +187,10 @@ rank() over(
 - A common table expression using `with recursive` and having a subquery inside referring to its own table
 - [1613. Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/)
 - [Recursive Common Table Expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html#common-table-expressions-recursive)
+- [Generate an integer sequence in MySQL](https://stackoverflow.com/questions/304461/generate-an-integer-sequence-in-mysql)
 - [[MySQL] 4 solutions to generate consecutive sequence](https://leetcode.com/problems/find-the-missing-ids/discuss/890608/MySQL-4-solutions-to-generate-consecutive-sequence)
-- Generate a integer sequence from 1 to 100
+- Generate a sequence of integers from 1 to 100
+  - Notice that `< 100`, not `<= 100`
 
 ```
 with recursive cte as
