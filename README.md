@@ -109,7 +109,7 @@ the concepts and useful code snippets. These unordered lists are linked to markd
     and 4 are not contiguous, so it's not subarray.
 - `Subsequence`
   - A sequence that can be derived from a given array by deleting some or no elements without changing the order of the
-    remaining elements.
+    remaining elements. Doesn't necessarily need to be contiguous.
 - `Substring`
   - A **contiguous** non-empty sequence of characters within a string.
 - `Palindrome`
