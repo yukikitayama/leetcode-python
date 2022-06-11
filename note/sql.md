@@ -235,3 +235,8 @@ from cte
 
 - `UNION` removes duplicate records, but `UNION ALL` doesn't.
 - [What is the difference between UNION and UNION ALL?](https://stackoverflow.com/questions/49925/what-is-the-difference-between-union-and-union-all)
+
+## Day of week
+
+- `DAYOFWEEK(date)` returns 1 (Sunday), 2 (Monday), ... 7 (Saturday)
+- `WEEKDAY(date)` returns 0 (Monday), 1 (Tuesday), ... 6 (Sunday)
