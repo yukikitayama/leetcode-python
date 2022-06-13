@@ -251,3 +251,13 @@ from cte
 - `*` means 0 or more instances of string preceding it. `a*` is 'a', 'aa', or ''.
 - [MySQL | Regular expressions (Regexp)](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/)
 - [12.8.2 Regular Expressions](https://dev.mysql.com/doc/refman/8.0/en/regexp.html)
+
+## TRIM
+
+- `TRIM(string)` removes leading and trailing whitespaces
+- [How to remove leading and trailing whitespace in a MySQL field?](https://stackoverflow.com/questions/6858143/how-to-remove-leading-and-trailing-whitespace-in-a-mysql-field)
+
+## LOWER
+
+- `LOWER(string)` converts all the characters in a string to lowercase characters.
+
