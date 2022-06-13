@@ -21,7 +21,8 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [x] Solve 800 LeetCode problems (2022-01-14)
 - [x] Solve 900 LeetCode problems (2022-03-26)
 - [x] Solve 1,000 LeetCode problems (2022-05-01)
-- [ ] Solve 1,100 LeetCode problems
+- [x] Solve 1,100 LeetCode problems (2022-06-12)
+- [ ] Solve 1,200 LeetCode problems
 
 ## Action
 
