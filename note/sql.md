@@ -240,3 +240,14 @@ from cte
 
 - `DAYOFWEEK(date)` returns 1 (Sunday), 2 (Monday), ... 7 (Saturday)
 - `WEEKDAY(date)` returns 0 (Monday), 1 (Tuesday), ... 6 (Sunday)
+
+## REGEXP
+
+- `REGEXP` performs regular expression pattern matches.
+- `^ab` means starts with 'ab' like 'abc', not 'acc'
+- Use two backslashes `\\` to use literal instance of special characters.
+  - To match '-', `\\-`
+- `abc$` means ends with 'abc'
+- `*` means 0 or more instances of string preceding it. `a*` is 'a', 'aa', or ''.
+- [MySQL | Regular expressions (Regexp)](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/)
+- [12.8.2 Regular Expressions](https://dev.mysql.com/doc/refman/8.0/en/regexp.html)
