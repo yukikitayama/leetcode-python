@@ -261,3 +261,8 @@ from cte
 
 - `LOWER(string)` converts all the characters in a string to lowercase characters.
 
+## LENGTH()
+
+- `LENGTH(string)` returns a number of characters
+  - e.g. `WHERE LENGTH(string_column) > 15`
+
