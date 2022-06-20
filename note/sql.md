@@ -145,6 +145,12 @@ group by
 - `DATE_FORMAT(DATE, 'FORMAT_STRING')`
 - `%m`: month `00` to `12`
 - `%Y`: 4 digits year
+- `%W`: Weekday name in full (Sunday to Saturday)
+- `%M`: Month name in full (January to December)
+- `%e`: Day of the month as a numeric value without leading 0
+  - `1`, not `01`
+  - If `01` is required, use `%d`
+- [1853. Convert Date Format](https://leetcode.com/problems/convert-date-format/)
 - [MySQL DATE_FORMAT() Function](https://www.w3schools.com/sql/func_mysql_date_format.asp)
 
 ## 2 Items for NOT IN
