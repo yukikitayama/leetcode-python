@@ -272,3 +272,10 @@ from cte
 - `LENGTH(string)` returns a number of characters
   - e.g. `WHERE LENGTH(string_column) > 15`
 
+## TIMESTAMPDIFF()
+
+- `TIMESTAMPDIFF(unit, earlier_date, later_date)` returns time difference in the `unit`
+  - e.g. `where timestampdiff(second, timestamp1, timestamp2) <= 60 * 60 * 24` checks if two timestamps are within 24 
+    hours window.
+- [1939. Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/)
+
