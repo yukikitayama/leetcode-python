@@ -279,3 +279,9 @@ from cte
     hours window.
 - [1939. Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/)
 
+## Cumulative sum
+
+- `SUM(amount_to_be_cumsummed) OVER(PARTITION BY group ORDER BY amount_to_be_cumsummed, some_id)`
+- [2004. The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/)
+
+
