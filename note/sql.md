@@ -23,12 +23,19 @@ UNION ALL
 SELECT 'b' AS col
 ```
 
+## CONCAT()
+
+- `CONCAT(exp1, exp2, ...)` concatenate two or more expressions
+- Expression can be either string or even string. The result is string.
+- Doesn't specify `separator` string. If you wanna separate each expression by `,` or ` ` (space), use `GROUP_CONCAT()`
+
 ## GROUP_CONCAT()
 
 - Concatenate string from a group into a single string with options such as separator.
 - e.g. `GROUP_CONCAT(DISTINCT col ORDER BY col separator ',')`
   - `seperator ','` can be omitted because by default ',' is a separator.
 - [1484. Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)
+- [2118. Build the Equation](https://leetcode.com/problems/build-the-equation/)
 - [MySQL GROUP_CONCAT Function](https://www.mysqltutorial.org/mysql-group_concat/)
   
 ## Percentage
