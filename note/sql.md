@@ -291,4 +291,11 @@ from cte
 - `SUM(amount_to_be_cumsummed) OVER(PARTITION BY group ORDER BY amount_to_be_cumsummed, some_id)`
 - [2004. The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/)
 
+## CAST(_ as SIGNED)
+
+- [2175. The Change in Global Rankings](https://leetcode.com/problems/the-change-in-global-rankings/)
+- [11.1.7 Out-of-Range and Overflow Handling](https://dev.mysql.com/doc/refman/8.0/en/out-of-range-and-overflow.html)
+- [When should I use UNSIGNED and SIGNED INT in MySQL?](https://stackoverflow.com/questions/11515594/when-should-i-use-unsigned-and-signed-int-in-mysql)
+- [12.11 Cast Functions and Operators](https://dev.mysql.com/doc/refman/8.0/en/cast-functions.html)
+
 
