@@ -16,7 +16,7 @@ at a later stage and avoid need to redesign the entire existing system.
 ## Monolithic architecture
 
 - Monolith is typically good for a small team, a few services
-- Many people say that microserivces architecture is better, but the monolith has the following benefits
+- Many people say that microservices architecture is better, but the monolith has the following benefits
   - Microservices have a higher latency typically for API communications, which are slower than function calls in a 
     monolith.
   - Each network call among microservices can fail by network failure.
