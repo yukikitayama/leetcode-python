@@ -12,12 +12,11 @@ class Solution:
         one_step_before = 0
 
         for i in range(2, len(cost) + 1):
-            two_step_before = two_step_before + cost[i - 2]
-            one_step_before = one_step_before + cost[i - 1]
-            ans = min(two_step_before, one_step_before)
+            tmp = one_step_before
+            one_step_before = min(one_step_before + cost[i - 1], two_step_before + cost[i - 2])
+            two_step_before = tmp
 
-
-        return ans
+        return one_step_before
 
 
 class Solution3:
