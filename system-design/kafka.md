@@ -11,3 +11,8 @@ Kafla is only used as a data transportation mechanism.
 - Messaging system
 - De-couple of system dependencies
   - Between website and database
+
+## Topic
+
+- A unit of organization for a cluster
+- An append-only log
