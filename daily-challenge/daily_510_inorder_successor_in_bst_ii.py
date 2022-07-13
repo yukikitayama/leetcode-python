@@ -1,0 +1,28 @@
+"""
+- If has right child, go to right once, and keep going left until None
+- If no right child, go up until the node that is left child of its parent
+"""
+
+
+from typing import Optional
+
+
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
+        self.parent = None
+
+
+class Solution:
+    def inorderSuccessor(self, node: 'Node') -> 'Optional[Node]':
+        if node.right:
+            node = node.right
+            while node.left:
+                node = node.left
+            return node
+
+        while node.parent and node == node.parent.right:
+            node = node.parent
+        return node.parent
