@@ -31,6 +31,3 @@ class Solution:
 
         recursion(root)
         return ans
-
-
-if __name__ == '__main__':
