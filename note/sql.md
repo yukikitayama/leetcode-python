@@ -175,8 +175,6 @@ group by
 - Multiple common table expressions
   - If table contains both recursive and non-recursive, put `RECURSIVE` right after `WITH`
 
-
-
 ## Rank
 
 - `order by` can use `desc` after column name
@@ -253,6 +251,7 @@ from cte
 
 - `DAYOFWEEK(date)` returns 1 (Sunday), 2 (Monday), ... 7 (Saturday)
 - `WEEKDAY(date)` returns 0 (Monday), 1 (Tuesday), ... 6 (Sunday)
+  - I think this is more useful because it's easy to separate weekend and not-weekend by `< 5` or not.
 
 ## REGEXP
 
