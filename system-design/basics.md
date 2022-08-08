@@ -1,17 +1,72 @@
 # System Design Basics
 
+## Who needs to know
+
+- Software engineer
+- Product manager
+- Technical program manager
+
 ## High Level Design
 
-Design should be future proof, meaning the system should be non-restrictive and pluggable for an additional requirement
-at a later stage and avoid need to redesign the entire existing system.
+High level design includes
+
+- Overall architecture
+- Systems and services
+- Interaction between systems
+- Databases
+- Example
+
+This design is expected to
+
+- Satisfy functional requirements and non-functional requirements
+- Highly scalable
+- Non-restrictive and modular to be futuristic
+
+### Functional requirements
+
+- What features does the system/service have?
+- What does a user experience through the service?
+
+### Non functional requirements
+
+- How does the service need to scale?
+- What's the latency expectation?
+- Is consistency required?
+
+## Approach to high level system design
+
+1. Clarify functional and non functional requirements
+2. Propose a design by defining components, databases, interactions among them
+3. Clarify trade-offs, e.g. SQL or NoSQL database?
+4. Clarify multiple design choices exist and which one is the best for a specific system
+5. Consider limitations and what's missing from the designed system.
 
 ## Low Level Design
 
-- Individual components
-- Optimizations within the components
-- Clean, modularized, future-proof code
-  - **Future-proof** means that when we need to add a new feature in the future, the current design should not restrict 
-    it. 
+Low level design means
+
+- Discuss the detail of an individual component of all the components in the system (**subsystem**). 
+- Discuss the optimization of the individual component
+- Describe examples
+
+Low level design expects us to
+
+- Satisfy functional and non functional requirement
+- Have a good structure of set of codes
+- Have a working and clean code
+- Have non-restrictive modular codes to be futuristic
+
+## Approach to low level system design
+
+1. Describe functional and non functional requirements
+2. Make a set of codes
+   1. Define interfaces
+   2. Make class diagrams
+   3. Define data model
+3. Keep the quality in the code
+   1. Code is working
+   2. Code is modular
+   3. Code is testable
 
 ## Monolithic architecture
 
