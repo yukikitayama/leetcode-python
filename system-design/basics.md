@@ -71,6 +71,11 @@ Low level design expects us to
 ## Monolithic architecture
 
 - Monolith is typically good for a small team, a few services
+- Problems of monolithic architecture are
+  - Bounded by a single technology
+  - Easy to break things because it's hard to know the boundaries of subsystems.
+  - Difficult scale when traffic spikes
+  - Deployment of a single subsystem is to need to deploy the entire system.
 - Many people say that microservices architecture is better, but the monolith has the following benefits
   - Microservices have a higher latency typically for API communications, which are slower than function calls in a 
     monolith.
@@ -79,6 +84,17 @@ Low level design expects us to
 
 ## Microservices
 
+- Benefits of microservices are
+  - Tech stack freedom, e.g. Frameworks, Databases.
+  - Separation of concerns
+  - Easy for engineers to understand the code base
+  - Deployment can be frequent and faster
+  - Scaling of each subsystem can be independent
+- Problems of microservices are
+  - Higher latency because of API calls for each subsystem to talk to each other
+  - Exposed to network failure because subsystem needs to talk to each other
+  - Logs are stored in each subsystem, so we need to develop logging service to collect and aggregate from all the subsystems
+  - Additional access and security management of each subsystem
 - Microservices are typically good for large organizations, and hundreds or thousands of services.
 - Typically used in interviews
 
