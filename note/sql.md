@@ -297,4 +297,8 @@ from cte
 - [When should I use UNSIGNED and SIGNED INT in MySQL?](https://stackoverflow.com/questions/11515594/when-should-i-use-unsigned-and-signed-int-in-mysql)
 - [12.11 Cast Functions and Operators](https://dev.mysql.com/doc/refman/8.0/en/cast-functions.html)
 
+## CREATE FUNCTION
+
+- [2205. The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/)
+- [MySQL | Creating stored function](https://www.geeksforgeeks.org/mysql-creating-stored-function/)
 
