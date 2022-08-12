@@ -104,6 +104,9 @@ Low level design expects us to
 - Message queues to call asynchronous process to be fault-tolerant
   - If one of the systems which depends on message queues is down, the messages will remain in the queue until the
     service is back up, so the data won't get lost
+  - Even if a sudden surge of using services, events are stored in queues, so subsequent services can work at their
+    own pace to consume events from the queues.
+  - Code will be simple by decoupling producing events and consuming events.
   - Message queue software examples; Kafka, Rabbit MQ, Active MQ
 
 ## WebSockets
