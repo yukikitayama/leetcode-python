@@ -302,3 +302,16 @@ from cte
 - [2205. The Number of Users That Are Eligible for Discount](https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/)
 - [MySQL | Creating stored function](https://www.geeksforgeeks.org/mysql-creating-stored-function/)
 
+## CREATE PROCEDURE
+
+- Need `;` before `END`
+- [2230. The Users That Are Eligible for Discount](https://leetcode.com/problems/the-users-that-are-eligible-for-discount/)
+
+```sql
+CREATE PROCEDURE name(args TYPE)
+BEGIN
+  regular SQL code
+  ;
+END
+```
+
