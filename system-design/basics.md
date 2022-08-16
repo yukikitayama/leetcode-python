@@ -109,14 +109,27 @@ Low level design expects us to
   - Code will be simple by decoupling producing events and consuming events.
   - Message queue software examples; Kafka, Rabbit MQ, Active MQ
 
-## WebSockets
+## Protocol
 
-- Establish a persistent connection, typically first introduced by HTTP request
+### HTTP(s)
+
+- Client driven
+- Request response model
+- Occasional requests, meaning there is no random continuous many requests
+- Stateless, meaning any server can handle the requests and return the same response.
+- HTTP is implemented by REST API, an approach to make an API in a user friendly manner.
+- Low infrastructure cost
+
+### WebSockets
+
+- For the server to send a message directly to the client, even when the client is not requesting for anything.
+- Establish a persistent, open connection, typically first introduced by HTTP request, and upgraded to WebSockets
 - Bidirectional communication so server can send data to client too
 - High frequency communication is possible, meaning **high throughput**
 - Disadvantage is that we will have a high cost of hardware. If there are many users, we need to maintain persistent 
   connection with each user.
-- Example is chat application
+- Example is chat application like Messenger, and Uber like continuously sending location information of the current 
+  drivers.
 
 ## Consistent hashing
 
