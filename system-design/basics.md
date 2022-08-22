@@ -131,7 +131,30 @@ Low level design expects us to
 - Example is chat application like Messenger, and Uber like continuously sending location information of the current 
   drivers.
 
-## Consistent hashing
+## Hashing
+
+Hash is a function which takes a value and converts it into another value in a specific format. When we have a 
+distributed caching system, hashing is useful, because distributed system has multiple nodes or machines, and hash 
+function can assign a mapping of a certain data to a certain node.
+
+Common hash functions are. These functions produce a large output
+
+- MD5, 128 bit
+- SHA1, 160 bit
+- SHA256, 256 bit
+
+### Consistent hashing
+
+Consistent hashing is to assign the same machine to multiple hashes, and map each of these hashes to a ring. The same 
+node on the ring multiple times. 
+
+Consistent hashing is used in the following databases.
+
+- Cassandra
+  - Distributed NoSQL Columnar database which can handle huge traffic by using consistent hashing to distribute its data.
+- Dynamo DB
+- Couchbase
+  - NoSQL document database to use consistent hashing to distribute the data across variance instances
 
 ## Caching
 
