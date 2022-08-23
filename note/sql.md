@@ -37,7 +37,8 @@ SELECT 'b' AS col
 - [1484. Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)
 - [2118. Build the Equation](https://leetcode.com/problems/build-the-equation/)
 - [MySQL GROUP_CONCAT Function](https://www.mysqltutorial.org/mysql-group_concat/)
-  
+- [2199. Finding the Topic of Each Post](https://leetcode.com/problems/finding-the-topic-of-each-post/)
+
 ## Percentage
 
 - Use `AVG()` and `CASE WHEN` to convert a column into binary
@@ -84,6 +85,8 @@ from
 ## LIKE
 
 - [1527. Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/)
+- [2199. Finding the Topic of Each Post](https://leetcode.com/problems/finding-the-topic-of-each-post/)
+  - `ON CONCAT(something, something) LIKE CONCAT(something, something)`
 
 ## LIMIT
 
