@@ -34,10 +34,15 @@ SELECT 'b' AS col
 - Concatenate string from a group into a single string with options such as separator.
 - e.g. `GROUP_CONCAT(DISTINCT col ORDER BY col separator ',')`
   - `seperator ','` can be omitted because by default ',' is a separator.
+- By default, maximum length of returned string by `GROUP_CONCAT()` is set to `1024` in MYSQL. If we wanna make it 
+  longer, run this
+  - `SET SESSION group_concat_max_len = 1000000;`
+  - [5.1.7 Server System Variables](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html)
 - [1484. Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)
 - [2118. Build the Equation](https://leetcode.com/problems/build-the-equation/)
 - [MySQL GROUP_CONCAT Function](https://www.mysqltutorial.org/mysql-group_concat/)
 - [2199. Finding the Topic of Each Post](https://leetcode.com/problems/finding-the-topic-of-each-post/)
+- [2252. Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/)
 
 ## Percentage
 
@@ -321,4 +326,21 @@ END
 ## LAG
 
 - [MySQL LAG Function](https://www.mysqltutorial.org/mysql-window-functions/mysql-lag-function/)
+
+## SET
+
+A user-defined variable is written as `@var_name` abd assigned an value as follows
+
+`SET @var_name = expression;`
+
+## SELECT INTO variable
+
+- [2252. Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/)
+- [MySQL SELECT INTO Variable](https://www.mysqltutorial.org/mysql-select-into-variable/)
+
+## Prepared statement
+
+- [MySQL Prepared Statement](MySQL Prepared Statement)
+- [2252. Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/)
+
 
