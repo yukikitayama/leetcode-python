@@ -343,4 +343,11 @@ A user-defined variable is written as `@var_name` abd assigned an value as follo
 - [MySQL Prepared Statement](MySQL Prepared Statement)
 - [2252. Dynamic Pivoting of a Table](https://leetcode.com/problems/dynamic-pivoting-of-a-table/)
 
+## INFORMATION_SCHEMA
+
+`INFORMATION_SCHEMA` is a database. It's visible as a normal database. It contains information about other databases.
+It's available in every MySQL instance and store metadata. It's called the system catalog or data dictionary.
+
+- [2253. Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/)
+
 
