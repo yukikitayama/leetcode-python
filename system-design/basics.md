@@ -165,9 +165,16 @@ Consistent hashing is used in the following databases.
 - Prevent bots from doing random things on our websites
   - Scraping
   - Stealing
-  - Spammingb  
+  - Spamming  
 - Prevent DOS and DDOS attack
 - Prevent spams
+
+Algorithm to implement rate limit
+
 - Leaky bucket
+  - It has the upper bound to stop new requests, but also it leaks certain unit per time, so allowing new certain number
+    of requests per time.
 - Fixed window
 - Sliding window
+  - It needs more memory and CPU to run this.
+  - Many people implement this
