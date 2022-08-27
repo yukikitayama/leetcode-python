@@ -350,4 +350,9 @@ It's available in every MySQL instance and store metadata. It's called the syste
 
 - [2253. Dynamic Unpivoting of a Table](https://leetcode.com/problems/dynamic-unpivoting-of-a-table/)
 
+## FIRST_VALUE
+
+- [2388. Change Null Values in a Table to the Previous Value](https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value/)
+- [MySQL FIRST_VALUE Function](https://www.mysqltutorial.org/mysql-window-functions/mysql-first_value-function/)
+
 
