@@ -1,5 +1,67 @@
 # Database
 
+## Caching
+
+- Redis
+- Memcached
+- Hazelcast
+
+## Blob storage
+
+Blob means Binary Large OBject. Files like images and videos. Something which we will not query on but rather serve it as it is.
+
+- Amazon S3
+
+## Content Delivery Network (CDN)
+
+Blobs are typically stored in Blob storage as primary source and multiple same files are stored in CDN, so that users
+get the files from the closest server of the CDN to experience faster getting of the file. It means reducing latency.
+
+## Text search engine
+
+Allows us to do fuzzy search (e.g. airprot for airport)
+
+- Elasticsearch
+- Solr
+
+## Time series database
+
+Append only database, updated sequentially, used for metric tracking system.
+
+- OpenTSDB
+- InfluxDB
+
+## Data warehouse
+
+Dump all the available data and perform offline reporting and analytics.
+
+- Hadoop
+
+## RDBMS
+
+- Need ACID
+- Structured data
+
+## Document database
+
+- Need to specify data type
+- Non structured
+- Run queries for analysis
+
+- MongoDB
+- Couchbase
+
+## Columnar database, column oriented database
+
+- Non structured
+- Ever increasing data
+- finite queries
+- If we have small number of queries but a large amount of data
+- Huge scale of queries but less variety of queries, use columnar DB
+
+- Cassandra
+- HBase 
+
 ## MySQL database
 
 - When data can be described as a table
