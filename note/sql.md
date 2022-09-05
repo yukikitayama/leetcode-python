@@ -295,8 +295,9 @@ from cte
 
 ## Cumulative sum
 
-- `SUM(amount_to_be_cumsummed) OVER(PARTITION BY group ORDER BY amount_to_be_cumsummed, some_id)`
+- `SUM(amount_to_be_cumsummed) OVER(PARTITION BY group ORDER BY order_reference_of_cumsum)`
 - [2004. The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/)
+- [534. Game Play Analysis III](https://leetcode.com/problems/game-play-analysis-iii/)
 
 ## CAST(_ as SIGNED)
 
