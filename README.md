@@ -29,6 +29,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [ ] Review A star in [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
 - [ ] Understand Morris Preorder Traversal.
   - [114. Flatten Binary Tree to Linked List(https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+  - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 - [ ] Understand Inverse Ackermann Function used to analyze time complexity of disjoint set find() and union()
 - [ ] Learn **Quickselect** by [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/solution/) and [Quickselect wiki](https://en.wikipedia.org/wiki/Quickselect)
 
