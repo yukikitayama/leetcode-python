@@ -303,3 +303,10 @@ else:
   - [Python __lt__() Magic Method](https://blog.finxter.com/python-__lt__-magic-method/)
   - [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/)
   - [Python 3 solution with O(nlogk) and O(n)](https://leetcode.com/problems/top-k-frequent-words/discuss/108348/Python-3-solution-with-O(nlogk)-and-O(n))
+
+## Rotate two dimensional matrix
+
+Given a matrix `mat`, `list(zip(*mat[::-1]))`
+
+- [Rotating a two-dimensional array in Python](https://stackoverflow.com/questions/8421337/rotating-a-two-dimensional-array-in-python)
+
