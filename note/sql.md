@@ -254,6 +254,7 @@ from cte
 
 - `UNION` removes duplicate records, but `UNION ALL` doesn't.
 - [What is the difference between UNION and UNION ALL?](https://stackoverflow.com/questions/49925/what-is-the-difference-between-union-and-union-all)
+- Comments in [Follow up solution ](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/discuss/146577/Follow-up-solution)
 
 ## Day of week
 
