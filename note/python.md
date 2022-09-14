@@ -310,3 +310,8 @@ Given a matrix `mat`, `list(zip(*mat[::-1]))`
 
 - [Rotating a two-dimensional array in Python](https://stackoverflow.com/questions/8421337/rotating-a-two-dimensional-array-in-python)
 
+## format()
+
+- `format(INTEGER, 'b')` to convert an integer to binary
+- `format(INTEFER, '#010b')` returns 8 length binary representation with leading `0b`
+
