@@ -369,4 +369,9 @@ It's available in every MySQL instance and store metadata. It's called the syste
 
 - `ifnull()` can be used in `WHERE` clause when `null` occurs by joining tables.
 
+## BETWEEN
+
+- `BETWEEN value1 and value2` where `value1` < `value2`.
+- e.g. `BETWEEN '2018-06-23' AND '2019-06-23'`
+
 
