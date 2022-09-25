@@ -32,3 +32,7 @@
 ## Lattice Graph
 
 - [Lattice graph](https://en.wikipedia.org/wiki/Lattice_graph)
+
+## Sweep line algorithm
+
+- [Sweep line algorithm](https://en.wikipedia.org/wiki/Sweep_line_algorithm)
