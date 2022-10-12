@@ -1,0 +1,22 @@
+"""
+- a <= b <= c where a + b > c
+"""
+
+
+from typing import List
+
+
+class Solution:
+    def largestPerimeter(self, nums: List[int]) -> int:
+        nums.sort()
+
+        for i in range(len(nums) - 3, -1, -1):
+            if nums[i] + nums[i + 1] > nums[i + 2]:
+                return nums[i] + nums[i + 1] + nums[i + 2]
+
+        return 0
+
+
+if __name__ == '__main__':
+    nums = [1, 2, 1]
+    print(Solution().largestPerimeter(nums))
