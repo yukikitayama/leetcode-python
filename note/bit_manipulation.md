@@ -1,5 +1,51 @@
 # Bit Manipulation
 
+## Base
+
+- **Base** is a counting system which carries numbers and uses digital symbols and certain rules.
+- Each counting system has a base. When the base is `X`, the number on each digit will be carried over when it reaches
+  `X`, and we call it `base-X`
+- Base-10 is called **decimal**. It's the counting system people use
+  - Uses 10 digits from 0 to 9
+  - 123.45 can be written in decimal as `123.45 = 1 * 10^2 + 2 * 10^1 + 3 * 10^0 + 4 * 10^-1 + 5 * 10^-2`
+- Base-2 is called **binary**. It's often asked in coding interview
+  - Uses 2 digits from 0 and 1
+- Base-16 is called **hexadecimal**. It's used in color in coding
+  - Uses 16 digits from 0 to 9, and A, B, C, D, E and F. 10 corresponds to A. 15 corresponds to F.
+- Base-8 is called **octal**.
+  - Uses 8 digits from 0 to 7.
+  - 720.5 can be written in octal as `720.5 = 7 * 8^2 + 2 * 8^1 + 0 * 8^0 + 5 * 8^-1`
+
+## Convert binary to decimal
+
+- Sum of 1 or 0 multiplied by 2 to the power of digit position
+- `110010 = 1 * 2^5 + 1 * 2^4 + 0 * 2^3 + 0 * 2^2 + 1 * 2^1 + 0 * 2^0 = 32 + 16 + 0 + 0 + 2 + 0 = 50` 
+
+## Convert decimal to binary
+
+- Convert the integer part (123 in 123.45) and the fractional part (45 in 123.45) separately with different rule.
+- To convert the integer part, keep integer-dividing a number by 2 until it reaches 0 and record the remainder each time. 
+  Concatenate the remainders in reverse order.
+  - Convert 50 in decimal (base-10) to in binary (base-2), 
+  - `50 // 2 = 25 and 50 % 2 = 0`
+  - `25 // 2 = 12 and 12 % 2 = 1`
+  - `12 // 2 = 6 and 12 % 2 = 0`
+  - `6 // 2 = 3 and 6 % 2 = 0`
+  - `3 // 2 = 1 and 3 % 2 = 1`
+  - `1 // 2 = 0 and 1 % 2 = 1`
+  - The remainders in reverse order is `110010`. This is the binary representation of 50.
+  - To check, `1 * 2^5 + 1 * 2^4 + 0 * 2^3 + 0 * 2^2 + 1 * 2^1 + 0 * 2^0 = 32 + 16 + 0 + 0 + 2 + 0 = 50`
+- To convert the fractional part, keep multiplying only the fractional part by 2 until the fractional part becomes 0 and 
+  record the integer part each time. Concatenate the recorded integers.
+  - Convert 0.6875 in decimal to binary
+  - `0.6875 * 2 = 1.375 and integer: 1`
+  - Ignore leading 1 and multiply only the fractional part `0.375 * 2 = 0.75 and integer: 0`
+  - `0.75 * 2 = 1.5 and integer: 1`
+  - `0.5 * 2 = 1.0 (fractional part became 0) and integer: 1`
+  - Concatenate the recorded integers `1011`. `0.1011` is the binary representation fo 0.6875
+  - To check, `1 * 2^-1 + 0 * 2^-2 + 1 * 2^-3 + 1 * 2^-4 = 0.5 + 0 + 0.125 + 0.0625 = 0.6875`
+- Hence, 50.6875 in decimal is 110010.1011 in binary.
+
 ## Two's Complement
 
 - To compute two's complement notation -x, revert all bits in x, and add 1
