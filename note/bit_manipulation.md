@@ -46,6 +46,61 @@
   - To check, `1 * 2^-1 + 0 * 2^-2 + 1 * 2^-3 + 1 * 2^-4 = 0.5 + 0 + 0.125 + 0.0625 = 0.6875`
 - Hence, 50.6875 in decimal is 110010.1011 in binary.
 
+## Computer byte number
+
+- 1-byte number means 8 digits binary number. It has 2^8 possible values, because it has 8 positions for digits and 
+  each has 2 options either using 0 or 1.
+- 2-byte number is 16 digits binary number. It has 2^16 possible values
+- 4-byte number is 32 digits binary number. It has 2^32 possible values
+- 8-byte number is 64 digits binary number. It has 2^64 possible values
+
+## Signed integer
+
+- The highest bit represents the sign, so the highest bit is called **sign bit**. The digits other than the highest bit
+  are used to represent the size of number.
+- When the highest bit is 0, it's non-negative integer
+- When the highest bit is 1, it's a negative integer
+
+### 1-byte signed integer (i.e. 8 digits binary number)
+
+- When the highest bit is 0, the 1-byte signed number ranges from 0 to 127 (2^7 - 1)
+  - 0 is `00000000`
+  - 127 is `01111111`
+- When the highest bit is 1, the 1-byte signed number ranges from -128 to -1
+  - -128 is `10000000`
+  - -1 is `10000001`
+
+## Unsigned integer
+
+- It cannot represent negative numbers because all digits in binary representation are used to represent the size of the
+  number.
+
+### 1-byte unsigned integer (i.e. 8 digits binary number)
+
+- It ranges from 0 to 255
+  - 0 is `00000000`
+  - 255 is `11111111`, 2^8 - 1
+- The maximum value of the unsigned integer is twice bigger than the signed integer, because the unsigned integer
+  doesn't have to keep one digit for sign bit.
+
+## Machine number
+
+- Machine number is signed number, meaning the highest bit of the machine number is used for a sign
+  - Highest bit 0 is non-negative number
+  - Highest bit 1 is negative number
+- Given a binary number for example `10001010`, converting it to decimal number is `2^7 + 2^3 + 2^1 = 138`, but the
+  machine number is `-10` because the highest bit 1 is used for negative number and `2^3 + 2^1 = 8 + 2 = 10`
+
+## Complement code
+
+- The computer uses something called **complement code** for calculations, because complement code has advantages over
+  something called **original code** and **inverse code**.
+- Original code is machine code
+- Inverse code of non-negative numbers is the same as original code. The inverse code of negative number is to flip
+  every bit of the original code except the sign bit
+- Complement code of non-negative numbers is the same as original code and inverse code. The complement code of
+  negative numbers is obtained by adding 1 to the inverse code.
+
 ## Two's Complement
 
 - To compute two's complement notation -x, revert all bits in x, and add 1
