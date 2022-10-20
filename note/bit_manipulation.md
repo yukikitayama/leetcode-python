@@ -101,6 +101,59 @@
 - Complement code of non-negative numbers is the same as original code and inverse code. The complement code of
   negative numbers is obtained by adding 1 to the inverse code.
 
+## Bit operations
+
+### AND &
+
+- When both bits are 1, result is 1, otherwise 0
+
+### OR |
+
+- When both bits are 0, result is 0, otherwise 1
+
+### XOR ^
+
+- When both bits are the same, result is 0, otherwise 1
+
+### Negation ~
+
+- 0 becomes 1, and 1 becomes 0
+- ~ 0 = 1
+- ~ 1 = 0
+
+### Left shift
+
+- Shift all the binary bits to the left, discard the highest bit, and fill the lowest bit with 0.
+- Example of signed 8-bit binary number
+  - Use 29. The binary representation is `00011101`.
+  - Left shift of 29 by 2 bits is 116, because of `01110100`.
+  - Left shift of 29 by 3 bits is -104, because `11101000` and, in signed integer, the highest bit is sign bit, so 
+    highest bit `1` indicates the integer is negative integer, and `1101000` is 104.
+- Left shift operation corresponds to multiplication.
+  - Shifting a number to the left by `k` bits is equal to multiplying the number by `2^k`.
+  - Left shift of 29 by 2 bits is 116. `2^k = 2^2 = 4`, and `4 * 29 = 116`.
+
+### Right shift
+
+- Shift all the binary bits to the right, discard the lowest bit, but there are different ways to fill the highest bit.
+- Fill the highest bit with the existing highest bit. This is called **arithmetic shift**
+- Fill the highest bit with 0. This is called **logical shift**
+- Example of signed 8-bit binary number
+  - Use -50. The binary representation is `11001110`.
+  - Arithmetic right shift of -50 by 2 bits is -115, because the highest bit of -50 is `1` and arithmetic shift repeats
+    this bit, so `11110011`
+  - Logical right shift of -50 by 2 bits is 51, because logical shift fills with 0 so `00110011`.
+- Arithmetic right shift operation corresponds to division.
+  - For non-negative numbers, arithmetic right shift of a number by `k` digit is equal to integer division by `2^k`.
+  - For negative numbers, integer division is rounded to 0, but right shift is rounded down.
+    - `-50 >> 2 = -13`, but `-50 / (2^2) = -50 / 4 = -12.5`, but in Python `-50 // 4 = -13`.
+
+## Properties of bitwise operations
+
+Using these properties, many bit operation problems can be solved strategically.
+
+xxx
+
 ## Two's Complement
 
 - To compute two's complement notation -x, revert all bits in x, and add 1
