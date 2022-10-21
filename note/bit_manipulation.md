@@ -46,6 +46,20 @@
   - To check, `1 * 2^-1 + 0 * 2^-2 + 1 * 2^-3 + 1 * 2^-4 = 0.5 + 0 + 0.125 + 0.0625 = 0.6875`
 - Hence, 50.6875 in decimal is 110010.1011 in binary.
 
+## Convert decimal to non-decimal
+
+- Let `num` denote the given number and `k` is of base-k.
+- If `num = 0`
+  - Converted number of any base-k is 0
+- If `num > 0`
+  - Integer divide `num` by `k` until it reaches 0, and record the remainder each time
+  - Traverse the remainders in reverse order and concatenate them, which is the representation in base-k system.
+- If `num < 0`
+  - Base-k representation of `num` is also negative
+  - Take absolute value of `num` to remove minus sign
+  - Integer divide the `num` by `k` until it reaches 0 and record the remainder each time
+  - Traverse the remainders in reverse order, concatenate them and add minus sign to make it negative.
+
 ## Computer byte number
 
 - 1-byte number means 8 digits binary number. It has 2^8 possible values, because it has 8 positions for digits and 
