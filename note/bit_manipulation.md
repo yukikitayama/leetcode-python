@@ -190,6 +190,8 @@ xxx
 
 - `x & (x - 1)`
   - Subtracting 1 means changing the rightmost 1-bit to 0, and setting all the lower bits to 1, and then 1 & 0 = 0.
+  - ANDing the two numbers `n` and `n - 1` always flips the least significant 1-bit in `n` to 0, and keeps all other 
+    bits the same
 - [231. Power of Two](https://leetcode.com/problems/power-of-two/)
 - [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 
