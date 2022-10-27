@@ -230,6 +230,8 @@ from cte
 
 - Assign a sequential number to each row.
 - [MySQL ROW_NUMBER Function](https://www.mysqltutorial.org/mysql-window-functions/mysql-row_number-function/)
+- If you want to make a tie in partition order by, use `RANK()` instead of `ROW_NUMBER()`
+  - [How to include a row number but show a tie?](https://stackoverflow.com/questions/9561171/how-to-include-a-row-number-but-show-a-tie)
 
 ## Over Clause
 
