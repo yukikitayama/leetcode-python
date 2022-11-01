@@ -226,6 +226,8 @@ from cte
 ;
 ```
 
+A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive `SELECT` part.
+
 ## ROW_NUMBER()
 
 - Assign a sequential number to each row.
