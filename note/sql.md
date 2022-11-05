@@ -377,5 +377,6 @@ It's available in every MySQL instance and store metadata. It's called the syste
 
 - `BETWEEN value1 and value2` where `value1` < `value2`.
 - e.g. `BETWEEN '2018-06-23' AND '2019-06-23'`
+- [1747. Leetflex Banned Accounts](https://leetcode.com/problems/leetflex-banned-accounts/)
 
 
