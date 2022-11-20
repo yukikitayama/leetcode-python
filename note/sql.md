@@ -379,4 +379,19 @@ It's available in every MySQL instance and store metadata. It's called the syste
 - e.g. `BETWEEN '2018-06-23' AND '2019-06-23'`
 - [1747. Leetflex Banned Accounts](https://leetcode.com/problems/leetflex-banned-accounts/)
 
+## CROSS JOIN
+
+When we want to get all the combinations of records, we can either `CROSS JOIN` or multiple tables in `FROM`.
+
+`FROM t1 CROSS JOIN t2` or `FROM t1, t2`
+
+But if you wanna join the resulted table to another table, only `CROSS JOIN` works.
+
+`FROM t1 CROSS JOIN t2 LEFT JOIN t3 ON t1.a = t3a` works.
+
+But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
+
+- [1990. Count the Number of Experiments](https://leetcode.com/problems/count-the-number-of-experiments/)
+- [It is the worst question! (2 Solutions, dynamic without using UNION hard code)](https://leetcode.com/problems/count-the-number-of-experiments/discuss/1445116/It-is-the-worst-question!-(2-Solutions-dynamic-without-using-UNION-hard-code))
+
 
