@@ -1,5 +1,12 @@
 # Sorting
 
+## Bucket sort
+
+- Sorting algorithm to achieve time complexity `O(N)`
+- Items are placed at array indexes based on their value.
+- Indexes are called `buckets`
+- [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)
+
 ## Counting Sort
 
 ### Concept
