@@ -360,6 +360,13 @@ It's available in every MySQL instance and store metadata. It's called the syste
 
 ## FIRST_VALUE
 
+- Repeat the value in the first row to the subsequent rows
+- Below, the first value in `col1` within a group by `col2` will be repeated within groups.
+
+```sql
+FIRST_VALUE(col1) OVER(PARTITION BY col2)
+```
+
 - [2388. Change Null Values in a Table to the Previous Value](https://leetcode.com/problems/change-null-values-in-a-table-to-the-previous-value/)
 - [MySQL FIRST_VALUE Function](https://www.mysqltutorial.org/mysql-window-functions/mysql-first_value-function/)
 
