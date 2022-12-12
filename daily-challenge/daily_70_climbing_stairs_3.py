@@ -1,5 +1,21 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
+        if n <= 2:
+            return n
+
+        prev = 2
+        prev_prev = 1
+
+        for i in range(2, n):
+            curr = prev + prev_prev
+            prev_prev = prev
+            prev = curr
+
+        return curr
+
+
+class Solution1:
+    def climbStairs(self, n: int) -> int:
 
         if n == 1:
             return 1
