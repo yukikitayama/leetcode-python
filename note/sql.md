@@ -403,4 +403,11 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
 - [1990. Count the Number of Experiments](https://leetcode.com/problems/count-the-number-of-experiments/)
 - [It is the worst question! (2 Solutions, dynamic without using UNION hard code)](https://leetcode.com/problems/count-the-number-of-experiments/discuss/1445116/It-is-the-worst-question!-(2-Solutions-dynamic-without-using-UNION-hard-code))
 
+## ROWS BETWEEN AND in OVER()
+
+- Basic syntax is `ROWS BETWEEN lower_bound AND upper_bound` in `OVER(PARTITION BY _ ORDER BY _ ROWS BETWEEN _ AND _)`
+- The bounds have several forms.
+- `OVER(PARTIION BY _ ORDER BY _ ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING)`
+  - Checks the rows between all the rows before the current row and the 1 row before the current row
+- [5 Practical Examples of Using ROWS BETWEEN in SQL](https://learnsql.com/blog/sql-window-functions-rows-clause/)
 
