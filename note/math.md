@@ -88,3 +88,10 @@
   `order matters`
 - [Combinations and Permutations](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
 - [447. Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)
+
+## Reverse polish notation
+
+- `3 4 +`, `3` and `4` are operands, and `+` is operator.
+- In reverse polish notation, operators follow their operands.
+- [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
+- [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
