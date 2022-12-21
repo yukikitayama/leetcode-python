@@ -157,6 +157,8 @@ group by
 
 ## DATE_FORMAT
 
+- Create `YYYY-MM` by `DATE_FORMAT(date_column, '%Y-%m')`.
+- [615. Average Salary: Departments VS Company](https://leetcode.com/problems/average-salary-departments-vs-company/description/)
 - `DATE_FORMAT(DATE, 'FORMAT_STRING')`
 - `%m`: month `00` to `12`
 - `%Y`: 4 digits year
