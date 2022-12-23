@@ -413,3 +413,7 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
   - Checks the rows between all the rows before the current row and the 1 row before the current row
 - [5 Practical Examples of Using ROWS BETWEEN in SQL](https://learnsql.com/blog/sql-window-functions-rows-clause/)
 
+## Pivot
+
+- [618. Students Report By Geography](https://leetcode.com/problems/students-report-by-geography/description/)
+
