@@ -39,8 +39,6 @@ cte3 as (
     cte2 as b
   on
     a.player_id = b.player
-  group by
-    1
 )
 
 -- select * from cte2;
