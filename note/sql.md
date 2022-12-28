@@ -423,3 +423,7 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
 - e.g. Subtract 1 day from a date column `DATE_SUB(date_column, INTERVAL 1 DAY)`
 - Official solution of [1097. Game Play Analysis V](https://leetcode.com/problems/game-play-analysis-v/description/)
 
+## Group ID by taking difference from ROW_NUMBER()
+
+- [1225. Report Contiguous Dates](https://leetcode.com/problems/report-contiguous-dates/description/)
+
