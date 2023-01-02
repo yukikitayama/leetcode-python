@@ -428,3 +428,10 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
 
 - [1225. Report Contiguous Dates](https://leetcode.com/problems/report-contiguous-dates/description/)
 
+## COUNT() OVER()
+
+- `COUNT` can work as window function
+- argument needs to be supplied in `COUNT()`
+- `COUNT(column_name_1) over(partition by column_name_2)`
+- [1369. Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/description/)
+
