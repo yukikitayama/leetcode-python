@@ -262,10 +262,11 @@ print(math.prod(nums))
 - [Is there a way to get the largest integer one can use in Python? [duplicate]](https://stackoverflow.com/questions/4581842/is-there-a-way-to-get-the-largest-integer-one-can-use-in-python)
 - [Can Integer Operations Overflow in Python?](https://mortada.net/can-integer-operations-overflow-in-python.html)
 
-## zip()
+## zip() and asterisk
 
 - Iterate each column of a matrix
   - Use `zip(*matrix)` to unpack a matrix into each row, and iterate element of each row together by `zip()`
+- [944. Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/description/)
 
 ```python
 matrix = [
@@ -276,6 +277,16 @@ matrix = [
 for column in zip(*matrix):
     print(column)
     # [1, 3], [2, 4]
+```
+
+```python
+strs = ['abc', 'bce', 'cae']
+
+for st in zip(*strs):
+    print(st)
+    # ('a', 'b', 'c')
+    # ('b', 'c', 'a')
+    # ('c', 'e', 'e')
 ```
 
 ## Assignment Expression
