@@ -267,6 +267,8 @@ print(math.prod(nums))
 - Iterate each column of a matrix
   - Use `zip(*matrix)` to unpack a matrix into each row, and iterate element of each row together by `zip()`
 - [944. Delete Columns to Make Sorted](https://leetcode.com/problems/delete-columns-to-make-sorted/description/)
+- [In Python what type of object does *zip(list1, list2) return? [duplicate]](https://stackoverflow.com/questions/9754453/in-python-what-type-of-object-does-ziplist1-list2-return)
+- [Python - asterisk when zipping](https://stackoverflow.com/questions/37449448/python-asterisk-when-zipping)
 
 ```python
 matrix = [
