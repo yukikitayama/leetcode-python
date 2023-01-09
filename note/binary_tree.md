@@ -97,6 +97,10 @@ return max(left_depth, right_depth) + 1
 - [Template](https://github.com/yukikitayama/leetcode-python/blob/main/algorithm/binary-tree/morris_preorder_traversal.py)
 - Time is `O(N)`
 - Space is `O(1)`
+- Before making preorder traversal, traverse the tree to make a pointer for Morris traversal, then make preorder 
+  traversal.
+- Morris traversal is, before making preorder traversal, making a pointer to go back to a previous node, so that the
+  extra space won't be needed.
 
 ## LeetCode
 
