@@ -206,11 +206,12 @@ rank() over(
 ## Recursive Common Table Expression (Recursive CTE)
 
 - A common table expression using `with recursive` and having a subquery inside referring to its own table
-- [1613. Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/)
 - [1336. Number of Transactions per Visit](https://leetcode.com/problems/number-of-transactions-per-visit/description/)
 - [1384. Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/)
+- [1613. Find the Missing IDs](https://leetcode.com/problems/find-the-missing-ids/)
 - [1635. Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i/description/)
 - [1645. Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii/description/)
+- [1651. Hopper Company Queries III](https://leetcode.com/problems/hopper-company-queries-iii/description/)
 - [Recursive Common Table Expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html#common-table-expressions-recursive)
 - [Generate an integer sequence in MySQL](https://stackoverflow.com/questions/304461/generate-an-integer-sequence-in-mysql)
 - [[MySQL] 4 solutions to generate consecutive sequence](https://leetcode.com/problems/find-the-missing-ids/discuss/890608/MySQL-4-solutions-to-generate-consecutive-sequence)
