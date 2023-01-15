@@ -95,3 +95,9 @@
 - In reverse polish notation, operators follow their operands.
 - [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
 - [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
+
+## Sum of integers
+
+- `(n * (n + 1)) / 2`
+- [1 + 2 + 3 + 4 + ⋯](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF)
+- [2421. Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/description/)
