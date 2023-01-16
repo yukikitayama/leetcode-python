@@ -212,6 +212,7 @@ rank() over(
 - [1635. Hopper Company Queries I](https://leetcode.com/problems/hopper-company-queries-i/description/)
 - [1645. Hopper Company Queries II](https://leetcode.com/problems/hopper-company-queries-ii/description/)
 - [1651. Hopper Company Queries III](https://leetcode.com/problems/hopper-company-queries-iii/description/)
+- [1767. Find the Subtasks That Did Not Execute](https://leetcode.com/problems/find-the-subtasks-that-did-not-execute/description/)
 - [Recursive Common Table Expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html#common-table-expressions-recursive)
 - [Generate an integer sequence in MySQL](https://stackoverflow.com/questions/304461/generate-an-integer-sequence-in-mysql)
 - [[MySQL] 4 solutions to generate consecutive sequence](https://leetcode.com/problems/find-the-missing-ids/discuss/890608/MySQL-4-solutions-to-generate-consecutive-sequence)
@@ -231,6 +232,27 @@ with recursive cte as
 select *
 from cte
 ;
+```
+
+Recursive CTE can also decrement. The below stops when subtask_id is 2, so 2 - 1 = 1, and actual final subtask_id is 1.
+
+```sql
+with recursive
+cte as (
+  select
+    task_id,
+    subtasks_count as subtask_id
+  from
+    tasks
+  union all
+  select
+    task_id,
+    subtask_id - 1 as subtask_id
+  from
+    cte
+  where
+    subtask_id > 1
+)
 ```
 
 A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive `SELECT` part.
