@@ -461,3 +461,8 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
 - `COUNT(column_name_1) over(partition by column_name_2)`
 - [1369. Get the Second Most Recent Activity](https://leetcode.com/problems/get-the-second-most-recent-activity/description/)
 
+## ORDER BY RAND() to select random records
+
+- [MySQL Select Random Records](https://www.mysqltutorial.org/select-random-records-database-table.aspx)
+- [Interview Query, Uniform Car Maker](https://www.interviewquery.com/questions/uniform-car-maker)
+
