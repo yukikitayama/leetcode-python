@@ -466,3 +466,8 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
 - [MySQL Select Random Records](https://www.mysqltutorial.org/select-random-records-database-table.aspx)
 - [Interview Query, Uniform Car Maker](https://www.interviewquery.com/questions/uniform-car-maker)
 
+## Pivot a table in SQL
+
+- [Exam Scores](https://www.interviewquery.com/questions/exam-scores)
+- Use `sum(case when ... then ... else ... end) ... group by`
+
