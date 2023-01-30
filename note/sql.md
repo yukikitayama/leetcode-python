@@ -325,7 +325,10 @@ A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive
 - `TIMESTAMPDIFF(unit, earlier_date, later_date)` returns time difference in the `unit`
   - e.g. `where timestampdiff(second, timestamp1, timestamp2) <= 60 * 60 * 24` checks if two timestamps are within 24 
     hours window.
+  - Difference in minute `timestampdiff(minute, start_datetime, end_datetime)`
+- Unlike BigQuery SQL, this function can be applied to `DATETIME` columns, even if the function name says timestamp.
 - [1939. Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/)
+- [Average Commute Time](https://www.interviewquery.com/questions/average-commute-time)
 - [MySQL TIMESTAMPDIFF() function](https://www.w3resource.com/mysql/date-and-time-functions/mysql-timestampdiff-function.php)
 
 ## Cumulative sum
@@ -470,4 +473,11 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
 
 - [Exam Scores](https://www.interviewquery.com/questions/exam-scores)
 - Use `sum(case when ... then ... else ... end) ... group by`
+
+## FLOOR()
+
+- Largest integer that is smaller than or equal to a number
+  - `FLOOR(1.1)` is `1`
+  - `FLOOR(-1.1)` is `-2`, not `-1` because `-2` is smaller than `-1.1`
+- [Average Commute Time](https://www.interviewquery.com/questions/average-commute-time)
 
