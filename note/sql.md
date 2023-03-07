@@ -481,3 +481,10 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
   - `FLOOR(-1.1)` is `-2`, not `-1` because `-2` is smaller than `-1.1`
 - [Average Commute Time](https://www.interviewquery.com/questions/average-commute-time)
 
+## VAR_SAMP()
+
+- `VAR_SAMP()` computes `sample variance`.
+- Sample variance uses `n - 1` to divide the sum of the differences between `sample mean` and each data.
+- [t Value via SQL](https://www.interviewquery.com/questions/t-value-sql)
+- [Population variance and sample variance](https://en.wikipedia.org/wiki/Variance#Population_variance_and_sample_variance)
+- [VAR_SAMP() function in MySQL](https://www.geeksforgeeks.org/var_samp-function-in-mysql/)
