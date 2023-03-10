@@ -1,4 +1,4 @@
-## Linked List
+# Linked List
 
 - `Singly linked list` contains value and a reference field to link to the next node, but no link to the previous node.
   - Cannot trace back the previous node, so the algorithm needs to store both current and previous nodes.
@@ -29,7 +29,7 @@
 | Delete | Tail | O(1) | O(N) | **O(1)** |
 | Search | Given val | O(N) | O(N) | O(N) |
 
-### Floyd's Tortoise and Hare (Floyd's cycle-finding algorithm)
+## Floyd's Tortoise and Hare (Floyd's cycle-finding algorithm)
 
 - Detect cycle in linked list.
 - Benefit of using this algorithm is
@@ -44,3 +44,9 @@
     - Two pointers will be identical at the entrance of the cycly in the linked list.
 - [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
 - [Python code](https://github.com/yukikitayama/leetcode-python/blob/main/company/goldman-sachs/gs_142_linked_list_cycle_ii_2.py)
+
+## Reservoir sampling
+
+- Do random sampling over a population of **unknown size** with **constant space**
+- [382. Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/)
+
