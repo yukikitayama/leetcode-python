@@ -447,6 +447,12 @@ But `FROM t1, t2 LEFT JOIN t3 ON t1.a = t3.a` doesn't work.
 
 - [618. Students Report By Geography](https://leetcode.com/problems/students-report-by-geography/description/)
 
+## DATE_ADD
+
+`DATE_ADD(date_column, INTERVAL number unit)`
+
+e.g. `ON date = DATE_ADD(date, INTERVAL 1 DAY)`
+
 ## DATE_SUB
 
 - Subtract a specified unit like day from a date
