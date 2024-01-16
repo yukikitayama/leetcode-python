@@ -26,6 +26,11 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [x] Solve 1,300 LeetCode problems (2023-12-02)
 - [ ] Solve 1,400 LeetCode problems
 
+## Algorithms that I am not confident of
+
+- Dynamic programming
+- Binary search
+
 ## Action
 
 - [ ] Review A star in [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
