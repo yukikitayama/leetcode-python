@@ -58,3 +58,13 @@ def func():
 
 - Time is O(n)
 - Space is O(1)
+
+## Memoization
+
+Typically save the result in **hashmap**
+
+## Recursion
+
+Need base cases to stop recursion
+
+Use logical thinking to find the base cases in each problem
