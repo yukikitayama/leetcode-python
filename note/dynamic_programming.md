@@ -48,6 +48,15 @@ def func():
 - Counting DP
   - Identify the base cases by logical thinking and usually the base is not 0.
 
+## Time complexity
+
+Time complexity of DP algorithm is tied to the number of possible states.
+
+## Space complexity
+
+In bottom-up case, we save the result in tabular. In top-down case, states are memoized. So the space complexity is 
+equal to the number of states.
+
 ## Kadane's Algorithm
 
 - Find the maximum sum subarray.
