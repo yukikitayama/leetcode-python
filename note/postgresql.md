@@ -22,7 +22,8 @@ needs to be converted to `timestamp`.
 DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 ```
 
-https://leetcode.com/problems/active-users/solutions/4668692/postgresql-solution-with-date-part/
+- https://leetcode.com/problems/active-users/solutions/4668692/postgresql-solution-with-date-part/
+- https://leetcode.com/problems/user-activity-for-the-past-30-days-i/solutions/4669355/postgresql-solution-with-date-part/
 
 ## Operator
 
