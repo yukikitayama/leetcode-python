@@ -12,7 +12,17 @@ select
   end as renamed_column_name
 from
   table_name
- ```
+```
+
+## Date difference
+
+PostgreSQL doesn't have `DATEDIFF` of MySQL, so you need to use `DATE_PART()` with the following syntax. `DATE` column 
+needs to be converted to `timestamp`.
+```
+DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
+```
+
+https://leetcode.com/problems/active-users/solutions/4668692/postgresql-solution-with-date-part/
 
 ## Operator
 
