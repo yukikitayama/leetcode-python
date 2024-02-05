@@ -53,6 +53,11 @@ https://stackoverflow.com/questions/34504497/division-not-giving-my-answer-in-po
 
 When you have 2 integer columns and we want the division to produce float, use `integer_column_a::decimal / integer_column_b`
 
+## Average
+
+PostgreSQL `AVG(integer_column_name)` produces **floating-point** number, even if the input is integers. So no need for 
+type conversion like `::decimal` to access decimals.
+
 ## Single quote and double quote
 
 In PostgreSQL, you cannot use double quote `"string"` to have string constants. You need to use single quote like 
