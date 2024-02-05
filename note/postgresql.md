@@ -51,6 +51,8 @@ round(num_accept::decimal / num_request::decimal, 2)
 
 https://stackoverflow.com/questions/34504497/division-not-giving-my-answer-in-postgresql
 
+When you have 2 integer columns and we want the division to produce float, use `integer_column_a::decimal / integer_column_b`
+
 ## Single quote and double quote
 
 In PostgreSQL, you cannot use double quote `"string"` to have string constants. You need to use single quote like 
