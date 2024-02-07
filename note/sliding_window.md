@@ -12,8 +12,6 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/des
 
 ## Problems that sliding window cannot solve
 
-https://leetcode.com/problems/subarray-sum-equals-k/description/
-
 When `k = 3`, `1, 1, 1` sum is `3`, but `1, 1` sum is `2`. Wider is valid, but narrower is invalid. It violates the 
 property 1.
 
