@@ -7,6 +7,10 @@ Pick
   random.choice from a particular list
 """
 
+from typing import List
+import collections
+import random
+
 
 class Solution:
 
