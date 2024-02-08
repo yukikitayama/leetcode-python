@@ -84,3 +84,7 @@ don't appear in `GROUP BY`. People say, for this part, MySQL is more relaxed tha
 MySQL `IFNULL()` doesn't exist in PostgreSQL. Use `COALESCE(expression, value_if_null)`. 
 For example `coalesce(avg(column), 0)` returns 0 if `avg(column)` returns `NULL`.
 
+## Outer join
+
+In MySQL, by omitting `FULL`, `OUT JOIN` works, but PostgreSQL throws error. You need to write a complete `FULL OUTER JOIN` 
+to perform outer join.
