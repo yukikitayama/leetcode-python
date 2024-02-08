@@ -78,3 +78,9 @@ https://stackoverflow.com/questions/41396195/what-is-the-difference-between-sing
 
 PostgreSQL `GROUP BY HAVING` is different from MySQL. In `SELECT` statement, you cannot have additional columns which 
 don't appear in `GROUP BY`. People say, for this part, MySQL is more relaxed than PostgreSQL.
+
+## If Null
+
+MySQL `IFNULL()` doesn't exist in PostgreSQL. Use `COALESCE(expression, value_if_null)`. 
+For example `coalesce(avg(column), 0)` returns 0 if `avg(column)` returns `NULL`.
+
