@@ -37,6 +37,12 @@
 - [1260. Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)
 - [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
 
+[368. Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/description/)
+
+Given a list of values [E, F, G] sorted in ascending order (i.e. E < F < G), and the list itself forms a divisible subset as described in the problem, then we could extend the subset without enumerating all numbers in the subset, in the following two cases:
+- Corollary I: For any value that can be divided by the largest element in the divisible subset, by adding the new value into the subset, one can form another divisible subset, i.e. for all h, if h % G == 0, then [E, F, G, h] forms a new divisible subset.
+- Corollary II: For all values that can divide the smallest element in the subset, by adding the new value into the subset, one can form another divisible subset, i.e. for all d, if E % d == 0, then [d, E, F, G] forms a new divisible subset.
+
 ## Remainder
 
 - Numerator is `dividend`. Denominator is `divisor`. Division produces `quotient` and `remainder`.
@@ -101,3 +107,51 @@
 - `(n * (n + 1)) / 2`
 - [1 + 2 + 3 + 4 + ⋯](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF)
 - [2421. Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/description/)
+
+## Binary exponentiation
+
+**Binary exponentiation** is a method to optimize time of computing `x` raised to the power `n` in `x^n`.
+
+With this approach, time complexity will be `O(logN)` instead of `O(N)` by multiplying `x` by `n` times (**Linear exponentiation**).
+
+The idea is,
+- If `n` is even, `(x^2)^{n / 2}`
+- If `n` is odd, `x * (x^2)^{(n - 1) / 2}`
+
+```
+2^100 = (2 * 2)^50
+4^50 = (4 * 4)^25
+...
+(10 steps)
+```
+
+instead of
+
+```
+2^100 = 2 * 2^99
+2^99 = 2 * 2 * 2^98
+...
+(100 steps)
+```
+
+For example, when `x = 2` and `n = 16` to compute `2^16`, `log(16) = 4`
+
+```
+2^16 = (2 * 2)^{16 / 2} = 4^8
+4^8 = (4 * 4)^{8 / 2} = 16^4
+16^4 = (16 * 16)^{4 / 2} = 256^2
+256^2 = (256 * 256)^{2 / 2} = 65536
+
+(4 steps)
+```
+
+But with linear exponentiation,
+
+```
+2^16 = 2 * 2^16
+2 * 2^16 = 2 * 2 * 2^15
+2 * 2 * 2^15 = 2 * 2 * 2 * 2^14
+...
+(16 steps)
+```
+

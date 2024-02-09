@@ -33,6 +33,10 @@ DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 
 https://learnsql.com/blog/double-colon-operator-postgresql/
 
+For not equal, both `<>` and `!=` will work.
+
+For a value equal to null, `column_name IS NULL` will work.
+
 ## Division
 
 `integer / integer` is integer division, so won't give you decimals
@@ -46,3 +50,41 @@ round(num_accept::decimal / num_request::decimal, 2)
 ```
 
 https://stackoverflow.com/questions/34504497/division-not-giving-my-answer-in-postgresql
+
+When you have 2 integer columns and we want the division to produce float, use `integer_column_a::decimal / integer_column_b`
+
+## Average
+
+PostgreSQL `AVG(integer_column_name)` produces **floating-point** number, even if the input is integers. So no need for 
+type conversion like `::decimal` to access decimals.
+
+## Single quote and double quote
+
+In PostgreSQL, you cannot use double quote `"string"` to have string constants. You need to use single quote like 
+`'string'`. 
+
+Double quotes are used for table names or field names, but you can omit. Most verbose query is below
+
+```
+seelct * 
+from "table_name" 
+where "string_column_name" = 'something'
+;
+```
+
+https://stackoverflow.com/questions/41396195/what-is-the-difference-between-single-quotes-and-double-quotes-in-postgresql
+
+## GROUP BY HAVING
+
+PostgreSQL `GROUP BY HAVING` is different from MySQL. In `SELECT` statement, you cannot have additional columns which 
+don't appear in `GROUP BY`. People say, for this part, MySQL is more relaxed than PostgreSQL.
+
+## If Null
+
+MySQL `IFNULL()` doesn't exist in PostgreSQL. Use `COALESCE(expression, value_if_null)`. 
+For example `coalesce(avg(column), 0)` returns 0 if `avg(column)` returns `NULL`.
+
+## Outer join
+
+In MySQL, by omitting `FULL`, `OUT JOIN` works, but PostgreSQL throws error. You need to write a complete `FULL OUTER JOIN` 
+to perform outer join.

@@ -30,6 +30,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 
 - Dynamic programming
 - Binary search
+- Morris traversal
 
 ## Action
 
