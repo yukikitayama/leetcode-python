@@ -55,3 +55,15 @@ for i in range(n):
 ## isdigit()
 
 - If the given string is negative number string such as `-1`, it doesn't work.
+
+## Find alphanumeric
+
+`character.isalnum()` return `True` if the given character is lowercase alphabet, uppercase alphabet or numbers.
+
+It's useful because you don't have to do this for example
+
+```python
+s = "something123.,!"
+alphanumeric = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+s = [ch.lower() for ch in s if ch in alphanumeric]
+```
