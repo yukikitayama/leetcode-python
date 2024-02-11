@@ -88,3 +88,20 @@ For example `coalesce(avg(column), 0)` returns 0 if `avg(column)` returns `NULL`
 
 In MySQL, by omitting `FULL`, `OUT JOIN` works, but PostgreSQL throws error. You need to write a complete `FULL OUTER JOIN` 
 to perform outer join.
+
+## String
+
+`LOWER(string_column)` makes all the strings lowercase
+
+## Concatenation
+
+`CONCAT(string_or_colunm, string_or_colunm, string_or_colunm, ...)` works in PostgreSQL too.
+
+Concatenating values in a column by `,` with MySQL `GROUP_CONCAT(column)` doesn't exist in PostgreSQL. Use `STRING_AGG()` instead
+
+`STRING_AGG(expression, separator [order by column_name])`
+
+`string_agg(numeric_column::text, ',' order by numeric_column::numeric)` when a column is `NUMERIC`, but we need to 
+concatenate as `STRING` and concatenation should be ordered by the `NUMERIC` values. Need to add type casting.
+
+
