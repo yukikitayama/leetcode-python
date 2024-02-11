@@ -37,6 +37,15 @@ For not equal, both `<>` and `!=` will work.
 
 For a value equal to null, `column_name IS NULL` will work.
 
+## Type casting
+
+- Integer to float
+  - `integer_column::decimal`
+- Integer to string
+  - `integer_column::text`
+
+https://stackoverflow.com/questions/13809547/convert-integer-to-string-in-postgresql
+
 ## Division
 
 `integer / integer` is integer division, so won't give you decimals
@@ -104,4 +113,4 @@ Concatenating values in a column by `,` with MySQL `GROUP_CONCAT(column)` doesn'
 `string_agg(numeric_column::text, ',' order by numeric_column::numeric)` when a column is `NUMERIC`, but we need to 
 concatenate as `STRING` and concatenation should be ordered by the `NUMERIC` values. Need to add type casting.
 
-
+https://www.postgresqltutorial.com/postgresql-aggregate-functions/postgresql-string_agg-function/
