@@ -32,6 +32,9 @@ Answer
   Only compare each pair of adjacent words
 """
 
+from typing import List
+import collections
+
 
 class Solution:
     # def isAlienSorted(self, words: List[str], order: str) -> bool:
