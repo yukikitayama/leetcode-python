@@ -13,6 +13,9 @@ when pop
     update prev
 """
 
+from typing import List
+import collections
+
 
 class Solution:
     # def arrayRankTransform(self, arr: List[int]) -> List[int]:
