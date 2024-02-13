@@ -5,6 +5,9 @@ DFS from all the nodes which have indegree 0
 Start from a node which has highest indegree and DFS
 """
 
+from typing import List
+import collections
+
 
 class Solution:
     def treeDiameter(self, edges: List[List[int]]) -> int:
