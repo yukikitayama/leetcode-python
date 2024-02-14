@@ -28,6 +28,9 @@ Append -1 to make each row complete
   Iteration is easier
 """
 
+from typing import List
+import collections
+
 
 class Solution:
     def findDiagonalOrder(self, nums: List[List[int]]) -> List[int]:
