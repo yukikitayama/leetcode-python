@@ -114,3 +114,10 @@ Concatenating values in a column by `,` with MySQL `GROUP_CONCAT(column)` doesn'
 concatenate as `STRING` and concatenation should be ordered by the `NUMERIC` values. Need to add type casting.
 
 https://www.postgresqltutorial.com/postgresql-aggregate-functions/postgresql-string_agg-function/
+
+## Random sampling
+
+MySQL `RAND()` doesn't exist in PostgreSQL. Instead, use `RANDOM()`
+
+https://www.interviewquery.com/questions/random-sql-sample
+
