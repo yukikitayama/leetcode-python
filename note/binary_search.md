@@ -18,6 +18,7 @@
 - Binary Search can take many alternate forms.
 - People say that 99% of the binary search problems fall into one of the following 3 ways to implement it.
 - The three implementations differ in index assignment, the while loop termination condition, and post-processing.
+- https://medium.com/swlh/binary-search-find-upper-and-lower-bound-3f07867d81fb
 
 ### While loop left <= right
 
@@ -46,3 +47,8 @@
 
 - [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
   - It's not obvious from the problem statement to notice that this is a binary search problem.
+- [1891. Cutting Ribbons](https://leetcode.com/problems/cutting-ribbons/)
+  - This is also not obvious from the problem that it's a binary search question.
+  - https://medium.com/swlh/binary-search-find-upper-and-lower-bound-3f07867d81fb
+  - https://leetcode.com/problems/cutting-ribbons/submissions/1177253885/
+  - https://leetcode.com/problems/cutting-ribbons/solutions/2575525/python-concise-code-binary-search/
