@@ -121,3 +121,22 @@ MySQL `RAND()` doesn't exist in PostgreSQL. Instead, use `RANDOM()`
 
 https://www.interviewquery.com/questions/random-sql-sample
 
+## Delete
+
+PostgreSQL lets you reference columns of other tables in the `WHERE` condition by specifying the other tables in the 
+`USING` clause.
+
+https://leetcode.com/problems/delete-duplicate-emails/description/
+https://leetcode.com/problems/delete-duplicate-emails/solutions/4431290/postgresql/
+
+```
+DELETE FROM 
+  films 
+USING 
+  producers
+WHERE 
+  producer_id = producers.id 
+  AND producers.name = 'foo'
+ ;
+```
+
