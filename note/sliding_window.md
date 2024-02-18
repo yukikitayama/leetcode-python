@@ -20,3 +20,9 @@ the property 2.
 
 So this problem cannot use sliding window.
 
+## Prefix product
+
+`right - left + 1` magic to compute count
+
+https://leetcode.com/problems/subarray-product-less-than-k/
+
