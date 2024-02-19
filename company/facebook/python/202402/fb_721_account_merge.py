@@ -34,6 +34,9 @@ eg
 
 """
 
+from typing import List
+import collections
+
 
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
