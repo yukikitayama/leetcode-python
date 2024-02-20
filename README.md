@@ -32,6 +32,10 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - Binary search
 - Morris traversal
 
+## Thinking
+
+- As intuitive as the problem seems to be, you might stumble over the implementation. It's natural.
+
 ## Action
 
 - [ ] Review A star in [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
