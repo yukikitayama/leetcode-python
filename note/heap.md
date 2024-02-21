@@ -116,3 +116,19 @@ value = -1 * heapq.heappop(max_heap)
     consider O(k * logN) is bigger than O(N).
 - Space
   - O(N) because it still adds all the N elements to heap.
+
+## N largest
+
+If you can remember the following, solving will be fast. `T: O(NlogK)`.
+
+```pytho
+import collections
+import heapq
+
+counter = collections.Counter(something)
+k = integer
+
+heapq.nlargest(k, counter.keys(), key=counter.get)
+```
+
+- [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
