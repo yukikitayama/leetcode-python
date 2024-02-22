@@ -12,6 +12,10 @@
 - `Post-processing`
   - Binary search is implemented to use the while loop
   - Post-processing is lines of codes that needs to be done after the while loop terminates.
+- **Upper bound** is the **rightmost** possible position to insert.
+  - When there are duplicated numbers which are the same as the number to insert, the number will be inserted after them
+- **Lower bound** is the **leftmost** possible position to insert.
+  - When there are duplicated numbers which are the same as the number to insert, the number will be inserted before them
 
 ## Implementation
 
@@ -52,3 +56,36 @@
   - https://medium.com/swlh/binary-search-find-upper-and-lower-bound-3f07867d81fb
   - https://leetcode.com/problems/cutting-ribbons/submissions/1177253885/
   - https://leetcode.com/problems/cutting-ribbons/solutions/2575525/python-concise-code-binary-search/
+
+## Math
+
+`mid = (left + right) // 2`, when the range is odd, middle one is picked. When the range is even, the left one in the 2 centers is picked.
+
+`mid = left + (right - left) // 2`, when the range is odd, middle one is picked. When the range is even, the left one in the 2 centers is picked.
+
+`mid = left + (right - left + 1) // 2`, when the range is odd, middle one is picked. When the range is even, the right one in the 2 centers is picked.
+
+So conceptually, `(left + right) // 2` and `left + (right - left) // 2` are the same.
+
+## Template
+
+Most basic and elementary form of Binary Search.
+- Initial Condition: left = 0, right = length-1
+- Termination: left > right
+- Searching Left: right = mid-1
+- Searching Right: left = mid+1
+
+```python
+left, right = 0, len(nums) - 1
+while left <= right:
+    mid = (left + right) // 2
+    if nums[mid] == target:
+        return mid
+    elif nums[mid] < target:
+        left = mid + 1
+    else:
+        right = mid - 1
+
+# End Condition: left > right
+return -1
+```
