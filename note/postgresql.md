@@ -140,6 +140,18 @@ WHERE
  ;
 ```
 
+## Update
+
+Swap update example. Use `CASE WHEN` and assign the result to `SET` value.
+
+```sql
+UPDATE
+  table_name
+SET
+  column_name = case when column_a = 'female' then 'male' else 'female' end
+;
+```
+
 ## Format datetime to string
 
 `to_char(timestamp_date_column, 'format_string')` converts timestamp/date column to a specific date format string.
@@ -148,4 +160,21 @@ To convert `2024-02-23` to year month format of `2024-02`, `to_char(date_column,
 
 https://www.postgresql.org/docs/8.1/functions-formatting.html
 
+## Simple form of case expression
 
+The CASE first evaluates the expression and compares the result with each value( value_1, value_2, …) in the WHEN clauses sequentially until it finds the match.
+
+```sql
+SELECT title,
+       rating,
+       CASE rating
+           WHEN 'G' THEN 'General Audiences'
+           WHEN 'PG' THEN 'Parental Guidance Suggested'
+           WHEN 'PG-13' THEN 'Parents Strongly Cautioned'
+           WHEN 'R' THEN 'Restricted'
+           WHEN 'NC-17' THEN 'Adults Only'
+       END rating_description
+FROM film
+ORDER BY title;
+```
+https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-case/
