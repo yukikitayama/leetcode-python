@@ -140,3 +140,12 @@ WHERE
  ;
 ```
 
+## Format datetime to string
+
+`to_char(timestamp_date_column, 'format_string')` converts timestamp/date column to a specific date format string.
+
+To convert `2024-02-23` to year month format of `2024-02`, `to_char(date_column, 'YYYY-MM')`
+
+https://www.postgresql.org/docs/8.1/functions-formatting.html
+
+
