@@ -1,22 +1,14 @@
 """
-only insert, not remove
-
-balance
-  +1 if (
-  -1 if )
-
-if close appears earlier than close, trouble
-
-ans = 0
-
-iterate s
-  update balance
-  when balance is negative
-    increment ans and reset balance
-
-and remaining balance to ans
-
-"()))(("
+())()
+  balance negative in middle
+    add open
+)()
+  same
+()(
+  balance positive end
+    add close
+()(()
+  open in middle but same as positive end
 """
 
 
@@ -24,17 +16,22 @@ class Solution:
     def minAddToMakeValid(self, s: str) -> int:
 
         ans = 0
-
         balance = 0
 
         for i in range(len(s)):
-            if s[i] == "(":
+            curr = s[i]
+
+            if curr == "(":
                 balance += 1
-            elif s[i] == ")":
+            else:
                 balance -= 1
 
             if balance < 0:
                 ans += 1
                 balance = 0
 
-        return ans + balance
+        if balance > 0:
+            ans += balance
+        # There is no ending with negative balance
+
+        return ans
