@@ -50,6 +50,13 @@ Given a list of values [E, F, G] sorted in ascending order (i.e. E < F < G), and
   - e.g. divmod(5, 2) = (2, 1), divmod(1, 2) = (0, 1)
   - [1015. Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k/)
 
+### Prefix sum and remainder
+
+- [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/description/)
+  - [Java O(n) time O(k) space](https://leetcode.com/problems/continuous-subarray-sum/solutions/99499/java-o-n-time-o-k-space/)
+    - Read the Comments section
+      - "For e.g. in case of the array [23,2,6,4,7] the running sum is [23,25,31,35,42] and the remainders are [5,1,1,5,0]. We got remainder 5 at index 0 and at index 3. That means, in between these two indexes we must have added a number which is multiple of the k. Hope this clarifies your doubt :) (a+(n*x))%x is same as (a%x)"
+
 ## Log
 
 - `log_base(result) = exponent <-> base^exponent = result`
