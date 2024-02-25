@@ -25,6 +25,14 @@ DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 - https://leetcode.com/problems/active-users/solutions/4668692/postgresql-solution-with-date-part/
 - https://leetcode.com/problems/user-activity-for-the-past-30-days-i/solutions/4669355/postgresql-solution-with-date-part/
 
+## Date addition
+
+`date_column + INTERVAL '1 DAY'` or `date_column + INTERVAL '1 day'`
+
+`interval '1 day'` can be multiplied by number like `date_column - interval '1 day' * row_num`
+
+https://www.sqlines.com/postgresql/how-to/dateadd
+
 ## Operator
 
 `::` in PostgreSQL is a synonym for `CAST`, which converts a value into a different data type.
