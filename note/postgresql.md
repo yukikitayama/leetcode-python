@@ -186,3 +186,11 @@ FROM film
 ORDER BY title;
 ```
 https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-case/
+
+## Modulo
+
+`integer_column % 2 != 0` or `MOD(integer_column, 2) = 1` can find odd-number row.
+
+`MOD(numerator, denominator)` or `MOD(dividend, divisor)`
+
+https://www.postgresqltutorial.com/postgresql-math-functions/postgresql-mod/
