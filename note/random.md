@@ -14,3 +14,4 @@ to swap an element with itself.
 ## LeetCode
 
 - [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/description/)
+- [398. Random Pick Index](https://leetcode.com/problems/random-pick-index/description/)
