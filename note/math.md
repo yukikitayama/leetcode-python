@@ -60,6 +60,7 @@ Given a list of values [E, F, G] sorted in ascending order (i.e. E < F < G), and
 ## Prefix sum
 
 - [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
+- [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/description/)
 
 ## Log
 
