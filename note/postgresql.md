@@ -194,3 +194,11 @@ https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-case/
 `MOD(numerator, denominator)` or `MOD(dividend, divisor)`
 
 https://www.postgresqltutorial.com/postgresql-math-functions/postgresql-mod/
+
+## Sum of boolean
+
+In MySQL you can sum of boolean like `sum(number_column < 5)` but it doesn't work in PostgreSQL. It needs type conversion.
+
+`sum((rating < 3)::integer)` works.
+
+

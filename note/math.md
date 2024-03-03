@@ -57,6 +57,11 @@ Given a list of values [E, F, G] sorted in ascending order (i.e. E < F < G), and
     - Read the Comments section
       - "For e.g. in case of the array [23,2,6,4,7] the running sum is [23,25,31,35,42] and the remainders are [5,1,1,5,0]. We got remainder 5 at index 0 and at index 3. That means, in between these two indexes we must have added a number which is multiple of the k. Hope this clarifies your doubt :) (a+(n*x))%x is same as (a%x)"
 
+## Prefix sum
+
+- [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
+- [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/description/)
+
 ## Log
 
 - `log_base(result) = exponent <-> base^exponent = result`
