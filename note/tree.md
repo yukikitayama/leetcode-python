@@ -1,7 +1,17 @@
-## Tree
+# Tree
 
 - An undirected graph in which any two vertices are connected by exactly one path
 - Any connected graph without cycles is a tree.
+
+## Valid tree
+
+A given graph is a valid tree is it's **fully connected** and there is **no cycle**.
+
+For the graph to be a valid tree, it must have exactly `n - 1` edges. Any less is not fully connected. Any more contains cycles.
+
+If a graph is fully connected AND contains exactly `n - 1` edges, it's a valid tree without a cycle.
+
+https://leetcode.com/problems/graph-valid-tree/description/
 
 ## Binary Tree
 
