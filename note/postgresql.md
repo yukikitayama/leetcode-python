@@ -91,6 +91,37 @@ where "string_column_name" = 'something'
 
 https://stackoverflow.com/questions/41396195/what-is-the-difference-between-single-quotes-and-double-quotes-in-postgresql
 
+### Column names with spaces
+
+The below is valid. https://leetcode.com/problems/total-traveled-distance/description/
+
+```
+-- Write your PostgreSQL query statement below
+with cte as (
+  select
+    user_id,
+    sum(distance) as "traveled distance"
+  from
+    rides
+  group by
+    1
+)
+
+select
+  a.user_id,
+  a.name,
+  coalesce(b."traveled distance", 0) as "traveled distance"
+from
+  users as a
+left join
+  cte as b
+on
+  a.user_id = b.user_id
+order by
+  1
+;
+```
+
 ## GROUP BY HAVING
 
 PostgreSQL `GROUP BY HAVING` is different from MySQL. In `SELECT` statement, you cannot have additional columns which 
