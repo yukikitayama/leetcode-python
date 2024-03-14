@@ -25,6 +25,8 @@
 - [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/description)
 - [1229. Meeting Scheduler](https://leetcode.com/problems/meeting-scheduler/description)
 - [1288. Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/description)
+- [2251. Number of Flowers in Full Bloom](https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/)
+  - Hard
 - [2276. Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/description)
   - Hard
 - [2345. Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/description)
