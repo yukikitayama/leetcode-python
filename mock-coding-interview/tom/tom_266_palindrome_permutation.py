@@ -1,3 +1,6 @@
+import collections
+
+
 class Solution:
     def canPermutePalindrome(self, s: str) -> bool:
         counter = collections.Counter(s)
