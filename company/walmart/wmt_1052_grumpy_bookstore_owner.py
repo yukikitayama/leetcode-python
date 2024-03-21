@@ -10,7 +10,27 @@ from typing import List
 
 
 class Solution:
+
     def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
+        # Pre-compute number of customers without grumpy
+        no_grumpy = 0
+        for i in range(len(customers)):
+            if grumpy[i] == 0:
+                no_grumpy += customers[i]
+
+        addition = 0
+        ans = no_grumpy
+        for i in range(len(customers)):
+            if grumpy[i] == 1:
+                addition += customers[i]
+            if i >= minutes and grumpy[i - minutes] == 1:
+                addition -= customers[i - minutes]
+
+            ans = max(ans, no_grumpy + addition)
+
+        return ans
+
+    def maxSatisfied1(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
 
         # Pre-compute number of customers without grumpy
         no_grumpy = 0
