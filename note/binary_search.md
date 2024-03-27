@@ -1,6 +1,8 @@
 # Binary Search
 
 - Whenever working with sorted array, it's always worth considering whether binary search can be applied to the problem.
+- To test whether your binary search correctly will terminate, test an input of size 2 and check if it reduces the search
+  space to a single element.
 
 ## Concept
 

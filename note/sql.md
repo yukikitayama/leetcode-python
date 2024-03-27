@@ -25,12 +25,16 @@ SELECT 'b' AS col
 
 ## CONCAT()
 
+- `CONCAT` concatenates **horizontally from multiple columns**.
+  - https://www.w3schools.com/sql/func_mysql_concat.asp
 - `CONCAT(exp1, exp2, ...)` concatenate two or more expressions
 - Expression can be either string or even string. The result is string.
 - Doesn't specify `separator` string. If you wanna separate each expression by `,` or ` ` (space), use `GROUP_CONCAT()`
 
 ## GROUP_CONCAT()
 
+- `GROUP_CONCAT` concatenates **vertically from single column**.
+  - https://www.geeksforgeeks.org/mysql-group_concat-function/
 - Concatenate string from a group into a single string with options such as separator.
 - e.g. `GROUP_CONCAT(DISTINCT col ORDER BY col separator ',')`
   - `seperator ','` can be omitted because by default ',' is a separator.
