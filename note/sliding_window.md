@@ -4,6 +4,9 @@ The problems that sliding window can solve have the following properties
 1. If a wider scope of the sliding window is valid, the narrower scope of that wider scope is valid.
 2. If a narrower scope of the sliding window is invalid, the wider scope of that narrower scope is invalid.
 
+Sliding window is applicable when the problem entails achieving a goal using **subarrays**, and the **individual 
+elements cannot be independently selected**.
+
 https://leetcode.com/problems/subarray-sum-equals-k/solutions/301242/general-summary-of-what-kind-of-problem-can-cannot-solved-by-two-pointers/
 
 ## Problems that sliding window can solve
