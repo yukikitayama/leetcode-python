@@ -9,6 +9,11 @@ elements cannot be independently selected**.
 
 https://leetcode.com/problems/subarray-sum-equals-k/solutions/301242/general-summary-of-what-kind-of-problem-can-cannot-solved-by-two-pointers/
 
+## Math
+
+- Incrementing `ans` by `right - left + 1` every time when `right` iterates is a typical math with sliding window.
+  - https://leetcode.com/problems/subarrays-with-k-different-integers/
+
 ## Problems that sliding window can solve
 
 https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
