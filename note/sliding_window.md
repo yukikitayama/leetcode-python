@@ -28,6 +28,12 @@ the property 2.
 
 So this problem cannot use sliding window.
 
+## Problem that does not use left pointer
+
+- [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)
+  - This approach optimize space
+  - Expand but doesn't contract, but keep sliding
+
 ## Prefix product
 
 `right - left + 1` magic to compute count
