@@ -498,3 +498,10 @@ e.g. `ON date = DATE_ADD(date, INTERVAL 1 DAY)`
 - [t Value via SQL](https://www.interviewquery.com/questions/t-value-sql)
 - [Population variance and sample variance](https://en.wikipedia.org/wiki/Variance#Population_variance_and_sample_variance)
 - [VAR_SAMP() function in MySQL](https://www.geeksforgeeks.org/var_samp-function-in-mysql/)
+
+## WEEK()
+
+`WEEK(date_column)` returns the week number for a given date from 0 to 53. This function can be used to identify which 
+nth week a date belongs to.
+
+- [2993. Friday Purchases I](https://leetcode.com/problems/friday-purchases-i/description/)
