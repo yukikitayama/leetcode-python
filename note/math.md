@@ -120,6 +120,7 @@ Given a list of values [E, F, G] sorted in ascending order (i.e. E < F < G), and
 - [1 + 2 + 3 + 4 + ⋯](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF)
 - [2421. Number of Good Paths](https://leetcode.com/problems/number-of-good-paths/description/)
 - [2485. Find the Pivot Integer](https://leetcode.com/problems/find-the-pivot-integer/description)
+- [441. Arranging Coins](https://leetcode.com/problems/arranging-coins/description)
 
 ## Binary exponentiation
 
