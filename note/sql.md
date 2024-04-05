@@ -505,3 +505,9 @@ e.g. `ON date = DATE_ADD(date, INTERVAL 1 DAY)`
 nth week a date belongs to.
 
 - [2993. Friday Purchases I](https://leetcode.com/problems/friday-purchases-i/description/)
+
+## Hard-code data as string and convert to data
+
+`SELECT DATE '2024-04-05' as date_column;`, `DATE` is a type keyword placed in front of string to make it date.
+
+https://dev.mysql.com/doc/refman/8.3/en/date-and-time-literals.html#date-and-time-standard-sql-literals
