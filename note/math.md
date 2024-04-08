@@ -169,3 +169,10 @@ But with linear exponentiation,
 (16 steps)
 ```
 
+## Triangle
+
+For 3 sides to form a valid triangle, the sum of any 2 sides needs to be greater than the third side. 
+
+`a + b > c` AND `b + c > a` AND `c + a > b`
+
+- [611. Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/description)
