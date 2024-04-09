@@ -209,6 +209,8 @@ rank() over(
 
 ## Recursive Common Table Expression (Recursive CTE)
 
+- If table contains both recursive and non-recursive, put `RECURSIVE` right after `WITH` (before the first cte name), 
+  even if the first CTE isn't for recursive, and the second cte is for recursive.
 - A common table expression using `with recursive` and having a subquery inside referring to its own table
 - [1336. Number of Transactions per Visit](https://leetcode.com/problems/number-of-transactions-per-visit/description/)
 - [1384. Total Sales Amount by Year](https://leetcode.com/problems/total-sales-amount-by-year/)
@@ -220,6 +222,7 @@ rank() over(
 - [Recursive Common Table Expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html#common-table-expressions-recursive)
 - [Generate an integer sequence in MySQL](https://stackoverflow.com/questions/304461/generate-an-integer-sequence-in-mysql)
 - [[MySQL] 4 solutions to generate consecutive sequence](https://leetcode.com/problems/find-the-missing-ids/discuss/890608/MySQL-4-solutions-to-generate-consecutive-sequence)
+- [3103. Find Trending Hashtags II](https://leetcode.com/problems/find-trending-hashtags-ii/description/)
 - Generate a sequence of integers from 1 to 100
   - Notice that `< 100`, not `<= 100`
 
@@ -309,6 +312,12 @@ A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive
 - `*` means 0 or more instances of string preceding it. `a*` is 'a', 'aa', or ''.
 - [MySQL | Regular expressions (Regexp)](https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/)
 - [12.8.2 Regular Expressions](https://dev.mysql.com/doc/refman/8.0/en/regexp.html)
+- [3103. Find Trending Hashtags II ](https://leetcode.com/problems/find-trending-hashtags-ii/description/)
+- `REGEXP_SUBSTR(string_column, pattern_string)` to extract expression from a string column
+  - `regexp_substr(tweet, '#[a-zA-Z]+')` extracts hashtag from a tweet.
+- `REGEXP_REPLACE(string_column, pattern_string, 1based_start_index, num_occurrence)` to replace.
+  - `regexp_replace(tweet, '#[a-zA-Z]+', '', 1, 1)` removes one leftmost tag from a tweet if it contains multiple tags.
+
 
 ## TRIM
 
@@ -505,3 +514,9 @@ e.g. `ON date = DATE_ADD(date, INTERVAL 1 DAY)`
 nth week a date belongs to.
 
 - [2993. Friday Purchases I](https://leetcode.com/problems/friday-purchases-i/description/)
+
+## Hard-code data as string and convert to data
+
+`SELECT DATE '2024-04-05' as date_column;`, `DATE` is a type keyword placed in front of string to make it date.
+
+https://dev.mysql.com/doc/refman/8.3/en/date-and-time-literals.html#date-and-time-standard-sql-literals
