@@ -67,3 +67,9 @@ s = "something123.,!"
 alphanumeric = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 s = [ch.lower() for ch in s if ch in alphanumeric]
 ```
+
+## Clean spaces
+
+`lstrip(character)` can remove leading one or more `character`
+
+`"00200".lstrip("0")` returns `"200"`

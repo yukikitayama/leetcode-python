@@ -176,3 +176,19 @@ For 3 sides to form a valid triangle, the sum of any 2 sides needs to be greater
 `a + b > c` AND `b + c > a` AND `c + a > b`
 
 - [611. Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/description)
+
+## Number of subsequences
+
+Find number of subsequences in a linear time by `2 ** (right - left)`, because for each element, we have 2 choices; include or exclude.
+
+```
+[3, 5, 6]
+  [3, 5, 6]
+  [3, _, 6]
+  [3, 5, _]
+  [3, _, _]
+left: 0, right: 2
+  2**(right - left) = 2**2 = 4
+```
+
+- [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description)
