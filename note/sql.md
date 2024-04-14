@@ -350,6 +350,7 @@ A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive
 - [2004. The Number of Seniors and Juniors to Join the Company](https://leetcode.com/problems/the-number-of-seniors-and-juniors-to-join-the-company/)
 - [534. Game Play Analysis III](https://leetcode.com/problems/game-play-analysis-iii/)
 - [2066. Account Balance](https://leetcode.com/problems/account-balance/)
+- [1204. Last Person to Fit in the Bus](https://leetcode.com/problems/last-person-to-fit-in-the-bus/description/)
 
 ## CAST(_ as SIGNED)
 
