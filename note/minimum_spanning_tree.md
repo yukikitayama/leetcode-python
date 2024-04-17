@@ -58,4 +58,10 @@ Prim's algorithm expands the minimum spanning tree by adding vertices.
 
 ## LeetCode
 
+- [1135. Connecting Cities With Minimum Cost](https://leetcode.com/problems/connecting-cities-with-minimum-cost/description/)
+  - Medium
 - [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
+  - Medium
+- [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/description/)
+  - Hard
+  - Kruskal's Algorithm
