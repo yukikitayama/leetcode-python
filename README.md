@@ -34,6 +34,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - Binary search
 - Morris traversal
 - Topological sorting
+- Dijkstra's algorithm
 - Boyer-Moore voting algorithm
   - [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
 
