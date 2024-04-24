@@ -38,6 +38,10 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - Boyer-Moore voting algorithm
   - [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
 
+## Approach
+
+- Should always start with the example given in the problem statement.
+
 ## Thinking
 
 - As intuitive as the problem seems to be, you might stumble over the implementation. It's natural.
