@@ -192,3 +192,13 @@ left: 0, right: 2
 ```
 
 - [1498. Number of Subsequences That Satisfy the Given Sum Condition](https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/description)
+
+## Arithmetic sequence
+
+**Arithmetic sequence** is a sequence where the differences between every two successive terms are the same.
+
+For example, `1, 2, 3, 4, ...`, by `+1, +1, +1, ...`.
+
+Sum of an arithmetic sequence is, if we know 1st term `a1` and the last term `an`, `(a1 + an) * (n / 2)`
+
+- [1802. Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array)
