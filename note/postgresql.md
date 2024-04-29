@@ -39,6 +39,12 @@ You can extract hour from timestamp by `extract(hour from timestamp_column)`
 
 - [2984. Find Peak Calling Hours for Each City](https://leetcode.com/problems/find-peak-calling-hours-for-each-city/description/)
 
+## Datetime or timestamp
+
+There is no `datetime` in PostgreSQL. There's `timestamp`.
+
+https://stackoverflow.com/questions/15501734/how-to-convert-date-to-datetime-in-postgresql
+
 ## Operator
 
 `::` in PostgreSQL is a synonym for `CAST`, which converts a value into a different data type.
