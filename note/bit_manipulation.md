@@ -84,6 +84,14 @@
   - -128 is `10000000`
   - -1 is `10000001`
 
+### Signed 32-bit integer
+
+the leftmost bit (bit position 31) is the sign bit, where 0 represents positive numbers and 1 represents negative numbers. This leaves only 31 bits for representing the actual numerical value.
+
+### Signed 64-bit integer
+
+the leftmost bit (bit position 63) is the sign bit, where 0 represents positive numbers and 1 represents negative numbers.
+
 ## Unsigned integer
 
 - It cannot represent negative numbers because all digits in binary representation are used to represent the size of the
@@ -123,7 +131,12 @@
 
 ### OR |
 
+Properties of bitwise **OR**
 - When both bits are 0, result is 0, otherwise 1
+  - Returns 1 if at least one of the corresponding bits in the operands is 1
+- Associative, meaning `(a | b) | c = a | (b | c)`
+- Commutative, meaning `a | b = b | a`
+- **Idempotent**, meaning `a | a = a`
 
 ### XOR ^
 
@@ -240,6 +253,7 @@ xxx
   - `XOR` plus `Trie`
 - [1284. Minimum Number of Flips to Convert Binary Matrix to Zero Matrix](https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/)
   - Use integer as bit mask
+- [2505. Bitwise OR of All Subsequence Sums](https://leetcode.com/problems/bitwise-or-of-all-subsequence-sums/description)
 
 ## 1-bits Bitmask
 

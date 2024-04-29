@@ -36,6 +36,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - Topological sorting
 - Dijkstra's algorithm
 - Union find
+- Bit manipulation
 - Boyer-Moore voting algorithm
   - [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
 
