@@ -33,6 +33,12 @@ DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 
 https://www.sqlines.com/postgresql/how-to/dateadd
 
+## Extract hour from timestamp
+
+You can extract hour from timestamp by `extract(hour from timestamp_column)`
+
+- [2984. Find Peak Calling Hours for Each City](https://leetcode.com/problems/find-peak-calling-hours-for-each-city/description/)
+
 ## Operator
 
 `::` in PostgreSQL is a synonym for `CAST`, which converts a value into a different data type.
