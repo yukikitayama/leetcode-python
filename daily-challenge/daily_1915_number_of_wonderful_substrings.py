@@ -37,6 +37,9 @@ class Solution:
             mask ^= (1 << bit_position)
 
             if mask in freq:
+
+                # If previously seen mask is equal to current mask
+                # then prev ^ curr = 0, meaning all characters are even counts
                 ans += freq[mask]
                 freq[mask] += 1
 
@@ -45,8 +48,10 @@ class Solution:
 
             for odd_ch_position in range(10):
 
-                # ?
-                if mask ^ (1 << odd_ch_position) in freq:
-                    ans += freq[mask ^ (1 << odd_ch_position)]
+                # prev: abbc (101), curr: abbbc (111), find b
+                # removed: 110, 101, 011 by XOR 1 to each bit in curr
+                removed = mask ^ (1 << odd_ch_position)
+                if removed in freq:
+                    ans += freq[removed]
 
         return ans
