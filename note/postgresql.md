@@ -244,4 +244,10 @@ In MySQL you can sum of boolean like `sum(number_column < 5)` but it doesn't wor
 
 `sum((rating < 3)::integer)` works.
 
+## Percentile
 
+`PERCENT_RANK()` returns 0% to 100% percentage ranking. Top has 0 and bottom has 1.
+
+- [3055. Top Percentile Fraud](https://leetcode.com/problems/top-percentile-fraud/description/)
+
+https://www.postgresqltutorial.com/postgresql-window-function/postgresql-percent_rank-function/
