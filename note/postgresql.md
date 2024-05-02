@@ -262,3 +262,10 @@ In MySQL you can sum of boolean like `sum(number_column < 5)` but it doesn't wor
 - [3055. Top Percentile Fraud](https://leetcode.com/problems/top-percentile-fraud/description/)
 
 https://www.postgresqltutorial.com/postgresql-window-function/postgresql-percent_rank-function/
+
+## Regular expression to substring
+
+Extract hashtag from a tweet (Assuming one tweet contains exactly one hashtag and hashtag is consisted of lower and upper case letters only) 
+`REGEXP_SUBSTR(tweet_column, '#[a-zA-Z]+')`
+
+- [3087. Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags/description/)
