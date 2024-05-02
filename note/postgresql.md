@@ -153,6 +153,17 @@ to perform outer join.
 
 `LOWER(string_column)` makes all the strings lowercase
 
+To substring from a particular character position use `SUBSTRING()` and `POSITION(char IN column)`. For example, to extract email domain,
+`SUBSTRING(email_column, POSITION('@' IN email_column) + 1)`
+
+- [3059. Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains/description/)
+
+## LIKE
+
+`%` can capture one or more characters, so to filer emails with domains ending with `.com`, you can use `email_column LIKE '%@%.com'`
+
+- [3059. Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains/description/)
+
 ## Concatenation
 
 `CONCAT(string_or_colunm, string_or_colunm, string_or_colunm, ...)` works in PostgreSQL too.
