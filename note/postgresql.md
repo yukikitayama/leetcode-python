@@ -33,6 +33,18 @@ DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 
 https://www.sqlines.com/postgresql/how-to/dateadd
 
+## Extract hour from timestamp
+
+You can extract hour from timestamp by `extract(hour from timestamp_column)`
+
+- [2984. Find Peak Calling Hours for Each City](https://leetcode.com/problems/find-peak-calling-hours-for-each-city/description/)
+
+## Datetime or timestamp
+
+There is no `datetime` in PostgreSQL. There's `timestamp`.
+
+https://stackoverflow.com/questions/15501734/how-to-convert-date-to-datetime-in-postgresql
+
 ## Operator
 
 `::` in PostgreSQL is a synonym for `CAST`, which converts a value into a different data type.
@@ -141,6 +153,17 @@ to perform outer join.
 
 `LOWER(string_column)` makes all the strings lowercase
 
+To substring from a particular character position use `SUBSTRING()` and `POSITION(char IN column)`. For example, to extract email domain,
+`SUBSTRING(email_column, POSITION('@' IN email_column) + 1)`
+
+- [3059. Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains/description/)
+
+## LIKE
+
+`%` can capture one or more characters, so to filer emails with domains ending with `.com`, you can use `email_column LIKE '%@%.com'`
+
+- [3059. Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains/description/)
+
 ## Concatenation
 
 `CONCAT(string_or_colunm, string_or_colunm, string_or_colunm, ...)` works in PostgreSQL too.
@@ -232,4 +255,17 @@ In MySQL you can sum of boolean like `sum(number_column < 5)` but it doesn't wor
 
 `sum((rating < 3)::integer)` works.
 
+## Percentile
 
+`PERCENT_RANK()` returns 0% to 100% percentage ranking. Top has 0 and bottom has 1.
+
+- [3055. Top Percentile Fraud](https://leetcode.com/problems/top-percentile-fraud/description/)
+
+https://www.postgresqltutorial.com/postgresql-window-function/postgresql-percent_rank-function/
+
+## Regular expression to substring
+
+Extract hashtag from a tweet (Assuming one tweet contains exactly one hashtag and hashtag is consisted of lower and upper case letters only) 
+`REGEXP_SUBSTR(tweet_column, '#[a-zA-Z]+')`
+
+- [3087. Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags/description/)

@@ -1,4 +1,5 @@
-## Disjoint set
+# Disjoint set
+
 Disjoint set = union-find. The goal is 1. to find whether two vertices share a common ancestor, and 2. connect two 
 vertices. Disjoint set is optimized by implementing union by rank and path compression. Implementation of Disjoint set
 is highly modularized, so it's good to just memorize the implementation of disjoint set with union by rank and path
@@ -12,13 +13,17 @@ the root nodes and choose the bigger rank root node as the root node in union().
 Path compression is to update a parent node with a root node in find() to improve find() time complexity by avoiding
 taking O(N) every time in calling find().
 
-### Method
+## LeetCode
+
+- [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/description)
+
+## Method
 - find(vertex)
   - Find the root node of a given vertex.
 - union(vertex1, vertex2)
   - Connect two vertices by making their root nodes the same.
 
-### Complexity
+## Complexity
 - Optimized disjoint set with union by rank and path compression
   - Constructor is O(N) to make parent array and rank array.
   - find() is O(alpha(N)), where alpha() is the Inverse Ackermann function
@@ -36,7 +41,7 @@ taking O(N) every time in calling find().
   - Quick union is more efficient than quick find, because to union all the nodes, quick find takes N * O(N) union, 
     but quick union takes less than or equal to N * O(N) because find() of quick union updates root nodes.
 
-### Terminology
+## Terminology
 - Parent node
   - The direct parent node of a vertex. For example, 0 (Root) - 1 - 3, The parent node of 3 is 1.
 - Root node

@@ -284,6 +284,13 @@ A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive
 - `MIN()` is typically used to return the minimum value in a column in a database. The table could contain many rows, but this function returns the one with the minimum value.
 - `LEAST()` on the other hand, returns the minimum-valued argument from the list of arguments passed to it. So you could pass say, 3 arguments to this function and it will return the one with the smallest value.
 - [MIN() vs LEAST() in MySQL: What’s the Difference?](https://database.guide/min-vs-least-in-mysql-whats-the-difference/)
+- Work in PostgreSQL too.
+
+## GREATEST
+
+- Use `GREATEST(col1, col2, ...)` to get a max from multiple columns.
+- [2783. Flight Occupancy and Waitlist Analysis](https://leetcode.com/problems/flight-occupancy-and-waitlist-analysis/description/)
+- Work in PostgreSQL too.
 
 ## Median
 
