@@ -39,6 +39,18 @@ You can extract hour from timestamp by `extract(hour from timestamp_column)`
 
 - [2984. Find Peak Calling Hours for Each City](https://leetcode.com/problems/find-peak-calling-hours-for-each-city/description/)
 
+## Get day of week
+
+`extract(dow from date_column)`. Use `dow`. Sunday is 0. Saturday is 6.
+
+- [3118. Friday Purchase III ](https://leetcode.com/problems/friday-purchase-iii/description/)
+
+## Get integer representing week of year
+
+`extract(week from date_column)`.
+
+- [3118. Friday Purchase III ](https://leetcode.com/problems/friday-purchase-iii/description/)
+
 ## Datetime or timestamp
 
 There is no `datetime` in PostgreSQL. There's `timestamp`.
@@ -158,6 +170,20 @@ To substring from a particular character position use `SUBSTRING()` and `POSITIO
 
 - [3059. Find All Unique Email Domains](https://leetcode.com/problems/find-all-unique-email-domains/description/)
 
+### Convert number to string
+
+`integer_column::text`. User `::text`, not `::string`.
+
+## Convert number of seconds to formatted string
+
+`to_char((number_of_seconds::text || 'second')::interval, 'HH24:MI:SS') as duration_formatted`
+
+https://stackoverflow.com/questions/2905692/postgresql-how-to-convert-seconds-in-a-numeric-field-to-hhmmss
+
+https://www.postgresqltutorial.com/postgresql-string-functions/postgresql-to_char/
+
+- [3124. Find Longest Calls](https://leetcode.com/problems/find-longest-calls/description/)
+
 ## LIKE
 
 `%` can capture one or more characters, so to filer emails with domains ending with `.com`, you can use `email_column LIKE '%@%.com'`
@@ -176,6 +202,10 @@ Concatenating values in a column by `,` with MySQL `GROUP_CONCAT(column)` doesn'
 concatenate as `STRING` and concatenation should be ordered by the `NUMERIC` values. Need to add type casting.
 
 https://www.postgresqltutorial.com/postgresql-aggregate-functions/postgresql-string_agg-function/
+
+`string || string`, `||` can work as a concatenation operator.
+
+- [3124. Find Longest Calls](https://leetcode.com/problems/find-longest-calls/description/)
 
 ## Random sampling
 
