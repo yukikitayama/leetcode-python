@@ -22,6 +22,8 @@ needs to be converted to `timestamp`.
 DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 ```
 
+`DATE_PART()` requires single quotations to unit, unlike `EXTRACT()`
+
 - https://leetcode.com/problems/active-users/solutions/4668692/postgresql-solution-with-date-part/
 - https://leetcode.com/problems/user-activity-for-the-past-30-days-i/solutions/4669355/postgresql-solution-with-date-part/
 
@@ -36,6 +38,8 @@ https://www.sqlines.com/postgresql/how-to/dateadd
 ## Extract hour from timestamp
 
 You can extract hour from timestamp by `extract(hour from timestamp_column)`
+
+`EXTRACT()` doesn't require single quotation to unit, unlike `DATE_PART()`
 
 - [2984. Find Peak Calling Hours for Each City](https://leetcode.com/problems/find-peak-calling-hours-for-each-city/description/)
 
