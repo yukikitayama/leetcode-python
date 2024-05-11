@@ -22,6 +22,8 @@ needs to be converted to `timestamp`.
 DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 ```
 
+`DATE_PART()` requires single quotations to unit, unlike `EXTRACT()`
+
 - https://leetcode.com/problems/active-users/solutions/4668692/postgresql-solution-with-date-part/
 - https://leetcode.com/problems/user-activity-for-the-past-30-days-i/solutions/4669355/postgresql-solution-with-date-part/
 
@@ -31,11 +33,20 @@ DATE_PART('day', later_date_column::timestamp - earlier_date_column::timestamp)
 
 `interval '1 day'` can be multiplied by number like `date_column - interval '1 day' * row_num`
 
-https://www.sqlines.com/postgresql/how-to/dateadd
+https://www.sqlines.com/postgresql/how-to/dateadd, read section "Adding Interval from Variable or Column"
+
+If we have `date` type column and add number of days dynamically with another column of addition, and the output column
+still needs to be `date` type, do following, because interval addition returns `timestamp` type.
+
+`(date_column + num_days_integer_column * interval '1 day')::date`
+
+- [2701. Consecutive Transactions with Increasing Amounts](https://leetcode.com/problems/consecutive-transactions-with-increasing-amounts/description/)
 
 ## Extract hour from timestamp
 
 You can extract hour from timestamp by `extract(hour from timestamp_column)`
+
+`EXTRACT()` doesn't require single quotation to unit, unlike `DATE_PART()`
 
 - [2984. Find Peak Calling Hours for Each City](https://leetcode.com/problems/find-peak-calling-hours-for-each-city/description/)
 

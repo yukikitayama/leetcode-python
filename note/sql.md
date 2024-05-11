@@ -350,6 +350,7 @@ A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive
 - [1939. Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/)
 - [Average Commute Time](https://www.interviewquery.com/questions/average-commute-time)
 - [MySQL TIMESTAMPDIFF() function](https://www.w3resource.com/mysql/date-and-time-functions/mysql-timestampdiff-function.php)
+- [3126. Server Utilization Time](https://leetcode.com/problems/server-utilization-time/description/)
 
 ## Cumulative sum
 
