@@ -310,3 +310,17 @@ Extract hashtag from a tweet (Assuming one tweet contains exactly one hashtag an
 `REGEXP_SUBSTR(tweet_column, '#[a-zA-Z]+')`
 
 - [3087. Find Trending Hashtags](https://leetcode.com/problems/find-trending-hashtags/description/)
+
+## Get length of string contents in a string column
+
+`length(string_column)`
+
+- [3150. Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/description/)
+
+## Count the number of occurrence of a certain character in string column
+
+`length(string_column) - length(replace(string_column, '@', ''))`
+
+`length(string_column) - length(replace(string_column, '#', ''))`
+
+- [3150. Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/description/)
