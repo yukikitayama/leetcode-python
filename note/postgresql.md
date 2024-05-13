@@ -324,3 +324,29 @@ Extract hashtag from a tweet (Assuming one tweet contains exactly one hashtag an
 `length(string_column) - length(replace(string_column, '#', ''))`
 
 - [3150. Invalid Tweets II](https://leetcode.com/problems/invalid-tweets-ii/description/)
+
+## RANGE BETWEEN in order by of window function
+
+```
+-- Compute how many posts were made in 7 window for each date
+cte3 as (
+  select
+    user_id,
+    post_date,
+    count(*) over(
+      partition by user_id
+      -- 6 without single quotation doesn't work in PostgreSQL 
+      order by post_date range between interval '6' day preceding and current row
+    ) as count_7window
+  from
+    cte
+),
+```
+
+- [3089. Find Bursty Behavior](https://leetcode.com/problems/find-bursty-behavior/description/)
+
+https://learnsql.com/blog/range-clause/
+
+https://www.postgresqltutorial.com/postgresql-window-function/
+
+https://www.geeksforgeeks.org/frame-clause-in-sql/
