@@ -16,6 +16,7 @@ taking O(N) every time in calling find().
 ## LeetCode
 
 - [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/description)
+- [1697. Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/description/)
 
 ## Method
 - find(vertex)
