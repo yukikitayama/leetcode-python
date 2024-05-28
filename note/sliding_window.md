@@ -4,7 +4,7 @@ The problems that sliding window can solve have the following properties
 1. If a wider scope of the sliding window is valid, the narrower scope of that wider scope is valid.
 2. If a narrower scope of the sliding window is invalid, the wider scope of that narrower scope is invalid.
 
-Sliding window is applicable when the problem entails achieving a goal using **subarrays**, and the **individual 
+Sliding window is applicable when the problem entails achieving a goal using **subarrays** or **substring**, and the **individual 
 elements cannot be independently selected**.
 
 https://leetcode.com/problems/subarray-sum-equals-k/solutions/301242/general-summary-of-what-kind-of-problem-can-cannot-solved-by-two-pointers/
@@ -17,6 +17,7 @@ https://leetcode.com/problems/subarray-sum-equals-k/solutions/301242/general-sum
 ## Problems that sliding window can solve
 
 https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+- [1208. Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/description)
 
 ## Problems that sliding window cannot solve
 
