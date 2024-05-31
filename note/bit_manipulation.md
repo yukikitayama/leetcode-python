@@ -191,7 +191,9 @@ xxx
 
 - `x & (-x)`
   - `-x` is two's complement
+  - `-x` has to revert all bits in x **and then add 1 to the result**
 - [231. Power of Two](https://leetcode.com/problems/power-of-two/)
+- [260. Single Number III](https://leetcode.com/problems/single-number-iii/description)
 
 | Code | Binary representation |
 |------|-----------------------|
