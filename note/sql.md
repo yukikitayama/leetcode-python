@@ -346,6 +346,7 @@ A recursive CTE consists of a nonrecursive `SELECT` part followed by a recursive
   - e.g. `where timestampdiff(second, timestamp1, timestamp2) <= 60 * 60 * 24` checks if two timestamps are within 24 
     hours window.
   - Difference in minute `timestampdiff(minute, start_datetime, end_datetime)`
+  - Difference in hour with decimal, `timestampdiff(second, start_datetime, end_datetime) / 60 / 60`
 - Unlike BigQuery SQL, this function can be applied to `DATETIME` columns, even if the function name says timestamp.
 - [1939. Users That Actively Request Confirmation Messages](https://leetcode.com/problems/users-that-actively-request-confirmation-messages/)
 - [Average Commute Time](https://www.interviewquery.com/questions/average-commute-time)
