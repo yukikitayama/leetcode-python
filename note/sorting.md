@@ -19,6 +19,7 @@ correct positions based on their values and frequencies.
 - We need to know the value range in advance to implement counting sort.
 - [506. Relative Ranks](https://leetcode.com/problems/relative-ranks/description)
 - [1051. Height Checker](https://leetcode.com/problems/height-checker/description)
+- [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description)
 - Implementation
   - Create counter hashmap with key element and value its count
   - Find min and max elements
