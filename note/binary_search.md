@@ -58,6 +58,8 @@
   - https://medium.com/swlh/binary-search-find-upper-and-lower-bound-3f07867d81fb
   - https://leetcode.com/problems/cutting-ribbons/submissions/1177253885/
   - https://leetcode.com/problems/cutting-ribbons/solutions/2575525/python-concise-code-binary-search/
+- Boundary search
+  - [2141. Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/description/)
 
 ## Math
 
