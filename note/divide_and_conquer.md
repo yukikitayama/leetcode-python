@@ -77,3 +77,4 @@
   - Hard problem
 - [241. Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)
   - Divide and conquer in practice
+- [1265. Print Immutable Linked List in Reverse](https://leetcode.com/problems/print-immutable-linked-list-in-reverse/description/)
