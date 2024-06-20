@@ -77,3 +77,8 @@ Typically save the result in **hashmap**
 Need base cases to stop recursion
 
 Use logical thinking to find the base cases in each problem
+
+## Knapsack problem
+
+- [2742. Painting the Walls](https://leetcode.com/problems/painting-the-walls/description/)
+  - Hard

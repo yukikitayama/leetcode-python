@@ -19,6 +19,11 @@
 - **Lower bound** is the **leftmost** possible position to insert.
   - When there are duplicated numbers which are the same as the number to insert, the number will be inserted before them
 
+## Clue
+
+- We are searching for a specific value that satisfies a condition
+- The condition exhibits an order property that if the condition is satisfied on a particular value, it will also be satisfied on all of the following values.
+
 ## Implementation
 
 - Binary Search can take many alternate forms.
@@ -59,7 +64,9 @@
   - https://leetcode.com/problems/cutting-ribbons/submissions/1177253885/
   - https://leetcode.com/problems/cutting-ribbons/solutions/2575525/python-concise-code-binary-search/
 - Boundary search
+  - [1552. Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/description)
   - [2141. Maximum Running Time of N Computers](https://leetcode.com/problems/maximum-running-time-of-n-computers/description/)
+  - [1482. Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description)
 
 ## Math
 

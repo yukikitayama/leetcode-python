@@ -20,6 +20,7 @@ correct positions based on their values and frequencies.
 - [506. Relative Ranks](https://leetcode.com/problems/relative-ranks/description)
 - [1051. Height Checker](https://leetcode.com/problems/height-checker/description)
 - [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array/description)
+- [945. Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/description)
 - Implementation
   - Create counter hashmap with key element and value its count
   - Find min and max elements

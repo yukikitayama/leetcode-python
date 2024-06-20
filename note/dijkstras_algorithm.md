@@ -5,3 +5,5 @@
 - [2812. Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/description)
 - [864. Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys/description/)
   - Hard
+- [499. The Maze III](https://leetcode.com/problems/the-maze-iii/description/)
+  - Hard

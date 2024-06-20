@@ -41,6 +41,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - Boyer-Moore voting algorithm
   - [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
 - Trie
+- Divide and conquer
 
 ## Approach
 
