@@ -17,6 +17,9 @@ taking O(N) every time in calling find().
 
 - [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/description)
 - [1697. Checking Existence of Edge Length Limited Paths](https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/description/)
+- [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/)
+  - Hard, but you can do it
+- [1101. The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/description)
 
 ## Method
 - find(vertex)
