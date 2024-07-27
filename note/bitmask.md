@@ -4,3 +4,5 @@
   - Hard
 - [1125. Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team/description/)
   - Hard
+- [1799. Maximize Score After N Operations](https://leetcode.com/problems/maximize-score-after-n-operations/description/)
+  - Hard
