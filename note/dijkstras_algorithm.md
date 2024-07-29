@@ -7,3 +7,5 @@
   - Hard
 - [499. The Maze III](https://leetcode.com/problems/the-maze-iii/description/)
   - Hard
+- [2045. Second Minimum Time to Reach Destination](https://leetcode.com/problems/second-minimum-time-to-reach-destination/description)
+  - Hard
