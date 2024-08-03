@@ -27,7 +27,8 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [x] Solve 1,400 LeetCode problems (2024-03-14)
 - [x] Solve 1,500 LeetCode problems (2024-04-21)
 - [x] Solve 1,600 LeetCode problems (2024-05-29)
-- [ ] Solve 1,700 LeetCode problems
+- [x] Solve 1,700 LeetCode problems (2024-08-01)
+- [ ] Solve 1,800 LeetCode problems
 
 ## Algorithms that I am not confident of
 
