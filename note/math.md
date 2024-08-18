@@ -214,3 +214,25 @@ Sum of an arithmetic sequence is, if we know 1st term `a1` and the last term `an
 4 over 2 should be 2 (or 2 over 1). `fractions.Fraction(4, 2) = Fraction(2, 1)`
 
 4 over 2 plus 4 over 2 should be 4 (2 + 2). `Fraction(4, 2) + Fraction(4, 2) = Fraction(4, 1)` 
+
+## Sieve of Eratosthenes
+
+**Sieve of Eratosthenes** is an algorithm to generate prime numbers up to a certain limit.
+
+https://www.youtube.com/watch?v=klcIklsWzrY
+
+```
+find primes up to N
+
+For all numbers a: from 2 to sqrt(n)
+
+  IF a is unmarked THEN
+  
+    a is prime
+    
+    for all multiples of a (a < n)
+    
+      mark multiples as composite
+      
+All unmarked numbers are prime
+```
