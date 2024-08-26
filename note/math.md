@@ -202,3 +202,37 @@ For example, `1, 2, 3, 4, ...`, by `+1, +1, +1, ...`.
 Sum of an arithmetic sequence is, if we know 1st term `a1` and the last term `an`, `(a1 + an) * (n / 2)`
 
 - [1802. Maximum Value at a Given Index in a Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array)
+
+## Geometric sum
+
+`S = X * (r + r**2 + r**3 + ...) = X * ( r / (1 - r) )`
+
+## Fraction
+
+`fractions.Fraction(numerater, denominator)` returns a simplified fraction after applying division.
+
+4 over 2 should be 2 (or 2 over 1). `fractions.Fraction(4, 2) = Fraction(2, 1)`
+
+4 over 2 plus 4 over 2 should be 4 (2 + 2). `Fraction(4, 2) + Fraction(4, 2) = Fraction(4, 1)` 
+
+## Sieve of Eratosthenes
+
+**Sieve of Eratosthenes** is an algorithm to generate prime numbers up to a certain limit.
+
+https://www.youtube.com/watch?v=klcIklsWzrY
+
+```
+find primes up to N
+
+For all numbers a: from 2 to sqrt(n)
+
+  IF a is unmarked THEN
+  
+    a is prime
+    
+    for all multiples of a (a < n)
+    
+      mark multiples as composite
+      
+All unmarked numbers are prime
+```
