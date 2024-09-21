@@ -116,6 +116,8 @@ for word in words:
 - [421. Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/)
   - Bitwise Trie to store binary prefixes.
 - [648. Replace Words](https://leetcode.com/problems/replace-words/description)
+- [2416. Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/)
+  - Hard
 
 ## Resource
 
