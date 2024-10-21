@@ -220,3 +220,21 @@ LeetCode Number | Problem Name | Level | YouTube | Language
 204 | Count Primes | Easy | https://youtu.be/HwXK1DJIf1k |
 326 | Power of Three | Easy | https://youtu.be/iHTOFDlkJqg |
 1480 | Running Sum of 1D Array | Easy | https://youtu.be/HbSN-ElXHwc |
+
+## Patterns
+
+- Sorted input
+  - Apply binary search for efficient element lookup.
+  - Use the two-pointer technique for problems involving pairs or segments.
+- Unsorted input
+  - Use a hash map or set to find specific elements quickly.
+  - Implement a monotonic stack or sliding window technique for managing elements while continuously finding maximum or minimum values.
+  - Use backtracking for problems that ask for all possibilities or combinations (this is also a suitable fallback if dynamic programming isn’t going to work).
+  - Apply dynamic programming for questions related to counting ways or optimizing values.
+  - Use a Trie for prefix matching and string-building scenarios.
+- Input is a Graph or Tree
+  - Use DFS to explore all paths or when the question does not require finding the shortest path.
+  - Use BFS when the question asks for the shortest path or fewest steps.
+  - For binary trees, use DFS if the problem involves exploring specific depths or levels.
+- Linked List input
+  - Use techniques involving slow and fast pointers or "prev" and "dummy" pointers to facilitate certain operations if you are unsure how to achieve a specific outcome.
