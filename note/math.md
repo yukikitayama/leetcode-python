@@ -240,3 +240,9 @@ For all numbers a: from 2 to sqrt(n)
       
 All unmarked numbers are prime
 ```
+
+## Parity
+
+**Parity** is state whether a number is even or odd.
+
+- [3152. Special Array II](https://leetcode.com/problems/special-array-ii/description)
