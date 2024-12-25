@@ -32,6 +32,12 @@ correct positions based on their values and frequencies.
 - Iterate the given array and get each element as `value`
 - Increment the auxiliary array by the array element as index such as `counter[value]`
 
+## Cycle sort
+
+- Cyclically place each element in its correct sorted position by swapping it with the value currently in that position.
+- Correct positions are found by getting a copy of an array and sorting it, and compare it with the original array.
+- [2471. Minimum Number of Operations to Sort a Binary Tree by Level](https://leetcode.com/problems/minimum-number-of-operations-to-sort-a-binary-tree-by-level/description/)
+
 ## LeetCode
 
 - [1874. Minimize Product Sum of Two Arrays](https://leetcode.com/problems/minimize-product-sum-of-two-arrays/)
