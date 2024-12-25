@@ -28,3 +28,5 @@
 - [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/)
 - [2204. Distance to a Cycle in Undirected Graph](https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph/description/)
 - [2360. Longest Cycle in a Graph](https://leetcode.com/problems/longest-cycle-in-a-graph/description/)
+- [3203. Find Minimum Diameter After Merging Two Trees
+](https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/description)
