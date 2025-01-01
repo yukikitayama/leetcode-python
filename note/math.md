@@ -106,6 +106,7 @@ Given a list of values [E, F, G] sorted in ascending order (i.e. E < F < G), and
   `order matters`
 - [Combinations and Permutations](https://www.mathsisfun.com/combinatorics/combinations-permutations.html)
 - [447. Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/)
+- [903. Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence/description/)
 
 ## Reverse polish notation
 
