@@ -11,6 +11,7 @@ It seems people pronounce it as "try". I was pronouncing "turii", but it's wrong
   - Each node in Trie is a string or a prefix
   - The value of a node is the letters from the root to the current node.
 - Root is empty string
+- When inserting a word into the prefix Trie, we are essentially storing all possible prefixes of that word.
 
 ## Data Structure
 
@@ -101,6 +102,13 @@ for word in words:
 - The root to leaf path in `Bitwise Tree` represents a binary form of a number.
   - e.g. 5 is 101 in a binary form. Bitwise Tree stores 1 -> 0 -> 1 for 5.
 - 
+
+## Suffix
+
+For suffixes, rather than directly storing and checking suffixes (which would require reversing and checking repeatedly for every comparison), we use a trick to convert them to a prefix Trie:
+- Reverse the word. By treating the reversed word as a prefix, the suffix-checking problem is reduced to a prefix-matching problem.
+- Insert the reversed word into a separate Trie.
+- [3042. Count Prefix and Suffix Pairs I](https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/description)
 
 ## Application
 
