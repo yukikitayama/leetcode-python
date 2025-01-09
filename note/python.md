@@ -328,3 +328,7 @@ Given a matrix `mat`, `list(zip(*mat[::-1]))`
 - `format(INTEGER, 'b')` to convert an integer to binary
 - `format(INTEFER, '#010b')` returns 8 length binary representation with leading `0b`
 
+## Return self
+
+- `return self` in a class is useful for **method cascading (chaining)** in OOP.
+- [Purpose of return self python](https://stackoverflow.com/questions/43380042/purpose-of-return-self-python)
