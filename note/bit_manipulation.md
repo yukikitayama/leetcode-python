@@ -141,6 +141,7 @@ Properties of bitwise **OR**
 ### XOR ^
 
 - When both bits are the same, result is 0, otherwise 1
+- XOR has **Inversion**. If `a XOR b = c`, then `a = b XOR c` and `b = a XOR c`.
 
 ### Negation ~
 
