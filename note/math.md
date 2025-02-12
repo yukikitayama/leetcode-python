@@ -247,3 +247,8 @@ All unmarked numbers are prime
 **Parity** is state whether a number is even or odd.
 
 - [3152. Special Array II](https://leetcode.com/problems/special-array-ii/description)
+
+## Digit time complexity
+
+- Let `m` is an integer. Computing the sum of digits for a given number takes `O(log m)` time.
+- This is because the number of digits in a number is proportional to `log_10 m`.
