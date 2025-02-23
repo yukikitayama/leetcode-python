@@ -53,6 +53,8 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 ## Thinking
 
 - As intuitive as the problem seems to be, you might stumble over the implementation. It's natural.
+- DP is a careful brute force. We try at every possible place, but save the answers to prevent us from doing multiple times.
+  - [Python3 || Detailed Explanation and Commented Code](https://leetcode.com/problems/allocate-mailboxes/solutions/685516/python3-detailed-explanation-and-commented-code/?envType=company&envId=amazon&favoriteSlug=amazon-thirty-days)
 
 ## Action
 
