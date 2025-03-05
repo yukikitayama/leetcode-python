@@ -252,3 +252,9 @@ All unmarked numbers are prime
 
 - Let `m` is an integer. Computing the sum of digits for a given number takes `O(log m)` time.
 - This is because the number of digits in a number is proportional to `log_10 m`.
+
+## First N natural numbers
+
+- **First N natural numbers** is calculated by `((n + 1) * n) / 2`
+- [Sum of the First N Natural Numbers | Formula and Proof](https://www.youtube.com/watch?v=dWunfFYQw0I)
+- [2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/)
