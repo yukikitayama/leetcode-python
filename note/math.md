@@ -258,3 +258,11 @@ All unmarked numbers are prime
 - **First N natural numbers** is calculated by `((n + 1) * n) / 2`
 - [Sum of the First N Natural Numbers | Formula and Proof](https://www.youtube.com/watch?v=dWunfFYQw0I)
 - [2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/)
+
+## Sum of squares of N natural numbers
+
+- **Sum of squares of N natural numbers** is
+  - `1/3 n**3 + 1/2 n**2 + 1/6 n`
+  - `(n**2 (n**2 + 1) (2n**2 + 1)) / 6`
+- [Finding the sum of n squares part 1](https://www.youtube.com/watch?v=i7iKLZQ-vCk)
+- [2965. Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/description/)
