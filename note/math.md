@@ -222,9 +222,18 @@ https://www.cuemath.com/sum-of-arithmetic-sequence-formula/
 
 ## Sieve of Eratosthenes
 
-**Sieve of Eratosthenes** is an algorithm to generate prime numbers up to a certain limit.
-
-https://www.youtube.com/watch?v=klcIklsWzrY
+- **Sieve of Eratosthenes** is an algorithm to generate prime numbers up to a certain limit.
+- https://www.youtube.com/watch?v=klcIklsWzrY
+- [2523. Closest Prime Numbers in Range](https://leetcode.com/problems/closest-prime-numbers-in-range/description/)
+- Example
+  - We start with a list of numbers from 2 to 100. 
+  - Notice we skip 1 since it’s not considered a prime. 
+  - Starting with the smallest prime, 2, we know it’s prime because it hasn’t been marked yet. 
+  - So, we keep it. Now, we cross out all multiples of 2 (like 4, 6, 8, etc.) because they’re definitely not prime. 
+  - The next number that isn’t crossed out is 3, so we mark it as a prime. 
+  - Then, we cross out all multiples of 3 (like 6, 9, 12, etc.). 
+  - We keep going, finding the next unmarked number (which will be 5), and marking all of its multiples. 
+  - We do this for 7 as well and continue until we’ve processed all numbers up to the limit.
 
 ```
 find primes up to N
@@ -252,3 +261,17 @@ All unmarked numbers are prime
 
 - Let `m` is an integer. Computing the sum of digits for a given number takes `O(log m)` time.
 - This is because the number of digits in a number is proportional to `log_10 m`.
+
+## First N natural numbers
+
+- **First N natural numbers** is calculated by `((n + 1) * n) / 2`
+- [Sum of the First N Natural Numbers | Formula and Proof](https://www.youtube.com/watch?v=dWunfFYQw0I)
+- [2579. Count Total Number of Colored Cells](https://leetcode.com/problems/count-total-number-of-colored-cells/description/)
+
+## Sum of squares of N natural numbers
+
+- **Sum of squares of N natural numbers** is
+  - `1/3 n**3 + 1/2 n**2 + 1/6 n`
+  - `(n**2 (n**2 + 1) (2n**2 + 1)) / 6`
+- [Finding the sum of n squares part 1](https://www.youtube.com/watch?v=i7iKLZQ-vCk)
+- [2965. Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/description/)
