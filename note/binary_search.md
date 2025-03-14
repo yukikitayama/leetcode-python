@@ -100,3 +100,11 @@ while left <= right:
 # End Condition: left > right
 return -1
 ```
+
+## Boundary problem
+
+- if a valid distribution exists for a given number x, then a distribution is also possible for any number smaller than or equal to x. 
+- Conversely, if we cannot allocate the candies such that each child receives x candies, then it's impossible to distribute them in a way that gives each child more than x candies. 
+- This monotonic property allows us to use a binary search approach, where we check if a distribution is possible for the middle value of our search range. 
+- Based on that, we either move to the upper half of the range if a distribution is possible, or to the lower half if it's not.
+- [2226. Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/description/)
