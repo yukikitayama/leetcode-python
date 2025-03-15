@@ -108,3 +108,10 @@ return -1
 - This monotonic property allows us to use a binary search approach, where we check if a distribution is possible for the middle value of our search range. 
 - Based on that, we either move to the upper half of the range if a distribution is possible, or to the lower half if it's not.
 - [2226. Maximum Candies Allocated to K Children](https://leetcode.com/problems/maximum-candies-allocated-to-k-children/description/)
+
+## Minimizing the maximum, maximizing the minimum
+
+- Problems that require minimizing the maximum or maximizing the minimum often suggest a binary search approach. 
+- Instead of searching through indices or subsets directly, we can binary search on the capability (i.e., something like the maximum amount stolen from any single house). 
+- By determining whether a given capability is achievable, we can efficiently narrow down the possible solutions.
+- [2560. House Robber IV](https://leetcode.com/problems/house-robber-iv/description/)
