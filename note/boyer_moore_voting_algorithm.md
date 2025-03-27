@@ -18,7 +18,6 @@ If an element is truly a majority element, it will stick in the potential candid
 
 ## LeetCode
 
-- [169. Majority Element
-](https://leetcode.com/problems/majority-element/)
-- [229. Majority Element II
-](https://leetcode.com/problems/majority-element-ii/description/)
+- [169. Majority Element](https://leetcode.com/problems/majority-element/)
+- [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
+- [2780. Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split/description/)
