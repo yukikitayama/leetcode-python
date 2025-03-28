@@ -275,3 +275,12 @@ All unmarked numbers are prime
   - `(n**2 (n**2 + 1) (2n**2 + 1)) / 6`
 - [Finding the sum of n squares part 1](https://www.youtube.com/watch?v=i7iKLZQ-vCk)
 - [2965. Find Missing and Repeated Values](https://leetcode.com/problems/find-missing-and-repeated-values/description/)
+
+## Complete connected component (Clique)
+
+- There must be `(n * (n - 1)) / 2` unique edges in a complete graph with `n` vertices, equal to the number of pairs of nodes in the graph.
+- `n * (n - 1)` means each vertex is connected to every other vertices.
+- `/ 2` means there is double count, when counting edges in undirected graph
+- Since our graph is undirected but out adjacency list counts each edge trice (once from each endpoint), the total edge count from the adjacency lists should be `n * (n - 1)`
+- [Clique (graph theory)](https://en.wikipedia.org/wiki/Clique_(graph_theory))
+- [2685. Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/description/)

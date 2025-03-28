@@ -32,3 +32,4 @@
 - [2276. Count Integers in Intervals](https://leetcode.com/problems/count-integers-in-intervals/description)
   - Hard
 - [2345. Finding the Number of Visible Mountains](https://leetcode.com/problems/finding-the-number-of-visible-mountains/description)
+- [3169. Count Days Without Meetings](https://leetcode.com/problems/count-days-without-meetings/description/)

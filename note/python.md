@@ -332,3 +332,24 @@ Given a matrix `mat`, `list(zip(*mat[::-1]))`
 
 - `return self` in a class is useful for **method cascading (chaining)** in OOP.
 - [Purpose of return self python](https://stackoverflow.com/questions/43380042/purpose-of-return-self-python)
+
+## Prefix sum
+
+- `itertools.accumulate([1, 2, 3])` produces `[1, 3, 6]` prefix sum
+- [itertools.accumulate](https://docs.python.org/3/library/itertools.html#itertools.accumulate)
+
+## Priority queue
+
+- In addition to `heapq`, there is also `from queue import PriorityQueue` in standard library
+- [queue — A synchronized queue class](https://docs.python.org/3/library/queue.html#queue.PriorityQueue)
+- [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/description/)
+
+```python
+from queue import PriorityQueue
+min_heap = PriorityQueue()
+min_heap.put((grid[0][0], 0, 0))
+min_heap.empty()
+min_heap.queue[0][0]
+min_heap.get()
+
+```
