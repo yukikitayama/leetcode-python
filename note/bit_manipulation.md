@@ -142,6 +142,10 @@ Properties of bitwise **OR**
 
 - When both bits are the same, result is 0, otherwise 1
 - XOR has **Inversion**. If `a XOR b = c`, then `a = b XOR c` and `b = a XOR c`.
+- `a ^ a = 0` and XOR is associative (can change rearrange parentheses, change precedence) and commutative (can change order of operands)
+  - [2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)
+  - https://en.wikipedia.org/wiki/Associative_property
+  - https://en.wikipedia.org/wiki/Commutative_property
 
 ### Negation ~
 
