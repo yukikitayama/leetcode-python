@@ -8,10 +8,14 @@
 - [346. Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/description/)
 - [362. Design Hit Counter](https://leetcode.com/problems/design-hit-counter/description/)
 - 295
+  - Hard
 - 359
+  - Easy
 - [1352. Product of the Last K Numbers](https://leetcode.com/problems/product-of-the-last-k-numbers/description/)
 - 1825
+  - Hard
 - 642
+  - Hard
 - 1472
 - 901
 - 933
