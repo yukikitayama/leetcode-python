@@ -16,7 +16,8 @@
   - Hard
 - 642
   - Hard
-- 1472
+- [1472. Design Browser History](https://leetcode.com/problems/design-browser-history/description/)
+  - Medium
 - 901
 - 933
 - 1429
