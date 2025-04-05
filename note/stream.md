@@ -20,7 +20,8 @@
   - Medium
 - [901. Online Stock Span](https://leetcode.com/problems/online-stock-span/description/)
   - Medium
-- 933
+- [933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/?envType=problem-list-v2&envId=data-stream)
+  - Easy
 - 1429
 - 1656
 - 703
