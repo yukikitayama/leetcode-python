@@ -23,9 +23,11 @@
 - [933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/?envType=problem-list-v2&envId=data-stream)
   - Easy
 - 1429
-- 1656
+- [1656. Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/description/)
+  - Easy
 - 703
-- 2034
+- [2034. Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/description/)
+  - Medium
 - 3369
 - 1670
 - 170
