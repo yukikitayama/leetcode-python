@@ -25,7 +25,8 @@
 - 1429
 - [1656. Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/description/)
   - Easy
-- 703
+- [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
+  - Easy
 - [2034. Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/description/)
   - Medium
 - 3369
