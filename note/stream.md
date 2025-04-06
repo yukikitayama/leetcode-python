@@ -22,7 +22,8 @@
   - Medium
 - [933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/description/?envType=problem-list-v2&envId=data-stream)
   - Easy
-- 1429
+- [1429. First Unique Number](https://leetcode.com/problems/first-unique-number/description/)
+  - Medium
 - [1656. Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/description/)
   - Easy
 - [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)

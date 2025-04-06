@@ -11,4 +11,4 @@ worst case seems to be `O(n^2)` but we say `O(1)` average time per operation.
 - https://leetcode.com/problems/implement-queue-using-stacks/description/
 - [901. Online Stock Span](https://leetcode.com/problems/online-stock-span/description/)
 - [933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/editorial/)
-- 
+- [1429. First Unique Number](https://leetcode.com/problems/first-unique-number/description/)
