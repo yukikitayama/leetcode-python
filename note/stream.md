@@ -35,5 +35,6 @@
 - 170
 - 1032
 - 2102
-- 2526
+- [2526. Find Consecutive Integers from a Data Stream](https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/description/)
+  - Medium
 - 1500
