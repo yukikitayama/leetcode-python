@@ -31,7 +31,8 @@
 - [2034. Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation/description/)
   - Medium
 - 3369
-- 1670
+- [1670. Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/description/)
+  - Medium
 - 170
 - 1032
 - 2102
