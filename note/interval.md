@@ -4,7 +4,7 @@
 
 - Sort
 - Stack
-- 
+- Curr and next
 
 ## LeetCode
 
@@ -16,6 +16,9 @@
   - Hard
 - [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description)
 - [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)
+- [495. Teemo Attacking](https://leetcode.com/problems/teemo-attacking/description/)
+  - Google
+  - Easy
 - [715. Range Module](https://leetcode.com/problems/range-module/description)
   - Hard
 - [729. My Calendar I](https://leetcode.com/problems/my-calendar-i/description)
