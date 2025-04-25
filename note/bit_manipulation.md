@@ -128,6 +128,7 @@ the leftmost bit (bit position 63) is the sign bit, where 0 represents positive 
 ### AND &
 
 - When both bits are 1, result is 1, otherwise 0
+- [371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/)
 
 ### OR |
 
@@ -146,12 +147,14 @@ Properties of bitwise **OR**
   - [2433. Find The Original Array of Prefix Xor](https://leetcode.com/problems/find-the-original-array-of-prefix-xor/)
   - https://en.wikipedia.org/wiki/Associative_property
   - https://en.wikipedia.org/wiki/Commutative_property
+- [371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/)
 
 ### Negation ~
 
 - 0 becomes 1, and 1 becomes 0
 - ~ 0 = 1
 - ~ 1 = 0
+- [371. Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/)
 
 ### Left shift
 

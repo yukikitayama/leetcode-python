@@ -30,7 +30,7 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
 - [x] Solve 1,700 LeetCode problems (2024-08-01)
 - [x] Solve 1,800 LeetCode problems (2024-11-15)
 - [x] Solve 1,900 LeetCode problems (2025-02-21)
-- [ ] Solve 1,900 LeetCode problems
+- [ ] Solve 2,000 LeetCode problems
 
 ## Algorithms that I am not confident of
 
@@ -45,6 +45,16 @@ LeetCode ID: yukikitayama (https://leetcode.com/yukikitayama/)
   - [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
 - Trie
 - Divide and conquer
+
+## Algorithms that I don't understand
+
+- Fenwick tree (binary index tree (BIT))
+  - https://leetcode.com/problem-list/binary-indexed-tree/
+  - https://leetcode.com/discuss/post/1093346/introduction-to-fenwick-treebinary-index-tp6h/
+  - https://leetcode.com/discuss/post/6097648/fenwick-tree-bit-complete-notes-beginner-grib/
+  - https://medium.com/@florian_algo/typical-problems-of-fenwick-tree-binary-indexed-tree-1b87a673749
+  - [2179. Count Good Triplets in an Array](https://leetcode.com/problems/count-good-triplets-in-an-array/)
+    - Hard
 
 ## Approach
 
