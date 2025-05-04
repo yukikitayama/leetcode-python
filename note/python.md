@@ -291,6 +291,13 @@ for st in zip(*strs):
     # ('c', 'e', 'e')
 ```
 
+```python
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+transposed_matrix = list(zip(*matrix))
+print(transposed_matrix)
+# Expected output: [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+```
+
 ## Assignment Expression
 
 - `:=` is `assignment expression` new syntax from `Python 3.8`.
