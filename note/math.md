@@ -284,3 +284,10 @@ All unmarked numbers are prime
 - Since our graph is undirected but out adjacency list counts each edge trice (once from each endpoint), the total edge count from the adjacency lists should be `n * (n - 1)`
 - [Clique (graph theory)](https://en.wikipedia.org/wiki/Clique_(graph_theory))
 - [2685. Count the Number of Complete Components](https://leetcode.com/problems/count-the-number-of-complete-components/description/)
+
+## Multiset permutation
+
+- `P = n! / (k1! * k2! * ... * kr!)`
+- https://www.geeksforgeeks.org/permutations-and-combinations-of-a-multiset/
+- [3343. Count Number of Balanced Permutations](https://leetcode.com/problems/count-number-of-balanced-permutations/description/)
+  - Hard
