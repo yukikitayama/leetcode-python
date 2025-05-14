@@ -291,3 +291,9 @@ All unmarked numbers are prime
 - https://www.geeksforgeeks.org/permutations-and-combinations-of-a-multiset/
 - [3343. Count Number of Balanced Permutations](https://leetcode.com/problems/count-number-of-balanced-permutations/description/)
   - Hard
+
+## Matrix multiplication
+
+- Matrix multiplication
+- [3337. Total Characters in String After Transformations II](https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/description/)
+  - Hard
