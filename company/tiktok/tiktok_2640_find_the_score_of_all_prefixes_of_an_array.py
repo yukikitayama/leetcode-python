@@ -3,6 +3,8 @@ max_so_far
 curr_sum
 """
 
+from typing import List
+
 
 class Solution:
     def findPrefixScore(self, nums: List[int]) -> List[int]:
